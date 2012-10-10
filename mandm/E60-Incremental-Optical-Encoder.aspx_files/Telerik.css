@@ -1,0 +1,105 @@
+/* START Telerik.Web.UI.Skins.Ajax.css */
+/* Telerik RadAjaxLoadingPanel Common CSS */
+
+.RadAjax .raDiv,
+.RadAjax .raColor
+{
+	width:100%;
+	height:100%;
+	margin:0;
+	padding:0;
+}
+
+.RadAjax .raDiv
+{
+	position:relative;
+	z-index:2;
+	background-color:transparent;
+	background-position:center center;
+	background-repeat:no-repeat;
+}
+
+.RadAjax .raColor
+{
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:1;
+	background-image:none;
+}
+
+.RadAjax .raTransp
+{
+	zoom:1;
+}
+
+.RadAjax .raTop
+{
+	background-position:center top;
+}
+
+.RadAjax .raTopLeft
+{
+	background-position:left top;
+}
+
+.RadAjax .raTopRight
+{
+	background-position:right top;
+}
+
+.RadAjax .raLeft
+{
+	background-position:left center;
+}
+
+.RadAjax .raRight
+{
+	background-position:right center;
+}
+
+.RadAjax .raBottom
+{
+	background-position:center bottom;
+}
+
+.RadAjax .raBottomLeft
+{
+	background-position:left bottom;
+}
+
+.RadAjax .raBottomRight
+{
+	background-position:right bottom;
+}
+
+.RadAjax div.raNone
+{
+	background-image:none;
+}
+
+* html .RadAjaxUpdatedElement select
+{
+	visibility:hidden !important;
+}
+/* END Telerik.Web.UI.Skins.Ajax.css */
+/* START Telerik.Web.UI.Skins.Default.Ajax.Default.css */
+/* Telerik RadAjaxLoadingPanel Default Skin */
+
+.RadAjax_Default .raDiv
+{
+	background-image:url('/WebResource.axd?d=8uxX6IchHq0D5_rrAMFJNLdu-lqAUFqt5dLNqSrBQD74Fp-KwYpBmYKKUIkLpcTk9NjmfPtwZDU_zX7_19_Qh-SygwWU1-ugOaix--E3U7tkLLp89tHpnKm4WtMDRAZp2g1vQNe2iz9DrpZ70&t=634581570380000000');
+}
+
+.RadAjax_Default .raColor
+{
+	background-color:#fff;
+}
+
+.RadAjax_Default .raTransp
+{
+	opacity:0.7;
+	-moz-opacity:0.7;
+	filter:alpha(opacity=70);
+}
+/* END Telerik.Web.UI.Skins.Default.Ajax.Default.css */

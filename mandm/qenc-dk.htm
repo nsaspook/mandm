@@ -1,0 +1,239 @@
+please dont rip this site </techref/indexok.asp?spider=41049.5584606482>
+
+
+  PIC Micro Controller <../../../index.htm> C
+  <../../../../language/ccpp/index.htm> Input / Output
+  <../../../ios.htm> Routine <../../../../methods.htm>
+
+
+      Quadrature Encoder <../../../qenc.htm> ISR
+
+by David Kott
+
+struct RotaryEncoderStruct {
+      int unused:4;  // RB[0:3]
+      int A:1;   // RB4
+      int B:1;   // RB5
+      int unused2:2;  // RB6-7
+};
+
+struct RotaryEncoderStruct RotaryEncoder;
+
+#pragma BYTE PORTB = 0x06
+
+#pragma BYTE RotaryEncoder = 0x06 // Place structure right over PORTB at
+location 0x06
+
+
+USHORT g_usEncoderCount = 0;
+
+#pragma INT_RB
+void
+PortBInterrupt (void)
+{
+
+      static BYTE OldPortB;
+      BYTE byTemp;
+      static struct RotaryEncoderStruct OldEncoder;
+
+
+      if (OldPortB != (byTemp=(PORTB & 0x30))) {
+
+
+      OldPortB = byTemp;
+
+      if (RotaryEncoder.A == OldEncoder.A) {
+     if (RotaryEncoder.B == RotaryEncoder.A)
+    --g_usEncoderCount;
+     else
+    ++g_usEncoderCount;
+      } else {
+     OldEncoder.A = RotaryEncoder.A;
+     if (RotaryEncoder.B == RotaryEncoder.A)
+    ++g_usEncoderCount;
+     else
+    --g_usEncoderCount;
+      }
+
+
+
+     }
+
+   // Handle more PORTB stuff here, like a button, or something.
+
+
+}
+
+Questions:
+
+  * Ken T Macfarlane of p.s. autogrinding
+    </techref/member/KTM-psa-R53/index.htm> asks:
+
+        How many machine cycles does this take to run (worst case)? This
+        sets the maximum rotational speed of encoder that can be tracked
+        (tempered by the processor clock speed and the encoder
+        resolution in lines/rev, obviously)
+
+    +
+    </techref/login/default.asp?req=/techref/update.asp%3Fact=reply%26url=/Techref/microchip/language/c/io/qenc-dk.htm%26id=38202.140787037>
+
+
+Comments:
+
+  * SPAMkarl.ratcliffKILLspam at KILLspamtiscali.co.uk
+    <mailto:SPAMkarl.ratcliffKILLspam at KILLspamtiscali.co.uk> "Doesn't
+    check for overrun or error conditions. The output of the encoder
+    will be gray code changing by one bit, so a two bit change = error
+    condition" +
+    </techref/login/default.asp?req=/techref/update.asp%3Fact=reply%26url=/Techref/microchip/language/c/io/qenc-dk.htm%26id=39924.6430671296>
+
+
+	
+
+*See also:*
+
+------------------------------------------------------------------------
+file: /Techref/microchip/language/c/io/qenc-dk.htm, 2KB, , updated:
+2009/4/22 23:22, local time: 2012/5/20 13:24,
+^TOP </techref/index.htm> NEW </techref/new201205.txt> MORE
+</techref/search.asp?from=%2FTechref%2Fmicrochip%2Flanguage%2Fc%2Fio%2Fqenc%2Ddk%2Ehtm>
+HELP
+<mailto:webmaster@piclist.com?subject=I%20need%20someone%20to%20help%20me%20with%3A%20>
+FIND: </techref/search.asp> 
+
+</techref/indexok.asp?top> ^50.53.228.193:LOG IN
+</techref/login/default.asp?req=403%3Bhttp%3A%2F%2Fwww%2Epiclist%2Ecom%3A80%2Ftechref%2Fmicrochip%2Flanguage%2Fc%2Fio%2Fqenc%2Ddk%2Ehtm>
+
+*©2012 PLEASE DON'T RIP! </dontripthissite.htm>**DO: LINK* / DIGG!
+<http://digg.com/submit?phase=2&url=http%3A%2F%2Fwww%2Epiclist%2Ecom%2Ftechref%2Fmicrochip%2Flanguage%2Fc%2Fio%2Fqenc%2Ddk%2Ehtm&title=PIC+C+I%2FO+Routine+%2D+Quadrature+Encoder+ISR> / MAKE!
+<http://makezine.com/cs/user/create/link?x-t=suggestlink.form&url=http%3A%2F%2Fwww%2Epiclist%2Ecom%2Ftechref%2Fmicrochip%2Flanguage%2Fc%2Fio%2Fqenc%2Ddk%2Ehtm&description=PIC+C+I%2FO+Routine+%2D+Quadrature+Encoder+ISR&title=www%2Epiclist%2Ecom>
+
+
+------------------------------------------------------------------------
+ 	©2012 These pages are served without commercial sponsorship. (No popup
+ads, etc...).Bandwidth abuse increases hosting cost forcing sponsorship
+or shutdown. This server aggressively defends against automated copying
+for any reason including offline viewing, duplication, etc... Please
+respect this requirement and DO NOT RIP THIS SITE. Questions?
+</dontripthissite.htm>
+Please /DO/ link to this page! Digg it!
+<http://digg.com/submit?phase=2&url=http://www.piclist.com/techref%2Fmicrochip%2Flanguage%2Fc%2Fio%2Fqenc%2Ddk%2Ehtm&title=PIC+C+I%2FO+Routine+%2D+Quadrature+Encoder+ISR> / MAKE!
+<http://makezine.com/cs/user/create/link?x-t=suggestlink.form&url=http%3A%2F%2Fwww%2Epiclist%2Ecom%2Ftechref%2Fmicrochip%2Flanguage%2Fc%2Fio%2Fqenc%2Ddk%2Ehtm&description=PIC+C+I%2FO+Routine+%2D+Quadrature+Encoder+ISR&title=www%2Epiclist%2Ecom> / 
+
+<A
+HREF="http://www.piclist.com/techref/microchip/language/c/io/qenc-dk.htm">
+PIC C I/O Routine - Quadrature Encoder ISR</A>
+
+------------------------------------------------------------------------
+After you find an appropriate page, you are invited to your to this
+/massmind/ </idea/websites.htm> site! (posts will be visible only to you
+before review) Just type in the box and press the Post button. (HTML
+</techref/language/html/index.htm> welcomed, but not the <A tag:
+Instead, use the link box to link to another page. A tutorial is
+available </techref/idea/website/codetutorial.htm> Members
+</techref/private.asp?req=membership> can login
+</techref/login/default.asp?req=403%3Bhttp%3A%2F%2Fwww%2Epiclist%2Ecom%3A80%2Ftechref%2Fmicrochip%2Flanguage%2Fc%2Fio%2Fqenc%2Ddk%2Ehtm>
+to post directly, become page editors, and be credited for their posts.
+* B * / I / _ u _ Blockquote Change language
+
+Link? Put it here: 
+if you want a response, please enter your email address: 
+Attn spammers: All posts are reviewed before being made visible to
+anyone other than the poster.
+
+Did you find what you needed? From: "/http://www.google.com/url
+<http://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&sqi=2&ved=0CG0QFjAB&url=http%3A%2F%2Fwww.piclist.com%2Ftechref%2Fmicrochip%2Flanguage%2Fc%2Fio%2Fqenc-dk.htm&ei=11K5T5_YKYiViQK0tZnrBg&usg=AFQjCNFUQ6IfxrEbyRF9uaJ51_5lS9C9NA&sig2=9ZFL0YddT0wlmlo-MKee0w>/"
+
+
+  * /"Not quite. Look for more pages like this one."
+    </techref/search.asp?from=%2FTechref%2Fmicrochip%2Flanguage%2Fc%2Fio%2Fqenc%2Ddk%2Ehtm>/
+
+  *
+    /"No. I'm looking for: "/
+
+  * /"No. Take me to the search page."/ </techref/search.asp>
+  * /"No. Take me to the top so I can drill down by catagory"/
+    </techref/index.htm>
+  * /"No. I'm willing to pay for help, please refer me to a qualified
+    consultant"/
+    <mailto:webmaster@piclist.com?subject=I%20need%20someone%20to%20help%20me%20with%3A%20>
+
+  *
+    /"No. But I'm interested. me at when this page is expanded."/
+
+------------------------------------------------------------------------
+ 	*PICList 2012 contributors <http://www.piclist.com/support>:*
+o List host: MIT
+<http://www.piclist.com/techref/piclist/support.htm#LIST>, Site host
+massmind.org
+<http://techref.massmind.org/techref/piclist/support.htm#SITE>, Top
+posters @20120520 RussellMc, IVP, alan.b.pearce, cdb, V G, Isaac Marino
+Bavaresco, John Gardner, Electron, Carl Denk, YES NOPE9,
+* Page Editors: James Newton, David Cary, and /YOU/
+</techref/idea/website/pageedit.htm>!
+* Roman Black of Black Robotics <http://www.blackrobotics.com> donates
+from sales of Linistep stepper controller kits
+<http://www.piclist.com/techref/io/stepper/linistep/index.htm>.
+* Ashley Roll of Digital Nemesis <http://www.digitalnemesis.com> donates
+from sales of RCL-1 RS232 to TTL converters
+<http://www.piclist.com/techref/io/serial/RCL1.htm>.
+* Monthly Subscribe </techref/piclist/support.htm#subscribe>rs: None at
+this time. /on-going support is MOST appreciated!/
+* Contributors </techref/piclist/support.htm#contribute>: Richard
+Seriani, Sr.
+
+ 	'What can I do?' - SiCKO
+<http://www.michaelmoore.com/sicko/what-can-i-do/>
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+  .
+

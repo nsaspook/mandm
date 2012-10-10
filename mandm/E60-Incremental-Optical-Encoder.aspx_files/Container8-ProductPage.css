@@ -1,0 +1,93 @@
+/*========================================================*/
+/*             CSS for DotNetNuke Containers              */
+/*                  by Brian Connor                       */
+/*             http://www.NukeVille.com                   */
+/*                connbrian@gmail.com                     */
+/*========================================================*/
+
+/*========================================================*/
+/*     Container Design Elements                          */
+/*========================================================*/
+
+
+/*-- conatiner title token             --*/.BCC_EQPS_GrayBar08Title
+{
+	font-size: 22px !important;
+	line-height: 1.4em;
+	font-family: Arial !important;
+	color: #00b5e3;
+	font-weight: normal;
+	padding-left: 18px;
+}
+
+h1
+{
+	font-size: 22px !important;
+	line-height: 1.4em;
+	font-family: Arial !important;
+	color: #00b5e3;
+	font-weight: normal;
+	padding: 5px 0px 0px 18px;
+	margin: 0px;
+}
+
+/*-- container title cell              --*/.BCC_EQPS_GrayBar08TitleTD
+{
+	width: 100%;
+	padding: 0;
+}
+/*-- container actions cell            --*/.BCC_EQPS_GrayBar08ActionsTD
+{
+	width: 0%;
+	padding: 0;
+}
+/*-- container content pane            --*/.BCC_EQPS_GrayBar08Content
+{
+	font-size: 11px;
+	font-family: tahoma;
+	color: #444;
+	text-align: left;
+	padding: 0px 5px 20px 8px;
+}
+/*-- container Icons cell              --*/.BCC_EQPS_GrayBar08Icons
+{
+	text-align: right;
+	padding: 0px 0 5px 0;
+	border-top: 0px solid #BBBBBB;
+}
+
+/*-- top center section                --*/.BCC_EQPS_GrayBar08T
+{
+	vertical-align: top;
+	height: 22px;
+	padding: 2px 0 0 0px;
+}
+/*-- top left section                  --*/.BCC_EQPS_GrayBar08TL
+{
+	vertical-align: top;
+	height: 22px;
+	width: 10px;
+	padding: 0;
+}
+/*-- top right section                 --*/.BCC_EQPS_GrayBar08TR
+{
+	vertical-align: top;
+	height: 22px;
+	width: 10px;
+	padding: 0;
+}
+
+/*========================================================*/
+
+.TitleBackground
+{
+	padding-top: 5px;
+	padding-left: 5px;
+}
+
+.TitleBarImage
+{
+	background-image: url(images/ContentContainerBar.jpg);
+	background-repeat: no-repeat;
+	background-position: 8px bottom;	
+}

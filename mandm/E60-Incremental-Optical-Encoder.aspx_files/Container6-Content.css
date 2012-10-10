@@ -1,0 +1,83 @@
+/*========================================================*/
+/*             CSS for DotNetNuke Containers              */
+/*                  by Brian Connor                       */
+/*             http://www.NukeVille.com                   */
+/*                connbrian@gmail.com                     */
+/*========================================================*/
+
+/*========================================================*/
+/*     Container Design Elements                          */
+/*========================================================*/
+
+
+/*-- conatiner title token             --*/.BCC_EQPS_GrayBar06Title
+{
+	font-size: 14px !important;
+	line-height: 1.4em;
+	font-family: Arial !important;
+	color: #2260a5;
+	font-weight: bold;
+	text-decoration: underline;
+	padding-left: 3px;
+}
+
+.BCC_EQPS_GrayBar06Title a
+{
+	color: #2260a5;
+}
+/*-- container title cell              --*/.BCC_EQPS_GrayBar06TitleTD
+{
+	width: 100%;
+	padding: 0;
+}
+/*-- container actions cell            --*/.BCC_EQPS_GrayBar06ActionsTD
+{
+	width: 0%;
+	padding: 0;
+}
+/*-- container content pane            --*/.BCC_EQPS_GrayBar06Content
+{
+	font-size: 11px;
+	font-family: tahoma;
+	color: #444;
+	text-align: left;
+	padding: 0px 5px 20px 5px;
+	background-image: url(images/ContentContainerBar.jpg);
+	background-repeat: no-repeat;
+	background-position: 8px bottom;
+}
+/*-- container Icons cell              --*/.BCC_EQPS_GrayBar06Icons
+{
+	text-align: right;
+	padding: 0px 0 5px 0;
+	border-top: 0px solid #BBBBBB;
+}
+
+/*-- top center section                --*/.BCC_EQPS_GrayBar06T
+{
+	vertical-align: top;
+	height: 22px;
+	padding: 2px 0 0 0px;
+}
+/*-- top left section                  --*/.BCC_EQPS_GrayBar06TL
+{
+	vertical-align: top;
+	height: 22px;
+	width: 10px;
+	padding: 0;
+}
+/*-- top right section                 --*/.BCC_EQPS_GrayBar06TR
+{
+	vertical-align: top;
+	height: 22px;
+	width: 10px;
+	padding: 0;
+}
+
+/*========================================================*/
+
+.TitleBackground
+{
+	padding-top: 5px;
+	padding-left: 5px;
+}

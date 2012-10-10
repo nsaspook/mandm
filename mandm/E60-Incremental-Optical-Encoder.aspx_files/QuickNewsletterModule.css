@@ -1,0 +1,79 @@
+﻿/* Sets the CSS style for the div outside the table on the view form */
+.QuickNewsletter_Main
+{
+	padding: 5px;
+	width: 100%;
+}
+
+/* Sets the CSS style for the table */
+.QuickNewsletter_Table
+{
+	width: 100%;
+}
+
+/* Sets the CSS style for the container cell around the label fields */
+.QuickNewsletter_LabelFieldContainer
+{
+	width: 30%;
+}
+
+/* Sets the CSS style for the container cell around the textbox fields */
+.QuickNewsletter_TextFieldContainer
+{
+	width: 70%;
+}
+
+/* Sets the CSS style for the container cell around the submit button */
+.QuickNewsletter_ButtonContainer
+{
+	padding: 5px 16px 0px 5px;
+	text-align: right;
+}
+
+/* Sets the CSS style for the form labels */
+.QuickNewsletter_FormLabels
+{
+	color: White;
+	font-family: 'Arial';
+	font-size: 11px;
+	font-weight: normal;
+	padding-right: 2px;
+}
+
+/* Sets the CSS style for the form textboxes */
+.QuickNewsletter_FormTextboxes
+{
+	background-color: #FFF;
+	border: solid 1px #56636F;	
+	width: 175px;	
+}
+
+/* Sets the CSS style for the submit button.  This can be redesigned with an image if you choose to do so */
+.QuickNewsletter_SubmitButton, 
+a.QuickNewsletter_SubmitButton
+{
+	background: none;
+	color: #FFF;
+	font-family: 'Arial';
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.LabelCell
+{
+	padding-bottom: 10px;
+}
+
+.FieldCell
+{
+	padding-bottom: 10px;
+}
+
+.ClearDivs
+{
+	clear: both;
+}
+
+/*#################################################################################################################*/
+/*###################################			Styles for Edit Form			###################################*/
+/*#################################################################################################################*/

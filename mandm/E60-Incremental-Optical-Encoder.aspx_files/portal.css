@@ -1,0 +1,636 @@
+.clearfix:after {content: ".";display: block;height: 0;clear: both;visibility: hidden;}.clearfix {display: inline-block;}/* Hides from IE-mac \*/ * html .clearfix { height: 1%;}.clearfix {display: block;}/* End hide from IE-mac */
+.clear { clear:both;} 
+.left { float:left;} 
+.right { float:right;}
+.img-left {float: left; margin-right: 10px;} 
+.img-right {float: right; margin-left: 10px;}
+.dnnsprite { background-image: url('images/AsideIcons.png'); background-color: transparent; background-repeat: no-repeat; }
+.Community { background-position: -249px -5px; }
+.Conferences { background-position: -188px -5px; }
+.Manuals { background-position: -127px -5px; }
+.Marketplace { background-position: -66px -5px; }
+.Training { background-position: -5px -5px; }
+
+
+ul.RotatorNav { margin:-74px 0 0 0;}
+ul.RotatorNav li {margin:0;list-style:none;}
+
+ul.sidebar-nav li { list-style-type: none;}
+ul.sidebar-nav li ul li { padding-left: 20px;;}
+
+/* Getting Started content */
+.getting-started-wrap .left { width: 116px; padding-top:20px;}
+.getting-started-wrap .right { width:500px;}
+a#TourStart img, a#TourVideo img { margin: 3px 3px 3px -10px; vertical-align: middle;}
+#dnnTourContainer { display:none; }
+hr.tour { border-style: solid; border-top-width: 0; color: #ccc; margin-top: 1em; }
+
+#Footer #dnn_Footer_LeftPane {float: left;margin: 0 20px 0 0;width: 430px;}
+#Footer #dnn_Footer_RightPane {float: left;width: 510px;}
+
+#Sponsors img{width:118px;height:58px;border:solid 1px #000;margin:0 7px 7px 0;background:url(images/Logos.jpg) no-repeat;}
+#Sponsors .aspnet img{background-position:0 0;}
+#Sponsors .maxasp img{background-position:-118px 0;}
+#Sponsors .telerik img{background-position:-236px 0;}
+#Sponsors .exacttarget img{background-position:-354px 0;}
+#Sponsors .winlive img{background-position: 0 -58px;}
+#Sponsors .redgate img{background-position: -118px -58px;}
+#Sponsors .appliedi img{background-position: -236px -58px;}
+#Sponsors .arrowdesign img{background-position: -354px -58px;}
+
+/* Quick Links */
+.tblQuickLinks { width:100%; }
+.tblQuickLinks td { line-height:22px; }
+.tblQuickLinks a:link, .tblQuickLinks a:active, .tblQuickLinks a:visited{ text-decoration:underline; color:#e5e5e5; }
+.tblQuickLinks a:hover {color:#d0171e;}
+
+/* ------    Awesome Cyles site styles    ------ */
+/* footer */
+.left-footer { width:48%; float:left;}
+.right-footer { width:48%; float:right;}
+
+/* Home page */
+/* Header Banner*/
+.bannerShadow {padding-bottom: 34px; background:url(/Portals/0/images/Slide-Shadow.png) no-repeat 0 bottom;}
+	.header-banner { background-image: url("/Portals/0/images/header-bg.jpg"); background-repeat: repeat-x; background-color:#830c11; min-height:200px; color:#FFF;}
+		.header-banner .header-banner-image { float:left; width:280px; margin-left:50px; padding-top:13px;}
+		.header-banner .header-banner-text { float:right; width:550px; margin-right:55px;}
+			.header-banner .header-banner-text { font-size:16px; line-height:19px; padding-top:10px;}
+			.header-banner .header-banner-text h2 { font-size:36px; text-transform:uppercase}
+			.header-banner .header-banner-text .header-read-more { font-size:14px; text-align:right;}
+			.header-banner .header-banner-text .header-read-more a { color:#FFF;}
+
+/* services columns */
+.home-services div { width:190px; margin-right:20px; float:left;}
+.home-services div.last { margin-right:0;}
+
+/*  home page sidebar styles*/
+#RightLinks .last { background:none;}
+#RightLinks li.icoAbout img { background-image: url("images/bike-about-icon.png"); background-repeat: no-repeat;}
+#RightLinks li.icoBike img { background-image: url("images/bike-icon.png"); background-repeat: no-repeat;}
+#RightLinks li.icoNews img { background-image: url("images/bike-news-icon.png"); background-repeat: no-repeat;}
+
+/* Subpage sidebar navigation on */
+.Normal ul.sidebar-nav li { line-height:200%;}
+.c_DNN6_Aside h3 { padding:0; margin:0; line-height:200%;}
+
+/*custom styles*/
+.NewsTitle
+{
+background-color: #394C86;
+color: white !important;
+font-family: Arial !important;
+font-size: 12px !important;
+padding-bottom: 3px !important;
+padding-left: 3px !important;
+padding-top: 3px !important;
+text-transform: uppercase;
+}
+
+
+.Head_White, 
+a.Head_White:link, 
+a.Head_White:hover, 
+a.Head_White:visited, 
+a.Head_White:active
+{
+color: White !important;
+font-size: 16px !important;
+font-weight: bold !important;
+}
+
+
+th
+{
+font-size: 0px !important;
+padding: 0px !important;
+margin: 0px !important;
+height: 0px !important;
+}
+
+
+/*---------------   Custom Styles   ---------------*/
+img, div, input, ul, li, a { behavior: url("iepngfix.htc") }
+
+a.HomeLinks:link, 
+a.HomeLinks:hover, 
+a.HomeLinks:visited, 
+a.HomeLinks:active
+{
+color: #505050 !important;
+font-family: Arial !important;
+font-size: 12px !important;
+font-weight: bold !important;
+text-decoration: none !important;
+}
+
+#LeftMenu, #LeftMenu a 
+{
+	color: #505050;
+	font-family: 'Trebuchet MS' !important;
+	font-size: 12px !important;
+	font-weight: bold !important;
+	margin:0px;
+	padding:0px;
+	position: relative;
+	text-decoration: none;
+}
+
+#LeftMenu a
+{
+	border: solid 0px red;
+	padding-left: 15px;
+}
+
+#LeftMenu a:hover
+{
+	color: #0365AE;
+	font-family: 'Trebuchet MS' !important;
+	font-size: 12px !important;
+	font-weight: bold !important;
+	margin:0px;
+	padding:0px;
+	padding-left: 15px;
+	text-decoration: none;
+}
+
+#LeftMenu li
+{
+	background: url(/Portals/0/LeftNavigation/LeftMenu.gif) no-repeat;	
+	color: #505050;
+	height: 59px;
+	line-height: 4.9em;
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+	width: 233px;
+	!width: auto;
+	
+	/* IE Quirks Hack */
+	_position: relative;
+}
+
+#LeftMenu li:hover
+{	
+	background: url(/Portals/0/LeftNavigation/LeftMenuHover.gif) no-repeat;
+}
+
+#LeftMenu li.SealedSwitches:hover
+{
+	background: url(/Portals/0/LeftNavigation/LeftMenu.gif) no-repeat;	
+}
+
+#LeftMenu li.Drives:hover
+{
+	background: url(/Portals/0/LeftNavigation/LeftMenu.gif) no-repeat;	
+}
+
+#LeftMenu li.Resources:hover
+{
+	background: url(/Portals/0/LeftNavigation/LeftMenu.gif) no-repeat;	
+}
+
+#LeftMenu li.BrushMotors:hover
+{
+	background: url(/Portals/0/LeftNavigation/LeftMenu.gif) no-repeat;	
+}
+
+#LeftMenu li ul
+{
+	border: solid 0px red;
+	color: #505050;
+	left: -999em;
+	margin: 0px;
+	padding: 0px;
+	position: absolute;
+	z-index: 10000;
+	
+	/* IE 7 Hack */
+	!position: relative;
+	
+	/* IE Quirks hack */
+	_position: absolute;
+}
+
+#LeftMenu li.sfhover
+{
+	/* IE Quirks Hack */
+	_background: url(/Portals/0/LeftNavigation/LeftMenuHover.png) no-repeat;
+	_z-index: 10000;
+}
+
+#LeftMenu li.SealedSwitches
+{
+	/* IE Quirks Hack */
+	_background: url(/Portals/0/LeftNavigation/LeftMenu.png) no-repeat;
+	border: solid 0px blue;
+	line-height: 1.3em;
+}
+
+#LeftMenu li.SealedSwitches a
+{
+	position: relative;
+	top: 12px;
+}
+
+#LeftMenu li:hover ul, #LeftMenu li.sfhover ul
+{	
+	left: 0px;	
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+	width: 233px;		
+	z-index: 10000;
+	
+	/* IE Quirks Hack */	
+	_top: 59px;
+	_left: 0px;	
+}
+
+#LeftMenu li ul li, #LeftMenu li ul li:hover
+{	
+	background: url(/Portals/0/LeftNavigation/SubMenuBG.png) repeat-y left top;
+	height: 30px;
+	line-height: 15px;
+	margin: 0px 0px 0px 0px;
+	padding-left: 16px;
+	z-index: 10000;
+	
+	/* IE 7 Hack */
+	!height: 35px;
+	
+	/* IE Quirks Hack */
+	_height: 30px;
+	_padding: 0px 0px 0px 15px;
+	_width: 233px;	
+}
+
+#LeftMenu li ul li a, #LeftMenu li ul li a:hover
+{
+	padding-left: 0px;
+}
+
+#LeftMenu li ul li img
+{
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+#LeftMenu li ul li.BrushlessMotors
+{
+	line-height: 16px;
+	padding-bottom: 10px;
+}
+
+#LeftMenu li ul li.BrushlessMotorsLast
+{	
+	border: solid 0px red;
+	height: 50px;
+	
+        /* IE 7 Hack */
+	!height: 30px;
+	
+	/* IE Quirk Hack */
+	_height: 30px;
+}
+
+#LeftMenu li ul li.LeadScrewsLast
+{
+	height: 61px;
+}
+
+#LeftMenu li ul li.LinearRailsLast
+{	
+	height: 32px;
+}
+
+#LeftMenu li ul li.DrivesLast
+{
+	height: 62px;
+}
+
+#LeftMenu li ul li.RotaryMotorsLast
+{
+	height: 62px;
+}
+
+#LeftMenu li ul li.EndCap
+{
+	background: url(/Portals/0/LeftNavigation/SubMenuBG_Last.png) no-repeat left top;
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+	
+	/* IE Quirks Hack */
+	_width: 233px;
+	_z-index: 10000;
+}
+
+#LeftMenu > li
+{
+	!width: 233px;
+	_width: 233px;
+}
+
+#LeftMenu li.PittmanExpress:hover
+{
+	background: url(/Portals/0/LeftNavigation/LeftMenu.gif) no-repeat;	
+}
+
+span.PittmanExpressBuyNow
+{
+color: #0365AE !important;
+}
+
+/* part number construction dropdown list styles */
+#PNDiv
+{
+	float: left;
+	margin: 0px;
+	padding: 5px 0px 10px 0px;
+	width: 185px;
+}
+
+#PNGoButton
+{
+	float: left;
+	margin: 0px;
+	padding: 10px 0px 0px 0px;
+}
+
+.dropdown
+{
+	margin: 0px;
+}
+
+.dropdown dd, .dropdown dt, .dropdown ul 
+{ 
+	margin:0px; 
+	padding:0px; 
+}
+
+.dropdown dd 
+{ 
+	position:relative; 
+}
+
+.dropdown a, .dropdown a:visited 
+{ 
+	color:#666666; 
+	text-decoration:none; 
+	outline:none;
+}
+
+.dropdown a:hover 
+{ 
+	color:#2260a5;
+}
+
+.dropdown dt a:hover 
+{ 
+	color:#2260a5; 
+	border: 0px solid #666666;
+	font-family: Arial;
+	font-size: 10px;
+	font-weight: bold;
+}
+
+.dropdown dt a 
+{
+	background:#ffffff url(/Portals/0/PartNumberConstruction/partNumberDropdownArrow.jpg) no-repeat scroll 164px center; 
+	display:block; 
+	font-family: Arial;
+	font-size: 10px;
+	font-weight: bold;
+	height: 26px;
+	line-height: 1.6em;
+	padding-right:20px;
+    border:0px solid #666666; 
+    width:160px;
+    _width: 180px;
+}
+
+.dropdown dt a span 
+{
+	cursor:pointer; 
+	display:block; 
+	padding:5px;
+}
+
+.dropdown dd ul 
+{ 
+	background:#fff none repeat scroll 0 0; 
+	border:0px solid #666666; 
+	color:#666666; 
+	display:none;
+	font-family: Arial;
+	font-size: 10px;
+	font-weight: bold;
+    left:0px; 
+    padding:5px 0px; 
+    position:absolute; 
+    top:0px; 
+    width:180px; 
+    list-style:none;
+    z-index: 10;
+}
+
+.dropdown dd ul li.PNConstr
+{
+	list-style-type: none;
+}
+
+.dropdown span.value 
+{ 
+	display:none;
+}
+
+.dropdown dd ul li a  
+{
+	padding:5px; 
+	display:block; 
+	list-style: none;
+}
+
+.dropdown dd ul li a:hover 
+{ 
+	background-color:#ffffff; 
+	list-style: none;
+}
+
+/* Error Message Styles */
+span.ErrorMessage
+{
+	color: red !important;
+	font-weight: bold !important;
+}
+
+/* Styles for paragraph tags, table cells, and divs site wide */
+p, table, tr, td, div
+{
+	font-family: 'Helvetica';
+	font-size: 12px;
+	line-height: 1.2em;
+}
+
+/* Styles for links sitewide */
+a:link, a:hover, a:visited
+{
+	color: #4277ad;
+}
+
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&	Product Table Styles	&&&&&&&&&&&&&&&&&&&&&&&&&& */
+.TableWhiteSpace
+{
+	background-color: White;
+}
+
+.TablePivotHeader
+{
+	background-color: White;
+	color: #221e1f;
+	font-family: 'Arial';
+	font-size: 11px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.TableHeading
+{
+	background-color: #00b5e3;
+	border-left: solid 1px #221e1f !important;
+	border-top: solid 1px #221e1f !important;
+	color: White;
+	font-family: 'Arial';
+	font-size: 11px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.TableHeading_Last
+{
+	background-color: #00b5e3;	
+	border-left: solid 1px #221e1f !important;
+	border-right: solid 1px #221e1f !important;
+	border-top: solid 1px #221e1f !important;
+	color: White;
+	font-family: 'Arial';
+	font-size: 11px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.TableRow_Cell
+{
+	background-color: White;
+	border-left: solid 1px #221e1f !important;
+	border-top: solid 1px #221e1f !important;
+	color: #221e1f;
+	font-family: 'Arial';
+	font-size: 10px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.TableRow_Cell_Last
+{
+	background-color: White;
+	border-left: solid 1px #221e1f !important;
+	border-right: solid 1px #221e1f !important;	
+	border-top: solid 1px #221e1f !important;
+	color: #221e1f;
+	font-family: 'Arial';
+	font-size: 10px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.TableRow_AltCell
+{
+	background-color: #dcddde;
+	border-left: solid 1px #221e1f !important;
+	border-top: solid 1px #221e1f !important;
+	color: #221e1f;
+	font-family: 'Arial';
+	font-size: 10px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.TableRow_AltCell_Last
+{
+	background-color: #dcddde;
+	border-left: solid 1px #221e1f !important;
+	border-right: solid 1px #221e1f !important;	
+	border-top: solid 1px #221e1f !important;
+	color: #221e1f;
+	font-family: 'Arial';
+	font-size: 10px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.FinalRow_Cell
+{
+	border-bottom: solid 1px #221e1f !important;
+}
+
+.ContentHeading
+{
+	color: #4277ad;
+	font-size: 16px !important;
+	font-family: Arial !important;
+	font-weight: bold;	
+}
+
+a.ProductLinks
+{
+	color: #4277ad;
+}
+
+a.sublandingLinks
+{
+font-weight: 3em!important;
+}
+
+.titleBar_Content
+{
+color: #00B5E3;
+    font-family: Arial !important;
+    font-size: 22px !important;
+    font-weight: normal;
+    line-height: 1.4em;
+}
+
+a.cathead
+{
+color: white !important;
+text-decoration: none !important;
+}
+
+A.HomeBottomLinks, A.HomeBottomLinks:link, A.HomeBottomLinks:visited, A.HomeBottomLinks:active {
+    color: #222222;
+    text-decoration: none;
+}
+
+A.HomeBottomLinks:hover
+{
+color: #3762D5;
+text-decoration: underline;
+}
+
+.DNN_Reports_Grid_Row a, .DNN_Reports_Grid_AlternatingRow a 
+{
+color: #222222!important;
+    text-decoration: underline;
+}
+
+.DNN_Reports_Grid_Row a:hover, .DNN_Reports_Grid_AlternatingRow a:hover 
+{
+color: #3762D5!important;
+    text-decoration: underline;
+}
+
+
+
+
+

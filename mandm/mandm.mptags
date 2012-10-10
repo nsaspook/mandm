@@ -1,0 +1,1028 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+!_TAG_REVISION_NAME	MCHPTags	//
+!_TAG_REVISION_VERSION	6.0.1	//
+A1	X:\mandm\mandm\mandm.h	32;"	m	line:32	struct:QuadEncoderType
+A2	X:\mandm\mandm\mandm.h	34;"	m	line:34	struct:QuadEncoderType
+ABSI	X:\mandm\mandm\daq.h	34;"	p	line:34	signature:(int)
+ABSI	X:\mandm\mandm\mandm8722.c	135;"	p	line:135	file:	signature:(int)
+ABSI	X:\mandm\mandm\mandm8722.c	632;"	f	line:632	signature:(int i)
+ABSL	X:\mandm\mandm\daq.h	33;"	p	line:33	signature:(long)
+ABSL	X:\mandm\mandm\mandm8722.c	134;"	p	line:134	file:	signature:(long)
+ABSL	X:\mandm\mandm\mandm8722.c	639;"	f	line:639	signature:(long i)
+ACTUAL::1023	X:\mandm\mandm\mandm_defs.h	217;"	d	line:217
+ADC0_MV::490	X:\mandm\mandm\mandm_defs.h	242;"	d	line:242
+ADC1_MV::2350	X:\mandm\mandm\mandm_defs.h	243;"	d	line:243
+ADC2_MV::488	X:\mandm\mandm\mandm_defs.h	244;"	d	line:244
+ADC3_MV::488	X:\mandm\mandm\mandm_defs.h	245;"	d	line:245
+ADC4_MV::488	X:\mandm\mandm\mandm_defs.h	246;"	d	line:246
+ADC5_MV::488	X:\mandm\mandm\mandm_defs.h	247;"	d	line:247
+ADC6_MV::488	X:\mandm\mandm\mandm_defs.h	248;"	d	line:248
+ADC7_MV::488	X:\mandm\mandm\mandm_defs.h	249;"	d	line:249
+ADC8_MV::488	X:\mandm\mandm\mandm_defs.h	250;"	d	line:250
+ADC_CHAN_DELAY::100	X:\mandm\mandm\mandm_defs.h	257;"	d	line:257
+ADC_INDEX::10	X:\mandm\mandm\mandm_defs.h	252;"	d	line:252
+ADC_NULL::127	X:\mandm\mandm\mandm_defs.h	253;"	d	line:253
+ADC_SAMP_F::16	X:\mandm\mandm\mandm_defs.h	255;"	d	line:255
+ADC_SAMP_S::64	X:\mandm\mandm\mandm_defs.h	256;"	d	line:256
+ADC_SLOTS::15	X:\mandm\mandm\mandm_defs.h	251;"	d	line:251
+ADC_read	X:\mandm\mandm\daq.c	37;"	f	line:37	signature:(void)
+ADC_read	X:\mandm\mandm\daq.h	12;"	p	line:12	signature:(void)
+ADC_zero	X:\mandm\mandm\daq.c	7;"	f	line:7	signature:(void)
+ADC_zero	X:\mandm\mandm\daq.h	11;"	p	line:11	signature:(void)
+ALARMOUT::LATGbits.LATG0	X:\mandm\mandm\mandm_defs.h	123;"	d	line:123
+ALL_CW_BITS::0b01110000	X:\mandm\mandm\mandm_defs.h	167;"	d	line:167
+ALL_MOTOR_BITS::0b00000111	X:\mandm\mandm\mandm_defs.h	166;"	d	line:166
+ALL_OFF_BITS::0b00000000	X:\mandm\mandm\mandm_defs.h	165;"	d	line:165
+AMP10_MAX::5000ul	X:\mandm\mandm\mandm_defs.h	238;"	d	line:238
+AMP10_SEN::225u	X:\mandm\mandm\mandm_defs.h	239;"	d	line:239
+AMP10_ZERO::510u	X:\mandm\mandm\mandm_defs.h	237;"	d	line:237
+AMP300_MAX::2380ul	X:\mandm\mandm\mandm_defs.h	229;"	d	line:229
+AMP300_SEN::8ul	X:\mandm\mandm\mandm_defs.h	230;"	d	line:230
+AMP300_ZERO::521u	X:\mandm\mandm\mandm_defs.h	228;"	d	line:228
+AMP50_MAX::11400ul	X:\mandm\mandm\mandm_defs.h	232;"	d	line:232
+AMP50_SEN::23ul	X:\mandm\mandm\mandm_defs.h	233;"	d	line:233
+AMP50_ZERO::510ul	X:\mandm\mandm\mandm_defs.h	231;"	d	line:231
+AMP50c_MAX::11400ul	X:\mandm\mandm\mandm_defs.h	235;"	d	line:235
+AMP50c_SEN::23ul	X:\mandm\mandm\mandm_defs.h	236;"	d	line:236
+AMP50c_ZERO::510u	X:\mandm\mandm\mandm_defs.h	234;"	d	line:234
+AMPZ::2	X:\mandm\mandm\mandm_defs.h	240;"	d	line:240
+B0	X:\mandm\mandm\mandm.h	40;"	m	line:40	struct:buttontype
+B0	X:\mandm\mandm\mandm.h	48;"	m	line:48	struct:blinktype
+B1	X:\mandm\mandm\mandm.h	33;"	m	line:33	struct:QuadEncoderType
+B1	X:\mandm\mandm\mandm.h	41;"	m	line:41	struct:buttontype
+B1	X:\mandm\mandm\mandm.h	49;"	m	line:49	struct:blinktype
+B2	X:\mandm\mandm\mandm.h	35;"	m	line:35	struct:QuadEncoderType
+B2	X:\mandm\mandm\mandm.h	42;"	m	line:42	struct:buttontype
+B2	X:\mandm\mandm\mandm.h	50;"	m	line:50	struct:blinktype
+B3	X:\mandm\mandm\mandm.h	43;"	m	line:43	struct:buttontype
+B3	X:\mandm\mandm\mandm.h	51;"	m	line:51	struct:blinktype
+BATRUN::15	X:\mandm\mandm\mandm_defs.h	174;"	d	line:174
+BATRUNF::5	X:\mandm\mandm\mandm_defs.h	175;"	d	line:175
+BCRELAYS::PORTE	X:\mandm\mandm\mandm.h	120;"	d	line:120
+BLINK_OFF::0b00001110	X:\mandm\mandm\xlcd.h	53;"	d	line:53
+BLINK_ON::0b00001111	X:\mandm\mandm\xlcd.h	52;"	d	line:52
+BLINK_RATE::20000	X:\mandm\mandm\mandm_defs.h	173;"	d	line:173
+BusyXLCD	X:\mandm\mandm\xlcd.h	89;"	p	line:89	signature:(void)
+BusyXLCD	X:\mandm\mandm\xlcd\busyxlcd.c	11;"	f	line:11	signature:(void)
+C	X:\mandm\mandm\mandm8722.c	198;"	v	line:198
+C2RAW	X:\mandm\mandm\mandm8722.c	183;"	v	line:183
+CAN::0x18	X:\mandm\mandm\mandm_defs.h	270;"	d	line:270
+CCW	X:\mandm\mandm\mandm.h	61;"	e	line:61	enum:pottype::movement_t
+CCW	X:\mandm\mandm\mandm.h	82;"	e	line:82	enum:knobtype::movement_t
+CCW	X:\mandm\mandm\mandm.h	91;"	e	line:91	enum:qeitype::movement_t
+CCW	X:\mandm\mandm\mandm_vector.h	44;"	e	line:44	enum:movement_t
+CHANGE_COUNT::20	X:\mandm\mandm\mandm_defs.h	219;"	d	line:219
+CHECKMARK::0x59	X:\mandm\mandm\mandm_defs.h	10;"	d	line:10
+CHECKMARK_CRC::0x59595959ul	X:\mandm\mandm\mandm_defs.h	11;"	d	line:11
+CONFIG_H_INCLUDED	X:\mandm\mandm\config.h	2;"	d	line:2
+COOLING	X:\mandm\mandm\mandm8722.c	184;"	v	line:184
+COOL_MAX::1000	X:\mandm\mandm\mandm_defs.h	172;"	d	line:172
+COOL_OFF::240	X:\mandm\mandm\mandm_defs.h	171;"	d	line:171
+COOL_ON::320	X:\mandm\mandm\mandm_defs.h	170;"	d	line:170
+CRITC	X:\mandm\mandm\mandm8722.c	219;"	v	line:219
+CRITC1::1	X:\mandm\mandm\mandm_defs.h	287;"	d	line:287
+CRIT_8::8	X:\mandm\mandm\mandm_defs.h	286;"	d	line:286
+CRIT_H_INCLUDED	X:\mandm\mandm\crit.h	2;"	d	line:2
+CURSOR_OFF::0b00001101	X:\mandm\mandm\xlcd.h	51;"	d	line:51
+CURSOR_ON::0b00001111	X:\mandm\mandm\xlcd.h	50;"	d	line:50
+CW	X:\mandm\mandm\mandm.h	61;"	e	line:61	enum:pottype::movement_t
+CW	X:\mandm\mandm\mandm.h	82;"	e	line:82	enum:knobtype::movement_t
+CW	X:\mandm\mandm\mandm.h	91;"	e	line:91	enum:qeitype::movement_t
+CW	X:\mandm\mandm\mandm_vector.h	44;"	e	line:44	enum:movement_t
+C_TEMP16::16	X:\mandm\mandm\mandm_defs.h	281;"	d	line:281
+C_TEMP7::7	X:\mandm\mandm\mandm_defs.h	282;"	d	line:282
+C_data	X:\mandm\mandm\mandm.h	133;"	s	line:133
+C_data	X:\mandm\mandm\mandm.h	137;"	t	line:137
+Change_Count	X:\mandm\mandm\daq.c	26;"	f	line:26	signature:(void)
+Change_Count	X:\mandm\mandm\daq.h	16;"	p	line:16	signature:(void)
+ChargeBatt	X:\mandm\mandm\model.h	15;"	p	line:15	signature:(unsigned char, unsigned char, unsigned char)
+Clear_All_Buttons	X:\mandm\mandm\mandm_vector.c	463;"	f	line:463	signature:(void)
+Clear_All_Buttons	X:\mandm\mandm\mandm_vector.h	21;"	p	line:21	signature:(void)
+Cursor	X:\mandm\mandm\mandm8722.c	219;"	v	line:219
+DAQ_H_INCLUDED	X:\mandm\mandm\daq.h	2;"	d	line:2
+DATA_PORT::PORTH	X:\mandm\mandm\xlcd.h	34;"	d	line:34
+DEADB_HUNT::0.3	X:\mandm\mandm\mandm_defs.h	211;"	d	line:211
+DEADB_KNOB::5.0	X:\mandm\mandm\mandm_defs.h	210;"	d	line:210
+DEADB_RUN::1.5	X:\mandm\mandm\mandm_defs.h	209;"	d	line:209
+DEADB_STOP::1.0	X:\mandm\mandm\mandm_defs.h	208;"	d	line:208
+DIPSW1::PORTDbits.RD0	X:\mandm\mandm\mandm_defs.h	126;"	d	line:126
+DIPSW2::PORTDbits.RD1	X:\mandm\mandm\mandm_defs.h	127;"	d	line:127
+DIPSW3::PORTDbits.RD2	X:\mandm\mandm\mandm_defs.h	128;"	d	line:128
+DIPSW4::PORTDbits.RD3	X:\mandm\mandm\mandm_defs.h	129;"	d	line:129
+DIPSW5::PORTDbits.RD4	X:\mandm\mandm\mandm_defs.h	130;"	d	line:130
+DIPSW6::PORTDbits.RD5	X:\mandm\mandm\mandm_defs.h	131;"	d	line:131
+DIPSW7::PORTDbits.RD6	X:\mandm\mandm\mandm_defs.h	132;"	d	line:132
+DIPSW8::PORTDbits.RD7	X:\mandm\mandm\mandm_defs.h	133;"	d	line:133
+DIPSW::PORTD	X:\mandm\mandm\mandm.h	122;"	d	line:122
+DIPSW::PORTD	X:\mandm\mandm\mandm_defs.h	125;"	d	line:125
+DIR_X::LATEbits.LATE4	X:\mandm\mandm\mandm_defs.h	113;"	d	line:113
+DIR_Y::LATEbits.LATE5	X:\mandm\mandm\mandm_defs.h	114;"	d	line:114
+DIR_Z::LATEbits.LATE6	X:\mandm\mandm\mandm_defs.h	115;"	d	line:115
+DISPLAY_MODE	X:\mandm\mandm\mandm8722.c	184;"	v	line:184
+DISPSEC::600	X:\mandm\mandm\mandm_defs.h	180;"	d	line:180
+DLED_0::LATJbits.LATJ0	X:\mandm\mandm\mandm_defs.h	99;"	d	line:99
+DLED_1::LATJbits.LATJ1	X:\mandm\mandm\mandm_defs.h	100;"	d	line:100
+DLED_2::LATJbits.LATJ2	X:\mandm\mandm\mandm_defs.h	101;"	d	line:101
+DLED_3::LATJbits.LATJ3	X:\mandm\mandm\mandm_defs.h	102;"	d	line:102
+DLED_4::LATJbits.LATJ4	X:\mandm\mandm\mandm_defs.h	103;"	d	line:103
+DLED_5::LATJbits.LATJ5	X:\mandm\mandm\mandm_defs.h	104;"	d	line:104
+DLED_6::LATJbits.LATJ6	X:\mandm\mandm\mandm_defs.h	105;"	d	line:105
+DLED_7::LATJbits.LATJ7	X:\mandm\mandm\mandm_defs.h	106;"	d	line:106
+DOFF::0b00001011	X:\mandm\mandm\xlcd.h	49;"	d	line:49
+DON::0b00001111	X:\mandm\mandm\xlcd.h	48;"	d	line:48
+DRIVE_V24::LATEbits.LATE7	X:\mandm\mandm\mandm_defs.h	116;"	d	line:116
+DS0::0	X:\mandm\mandm\mandm_defs.h	65;"	d	line:65
+DS1::1	X:\mandm\mandm\mandm_defs.h	66;"	d	line:66
+DS2::2	X:\mandm\mandm\mandm_defs.h	67;"	d	line:67
+DS3::3	X:\mandm\mandm\mandm_defs.h	68;"	d	line:68
+DS4::4	X:\mandm\mandm\mandm_defs.h	69;"	d	line:69
+DS5::5	X:\mandm\mandm\mandm_defs.h	70;"	d	line:70
+D_UPDATE	X:\mandm\mandm\mandm8722.c	184;"	v	line:184
+DelayFor18TCY	X:\mandm\mandm\mandm8722.c	458;"	f	line:458	signature:(void)
+DelayFor18TCY	X:\mandm\mandm\xlcd.h	127;"	p	line:127	signature:(void)
+DelayPORXLCD	X:\mandm\mandm\mandm8722.c	467;"	f	line:467	signature:(void)
+DelayPORXLCD	X:\mandm\mandm\xlcd.h	128;"	p	line:128	signature:(void)
+DelayXLCD	X:\mandm\mandm\mandm8722.c	475;"	f	line:475	signature:(void)
+DelayXLCD	X:\mandm\mandm\xlcd.h	129;"	p	line:129	signature:(void)
+E220E500_E::4	X:\mandm\mandm\mandm_defs.h	150;"	d	line:150
+E220E500_M::1	X:\mandm\mandm\mandm_defs.h	147;"	d	line:147
+EEP_ER	X:\mandm\mandm\mandm8722.c	186;"	v	line:186
+EEP_UPDATE::99999l	X:\mandm\mandm\mandm_defs.h	181;"	d	line:181
+EIGHT_BIT::0b00111111	X:\mandm\mandm\xlcd.h	63;"	d	line:63
+EMO_BAND::30	X:\mandm\mandm\mandm_defs.h	201;"	d	line:201
+EMO_LED::3	X:\mandm\mandm\mandm_defs.h	84;"	d	line:84
+ENC_A1::PORTBbits.RB4	X:\mandm\mandm\mandm_defs.h	139;"	d	line:139
+ENC_A2::PORTBbits.RB6	X:\mandm\mandm\mandm_defs.h	141;"	d	line:141
+ENC_B1::PORTBbits.RB5	X:\mandm\mandm\mandm_defs.h	140;"	d	line:140
+ENC_B2::PORTBbits.RB7	X:\mandm\mandm\mandm_defs.h	142;"	d	line:142
+ERELAYS::LATE	X:\mandm\mandm\mandm_defs.h	108;"	d	line:108
+ERR1::1	X:\mandm\mandm\mandm_defs.h	40;"	d	line:40
+ERR2::2	X:\mandm\mandm\mandm_defs.h	41;"	d	line:41
+ESC::0x1b	X:\mandm\mandm\mandm_defs.h	268;"	d	line:268
+ESCZ::0x1a	X:\mandm\mandm\mandm_defs.h	274;"	d	line:274
+EXTIO::PORTB	X:\mandm\mandm\mandm.h	123;"	d	line:123
+E_MOTOR_AXIS::-4	X:\mandm\mandm\mandm_defs.h	225;"	d	line:225
+E_MOTOR_EMO::-3	X:\mandm\mandm\mandm_defs.h	224;"	d	line:224
+E_MOTOR_NONE::-2	X:\mandm\mandm\mandm_defs.h	223;"	d	line:223
+E_MOTOR_NULL_P::-1	X:\mandm\mandm\mandm_defs.h	222;"	d	line:222
+E_PIN::LATHbits.LATH3	X:\mandm\mandm\xlcd.h	44;"	d	line:44
+FAILSAFE	X:\mandm\mandm\mandm8722.c	183;"	v	line:183
+FF::0x0c	X:\mandm\mandm\mandm_defs.h	269;"	d	line:269
+FINPUT_4::PORTFbits.RF4	X:\mandm\mandm\mandm_defs.h	91;"	d	line:91
+FINPUT_5::PORTFbits.RF5	X:\mandm\mandm\mandm_defs.h	93;"	d	line:93
+FINPUT_6::PORTFbits.RF6	X:\mandm\mandm\mandm_defs.h	95;"	d	line:95
+FINPUT_7::PORTFbits.RF7	X:\mandm\mandm\mandm_defs.h	97;"	d	line:97
+FORCEOUT	X:\mandm\mandm\mandm8722.c	182;"	v	line:182
+FOUR_BIT::0b00101111	X:\mandm\mandm\xlcd.h	62;"	d	line:62
+FS::0x1c	X:\mandm\mandm\mandm_defs.h	271;"	d	line:271
+FT20::20	X:\mandm\mandm\mandm_defs.h	279;"	d	line:279
+GLITCH_CHECK	X:\mandm\mandm\mandm8722.c	184;"	v	line:184
+GS::0x1d	X:\mandm\mandm\mandm_defs.h	272;"	d	line:272
+GSD_M::2	X:\mandm\mandm\mandm_defs.h	148;"	d	line:148
+H::1	X:\mandm\mandm\mandm_defs.h	44;"	d	line:44
+HCRIT	X:\mandm\mandm\mandm8722.c	172;"	v	line:172
+HELP_M::7	X:\mandm\mandm\mandm_defs.h	153;"	d	line:153
+HID_IDLE_FLAG	X:\mandm\mandm\mandm_vector.c	10;"	l	line:10	file:
+HIGH::(unsignedchar)1	X:\mandm\mandm\mandm_defs.h	16;"	d	line:16
+HIGH_DRIVE_24::0b10000000	X:\mandm\mandm\mandm_defs.h	168;"	d	line:168
+HIGH_VECTOR::0x8	X:\mandm\mandm\mandm_defs.h	74;"	d	line:74
+HL::3	X:\mandm\mandm\mandm_defs.h	46;"	d	line:46
+HOLD_PROC	X:\mandm\mandm\mandm8722.c	183;"	v	line:183
+HUNT_HIGH::2	X:\mandm\mandm\mandm_defs.h	213;"	d	line:213
+HUNT_LOW::1	X:\mandm\mandm\mandm_defs.h	212;"	d	line:212
+HUNT_MAX::4	X:\mandm\mandm\mandm_defs.h	214;"	d	line:214
+HWCONF_H_INCLUDED	X:\mandm\mandm\hwconf.h	2;"	d	line:2
+H_tmp	X:\mandm\mandm\crit.c	26;"	l	line:26	file:
+H_tmp	X:\mandm\mandm\crit.c	7;"	l	line:7	file:
+IDLEFLAG	X:\mandm\mandm\mandm8722.c	209;"	v	line:209
+INTTYPES	X:\mandm\mandm\mandm.h	12;"	d	line:12
+IORELAYS::PORTJ	X:\mandm\mandm\mandm.h	121;"	d	line:121
+KEYNUM	X:\mandm\mandm\mandm8722.c	182;"	v	line:182
+KNOBTICKS::6	X:\mandm\mandm\mandm_defs.h	197;"	d	line:197
+L::2	X:\mandm\mandm\mandm_defs.h	45;"	d	line:45
+LCDW_SIZE::21	X:\mandm\mandm\mandm_defs.h	278;"	d	line:278
+LCD_L::4	X:\mandm\mandm\mandm_defs.h	49;"	d	line:49
+LCD_OK	X:\mandm\mandm\mandm8722.c	219;"	v	line:219
+LCD_STR::22	X:\mandm\mandm\mandm_defs.h	51;"	d	line:51
+LCD_VC_puts	X:\mandm\mandm\mandm8722.c	136;"	p	line:136	file:	signature:(unsigned char, unsigned char, unsigned char)
+LCD_VC_puts	X:\mandm\mandm\mandm8722.c	260;"	f	line:260	signature:(unsigned char console, unsigned char line, unsigned char COPY)
+LCD_W::20	X:\mandm\mandm\mandm_defs.h	50;"	d	line:50
+LCRIT	X:\mandm\mandm\mandm8722.c	172;"	v	line:172
+LEDS::LATC	X:\mandm\mandm\mandm_defs.h	76;"	d	line:76
+LED_0::LATCbits.LATC0	X:\mandm\mandm\mandm_defs.h	77;"	d	line:77
+LED_1::LATCbits.LATC1	X:\mandm\mandm\mandm_defs.h	79;"	d	line:79
+LED_2::LATCbits.LATC2	X:\mandm\mandm\mandm_defs.h	81;"	d	line:81
+LED_3::LATCbits.LATC3	X:\mandm\mandm\mandm_defs.h	83;"	d	line:83
+LED_4::LATCbits.LATC4	X:\mandm\mandm\mandm_defs.h	85;"	d	line:85
+LED_5::LATCbits.LATC5	X:\mandm\mandm\mandm_defs.h	86;"	d	line:86
+LED_6::LATCbits.LATC6	X:\mandm\mandm\mandm_defs.h	87;"	d	line:87
+LED_7::LATCbits.LATC7	X:\mandm\mandm\mandm_defs.h	88;"	d	line:88
+LINES_5X7::0b00111011	X:\mandm\mandm\xlcd.h	66;"	d	line:66
+LINE_5X10::0b00110111	X:\mandm\mandm\xlcd.h	65;"	d	line:65
+LINE_5X7::0b00110011	X:\mandm\mandm\xlcd.h	64;"	d	line:64
+LL1::0x00	X:\mandm\mandm\mandm_defs.h	53;"	d	line:53
+LL2::0x40	X:\mandm\mandm\mandm_defs.h	54;"	d	line:54
+LL3::0x14	X:\mandm\mandm\mandm_defs.h	55;"	d	line:55
+LL4::0x54	X:\mandm\mandm\mandm_defs.h	56;"	d	line:56
+LOW::(unsignedchar)0	X:\mandm\mandm\mandm_defs.h	15;"	d	line:15
+LOW_DRIVE_5::0b01111111	X:\mandm\mandm\mandm_defs.h	169;"	d	line:169
+LOW_VECTOR::0x18	X:\mandm\mandm\mandm_defs.h	73;"	d	line:73
+LPCHANC::8	X:\mandm\mandm\mandm_defs.h	259;"	d	line:259
+LP_CURRENT_X::0	X:\mandm\mandm\mandm_defs.h	260;"	d	line:260
+LP_CURRENT_Y::1	X:\mandm\mandm\mandm_defs.h	261;"	d	line:261
+LP_CURRENT_Z::2	X:\mandm\mandm\mandm_defs.h	262;"	d	line:262
+LP_FB_X::3	X:\mandm\mandm\mandm_defs.h	263;"	d	line:263
+LP_FB_Y::4	X:\mandm\mandm\mandm_defs.h	264;"	d	line:264
+LP_FB_Z::5	X:\mandm\mandm\mandm_defs.h	265;"	d	line:265
+MAGIC::0x0024	X:\mandm\mandm\mandm_defs.h	6;"	d	line:6
+MANDM_DEFS_H_INCLUDED	X:\mandm\mandm\mandm_defs.h	2;"	d	line:2
+MANDM_H_INCLUDED	X:\mandm\mandm\mandm.h	2;"	d	line:2
+MANDM_MSG_H_INCLUDED	X:\mandm\mandm\mandm_msg.h	2;"	d	line:2
+MANDM_SHARED_H_INCLUDED	X:\mandm\mandm\mandm_shared.h	3;"	d	line:3
+MANDM_VECTOR_H_INCLUDED	X:\mandm\mandm\mandm_vector.h	7;"	d	line:7
+MANDM_VERSION::"MANDM02.4BFB"	X:\mandm\mandm\mandm_defs.h	5;"	d	line:5
+MAXALM::7	X:\mandm\mandm\mandm_defs.h	276;"	d	line:276
+MAXSECONDS::315576000ul	X:\mandm\mandm\mandm_defs.h	288;"	d	line:288
+MAX_EMO::3	X:\mandm\mandm\mandm_defs.h	196;"	d	line:196
+MAX_HELP::2	X:\mandm\mandm\mandm_defs.h	183;"	d	line:183
+MAX_IDLE::6000l	X:\mandm\mandm\mandm_defs.h	218;"	d	line:218
+MAX_MENU::8	X:\mandm\mandm\mandm_defs.h	182;"	d	line:182
+MAX_MOTOR::3	X:\mandm\mandm\mandm_defs.h	194;"	d	line:194
+MAX_POT::3	X:\mandm\mandm\mandm_defs.h	195;"	d	line:195
+MAX_SHAPES::6	X:\mandm\mandm\mandm_msg.h	7;"	d	line:7
+MAX_TWEAK_CMD::4	X:\mandm\mandm\mandm_defs.h	277;"	d	line:277
+MEM_MODEL::far	X:\mandm\mandm\xlcd.h	69;"	d	line:69
+MENU_ACTION::8	X:\mandm\mandm\mandm_defs.h	184;"	d	line:184
+MENU_BAND::35l	X:\mandm\mandm\mandm_defs.h	187;"	d	line:187
+MENU_LED::0	X:\mandm\mandm\mandm_defs.h	78;"	d	line:78
+MESG_W::250	X:\mandm\mandm\mandm_defs.h	52;"	d	line:52
+MIN_CHANGE::10l	X:\mandm\mandm\mandm_defs.h	220;"	d	line:220
+MISC_2::5	X:\mandm\mandm\mandm_defs.h	151;"	d	line:151
+MODEL_H_INCLUDED	X:\mandm\mandm\model.h	2;"	d	line:2
+MOD_DATA	X:\mandm\mandm\mandm8722.c	185;"	v	line:185
+MOTOR_ACTION::4	X:\mandm\mandm\mandm_defs.h	185;"	d	line:185
+MOTOR_BAND::1l	X:\mandm\mandm\mandm_defs.h	188;"	d	line:188
+MOTOR_LED::2	X:\mandm\mandm\mandm_defs.h	82;"	d	line:82
+MPULED::LATHbits.LATH0	X:\mandm\mandm\mandm_defs.h	118;"	d	line:118
+M_DEBUG::FALSE	X:\mandm\mandm\power.c	4;"	d	line:4	file:
+MputsXLCD	X:\mandm\mandm\mandm8722.c	121;"	p	line:121	file:	signature:(char *)
+NO::LOW	X:\mandm\mandm\mandm_defs.h	25;"	d	line:25
+NO_M	X:\mandm\mandm\daq.h	28;"	e	line:28	enum:answer_t
+NO_M	X:\mandm\mandm\mandm8722.c	222;"	e	line:222	enum:answer_t	file:
+NO_M	X:\mandm\mandm\mandm_vector.h	48;"	e	line:48	enum:answer_t
+NULL0::(unsignedchar)0	X:\mandm\mandm\mandm_defs.h	28;"	d	line:28
+OFF::HIGH	X:\mandm\mandm\mandm_defs.h	18;"	d	line:18
+ON::LOW	X:\mandm\mandm\mandm_defs.h	17;"	d	line:17
+OldEncoder	X:\mandm\mandm\mandm8722.c	225;"	v	line:225
+OldPortB	X:\mandm\mandm\mandm.h	36;"	m	line:36	struct:QuadEncoderType
+OpenXLCD	X:\mandm\mandm\xlcd.h	74;"	p	line:74	signature:(PARAM_SCLASS unsigned char)
+OpenXLCD	X:\mandm\mandm\xlcd\openxlcd.c	19;"	f	line:19	signature:(unsigned char lcdtype)
+P1wait	X:\mandm\mandm\mandm_vector.c	453;"	f	line:453	signature:(void)
+P1wait	X:\mandm\mandm\mandm_vector.h	19;"	p	line:19	signature:(void)
+P2wait	X:\mandm\mandm\mandm_vector.c	458;"	f	line:458	signature:(void)
+P2wait	X:\mandm\mandm\mandm_vector.h	20;"	p	line:20	signature:(void)
+PARAM_SCLASS::auto	X:\mandm\mandm\xlcd.h	68;"	d	line:68
+PB0::PORTBbits.RB0	X:\mandm\mandm\mandm_defs.h	135;"	d	line:135
+PB1::PORTBbits.RB1	X:\mandm\mandm\mandm_defs.h	136;"	d	line:136
+PB2::PORTBbits.RB2	X:\mandm\mandm\mandm_defs.h	137;"	d	line:137
+PERFECT	X:\mandm\mandm\mandm8722.c	870;"	l	line:870
+POT_BAND_MAX_N::-10l	X:\mandm\mandm\mandm_defs.h	190;"	d	line:190
+POT_BAND_MAX_P::10l	X:\mandm\mandm\mandm_defs.h	189;"	d	line:189
+POT_MAX_CHANGE::100	X:\mandm\mandm\mandm_defs.h	191;"	d	line:191
+POT_MAX_OFFSET::500	X:\mandm\mandm\mandm_defs.h	192;"	d	line:192
+POT_MIN_SPAN::200	X:\mandm\mandm\mandm_defs.h	193;"	d	line:193
+POWER_H_INCLUDED	X:\mandm\mandm\power.h	2;"	d	line:2
+POWER_S::LATEbits.LATE3	X:\mandm\mandm\mandm_defs.h	112;"	d	line:112
+POWER_X::LATEbits.LATE0	X:\mandm\mandm\mandm_defs.h	109;"	d	line:109
+POWER_Y::LATEbits.LATE1	X:\mandm\mandm\mandm_defs.h	110;"	d	line:110
+POWER_Z::LATEbits.LATE2	X:\mandm\mandm\mandm_defs.h	111;"	d	line:111
+PRIPOWEROK	X:\mandm\mandm\mandm8722.c	182;"	v	line:182
+QBACK::PORTFbits.RF6	X:\mandm\mandm\mandm_defs.h	94;"	d	line:94
+QEI1_A::PORTBbits.RB3	X:\mandm\mandm\mandm_defs.h	138;"	d	line:138
+QEI1_B::PORTFbits.RF7	X:\mandm\mandm\mandm_defs.h	96;"	d	line:96
+QEITICKS::20	X:\mandm\mandm\mandm_defs.h	198;"	d	line:198
+QEI_FAST::300l	X:\mandm\mandm\mandm_defs.h	199;"	d	line:199
+QEI_VERY_FAST::400l	X:\mandm\mandm\mandm_defs.h	200;"	d	line:200
+QENC1BITS::0b00110000	X:\mandm\mandm\mandm_defs.h	144;"	d	line:144
+QENC2BITS::0b11000000	X:\mandm\mandm\mandm_defs.h	145;"	d	line:145
+QFORWARD::PORTFbits.RF4	X:\mandm\mandm\mandm_defs.h	90;"	d	line:90
+QHOME::PORTFbits.RF5	X:\mandm\mandm\mandm_defs.h	92;"	d	line:92
+QuadEncoderType	X:\mandm\mandm\mandm.h	30;"	s	line:30
+R	X:\mandm\mandm\mandm8722.c	197;"	v	line:197
+RELAYRUN::6	X:\mandm\mandm\mandm_defs.h	177;"	d	line:177
+RELAYRUNF::1	X:\mandm\mandm\mandm_defs.h	176;"	d	line:176
+RESET_ZEROS	X:\mandm\mandm\mandm8722.c	185;"	v	line:185
+RS232_DEBUG	X:\mandm\mandm\mandm8722.c	190;"	v	line:190
+RS_PIN::LATHbits.LATH1	X:\mandm\mandm\xlcd.h	42;"	d	line:42
+RW_PIN::LATHbits.LATH2	X:\mandm\mandm\xlcd.h	40;"	d	line:40
+R_ALL_OFF::0x00	X:\mandm\mandm\mandm_defs.h	23;"	d	line:23
+R_ALL_ON::0xff	X:\mandm\mandm\mandm_defs.h	24;"	d	line:24
+R_OFF::LOW	X:\mandm\mandm\mandm_defs.h	22;"	d	line:22
+R_ON::HIGH	X:\mandm\mandm\mandm_defs.h	21;"	d	line:21
+R_data	X:\mandm\mandm\mandm.h	126;"	s	line:126
+R_data	X:\mandm\mandm\mandm.h	131;"	t	line:131
+ReadAddrXLCD	X:\mandm\mandm\xlcd.h	94;"	p	line:94	signature:(void)
+ReadAddrXLCD	X:\mandm\mandm\xlcd\readaddr.c	16;"	f	line:16	signature:(void)
+ReadDataXLCD	X:\mandm\mandm\xlcd.h	99;"	p	line:99	signature:(void)
+ReadDataXLCD	X:\mandm\mandm\xlcd\readdata.c	16;"	f	line:16	signature:(void)
+Reset_Change_Count	X:\mandm\mandm\daq.c	15;"	f	line:15	signature:(void)
+Reset_Change_Count	X:\mandm\mandm\daq.h	15;"	p	line:15	signature:(void)
+S0	X:\mandm\mandm\mandm.h	52;"	m	line:52	struct:blinktype
+S1	X:\mandm\mandm\mandm.h	53;"	m	line:53	struct:blinktype
+S2	X:\mandm\mandm\mandm.h	54;"	m	line:54	struct:blinktype
+S3	X:\mandm\mandm\mandm.h	55;"	m	line:55	struct:blinktype
+SCALED::999	X:\mandm\mandm\mandm_defs.h	215;"	d	line:215
+SCALED_FLOAT::999.9	X:\mandm\mandm\mandm_defs.h	216;"	d	line:216
+SDT1::1	X:\mandm\mandm\mandm_defs.h	283;"	d	line:283
+SDT2::2	X:\mandm\mandm\mandm_defs.h	284;"	d	line:284
+SDT6::6	X:\mandm\mandm\mandm_defs.h	285;"	d	line:285
+SD_18::18	X:\mandm\mandm\mandm_defs.h	280;"	d	line:280
+SELECT_ACTION::25	X:\mandm\mandm\mandm_defs.h	186;"	d	line:186
+SET_ADC	X:\mandm\mandm\mandm8722.c	185;"	v	line:185
+SHIFT16::16	X:\mandm\mandm\mandm_defs.h	37;"	d	line:37
+SHIFT1::1	X:\mandm\mandm\mandm_defs.h	30;"	d	line:30
+SHIFT24::24	X:\mandm\mandm\mandm_defs.h	38;"	d	line:38
+SHIFT2::2	X:\mandm\mandm\mandm_defs.h	31;"	d	line:31
+SHIFT30::30	X:\mandm\mandm\mandm_defs.h	39;"	d	line:39
+SHIFT4::4	X:\mandm\mandm\mandm_defs.h	32;"	d	line:32
+SHIFT6::5	X:\mandm\mandm\mandm_defs.h	33;"	d	line:33
+SHIFT7::7	X:\mandm\mandm\mandm_defs.h	34;"	d	line:34
+SHIFT8::8	X:\mandm\mandm\mandm_defs.h	35;"	d	line:35
+SHIFT9::9	X:\mandm\mandm\mandm_defs.h	36;"	d	line:36
+SHIFT_CUR_LEFT::0b00010011	X:\mandm\mandm\xlcd.h	56;"	d	line:56
+SHIFT_CUR_RIGHT::0b00010111	X:\mandm\mandm\xlcd.h	57;"	d	line:57
+SHIFT_DISP_LEFT::0b00011011	X:\mandm\mandm\xlcd.h	58;"	d	line:58
+SHIFT_DISP_RIGHT::0b00011111	X:\mandm\mandm\xlcd.h	59;"	d	line:59
+SIMULA::"	X:\mandm\mandm\mandm_defs.h	9;"	d	line:9
+SLOW_STATUS	X:\mandm\mandm\mandm8722.c	186;"	v	line:186
+START1::"MCHP,F.Brooks2012"	X:\mandm\mandm\mandm_defs.h	7;"	d	line:7
+STOP	X:\mandm\mandm\mandm.h	61;"	e	line:61	enum:pottype::movement_t
+STOP	X:\mandm\mandm\mandm.h	82;"	e	line:82	enum:knobtype::movement_t
+STOP	X:\mandm\mandm\mandm.h	91;"	e	line:91	enum:qeitype::movement_t
+STOP	X:\mandm\mandm\mandm_vector.h	44;"	e	line:44	enum:movement_t
+STOPPED	X:\mandm\mandm\mandm8722.c	1567;"	l	line:1567
+SYSTEM_STABLE	X:\mandm\mandm\mandm8722.c	183;"	v	line:183
+SYS_DATA	X:\mandm\mandm\mandm8722.c	185;"	v	line:185
+SYS_HELP	X:\mandm\mandm\mandm8722.c	185;"	v	line:185
+S_OFF::HIGH	X:\mandm\mandm\mandm_defs.h	20;"	d	line:20
+S_ON::LOW	X:\mandm\mandm\mandm_defs.h	19;"	d	line:19
+SetCGRamAddr	X:\mandm\mandm\xlcd.h	79;"	p	line:79	signature:(PARAM_SCLASS unsigned char)
+SetCGRamAddr	X:\mandm\mandm\xlcd\setcgram.c	14;"	f	line:14	signature:(unsigned char CGaddr)
+SetDDRamAddr	X:\mandm\mandm\xlcd.h	84;"	p	line:84	signature:(PARAM_SCLASS unsigned char)
+SetDDRamAddr	X:\mandm\mandm\xlcd\setddram.c	13;"	f	line:13	signature:(unsigned char DDaddr)
+Set_Cursor	X:\mandm\mandm\mandm8722.c	155;"	p	line:155	file:	signature:(void)
+Set_Cursor	X:\mandm\mandm\mandm8722.c	846;"	f	line:846	signature:(void)
+TAXIS::3	X:\mandm\mandm\mandm_defs.h	158;"	d	line:158
+TEST_LED::1	X:\mandm\mandm\mandm_defs.h	80;"	d	line:80
+TEST_SPINNERS	X:\mandm\mandm\mandm8722.c	186;"	v	line:186
+TIMEOFF::60	X:\mandm\mandm\mandm_defs.h	178;"	d	line:178
+TIMER3REG::3048	X:\mandm\mandm\mandm_defs.h	14;"	d	line:14
+TIMERFLAG	X:\mandm\mandm\mandm8722.c	182;"	v	line:182
+TIMEROFFSET::26474	X:\mandm\mandm\mandm_defs.h	13;"	d	line:13
+TRACK_DB_H::12	X:\mandm\mandm\mandm_defs.h	203;"	d	line:203
+TRACK_DB_H_S::35	X:\mandm\mandm\mandm_defs.h	205;"	d	line:205
+TRACK_DB_L::-12	X:\mandm\mandm\mandm_defs.h	202;"	d	line:202
+TRACK_DB_L_S::-35	X:\mandm\mandm\mandm_defs.h	204;"	d	line:204
+TRACK_DISPLAY::225	X:\mandm\mandm\mandm_defs.h	207;"	d	line:207
+TRACK_TIMEOUT::2000l	X:\mandm\mandm\mandm_defs.h	206;"	d	line:206
+TRIS_DATA_PORT::TRISH	X:\mandm\mandm\xlcd.h	35;"	d	line:35
+TRIS_E::TRISHbits.TRISH3	X:\mandm\mandm\xlcd.h	45;"	d	line:45
+TRIS_RS::TRISHbits.TRISH1	X:\mandm\mandm\xlcd.h	43;"	d	line:43
+TRIS_RW::TRISHbits.TRISH2	X:\mandm\mandm\xlcd.h	41;"	d	line:41
+TWEAK	X:\mandm\mandm\mandm8722.c	186;"	v	line:186
+UPDATE_EEP	X:\mandm\mandm\mandm8722.c	185;"	v	line:185
+UPPER	X:\mandm\mandm\xlcd.h	31;"	d	line:31
+US::0x1f	X:\mandm\mandm\mandm_defs.h	273;"	d	line:273
+V	X:\mandm\mandm\mandm8722.c	199;"	v	line:199
+VARIAN_V::6	X:\mandm\mandm\mandm_defs.h	152;"	d	line:152
+VC0::0	X:\mandm\mandm\mandm_defs.h	59;"	d	line:59
+VC1::4	X:\mandm\mandm\mandm_defs.h	60;"	d	line:60
+VC2::8	X:\mandm\mandm\mandm_defs.h	61;"	d	line:61
+VC_MAX::3	X:\mandm\mandm\mandm_defs.h	57;"	d	line:57
+VIISION_M::0	X:\mandm\mandm\mandm_defs.h	146;"	d	line:146
+VIISION_MS::3	X:\mandm\mandm\mandm_defs.h	149;"	d	line:149
+VOICE1::LATGbits.LATG3	X:\mandm\mandm\mandm_defs.h	119;"	d	line:119
+VOICE1_TRIS::TRISGbits.TRISG3	X:\mandm\mandm\mandm_defs.h	120;"	d	line:120
+VOICE2::LATGbits.LATG4	X:\mandm\mandm\mandm_defs.h	121;"	d	line:121
+VOICE2_TRIS::TRISGbits.TRISG4	X:\mandm\mandm\mandm_defs.h	122;"	d	line:122
+VS0::0	X:\mandm\mandm\mandm_defs.h	62;"	d	line:62
+VS1::1	X:\mandm\mandm\mandm_defs.h	63;"	d	line:63
+VS2::2	X:\mandm\mandm\mandm_defs.h	64;"	d	line:64
+VS_SLOTS::12	X:\mandm\mandm\mandm_defs.h	58;"	d	line:58
+V_data	X:\mandm\mandm\mandm.h	139;"	s	line:139
+V_data	X:\mandm\mandm\mandm.h	144;"	t	line:144
+Vin	X:\mandm\mandm\mandm8722.c	208;"	v	line:208
+WAIT_M	X:\mandm\mandm\daq.h	28;"	e	line:28	enum:answer_t
+WAIT_M	X:\mandm\mandm\mandm8722.c	222;"	e	line:222	enum:answer_t	file:
+WAIT_M	X:\mandm\mandm\mandm_vector.h	48;"	e	line:48	enum:answer_t
+WDT_TO	X:\mandm\mandm\mandm8722.c	186;"	v	line:186
+WORKERFLAG	X:\mandm\mandm\mandm8722.c	182;"	v	line:182
+WORKSEC::10	X:\mandm\mandm\mandm_defs.h	179;"	d	line:179
+WriteCmdXLCD	X:\mandm\mandm\xlcd.h	104;"	p	line:104	signature:(PARAM_SCLASS unsigned char)
+WriteCmdXLCD	X:\mandm\mandm\xlcd\wcmdxlcd.c	13;"	f	line:13	signature:(unsigned char cmd)
+WriteDataXLCD	X:\mandm\mandm\xlcd.h	109;"	p	line:109	signature:(PARAM_SCLASS char)
+WriteDataXLCD	X:\mandm\mandm\xlcd\writdata.c	16;"	f	line:16	signature:(char data)
+XAXIS::0	X:\mandm\mandm\mandm_defs.h	155;"	d	line:155
+XD_BIT::0b00010000	X:\mandm\mandm\mandm_defs.h	162;"	d	line:162
+XM_BIT::0b00000001	X:\mandm\mandm\mandm_defs.h	159;"	d	line:159
+XOFF::0x13	X:\mandm\mandm\mandm_defs.h	43;"	d	line:43
+XON::0x11	X:\mandm\mandm\mandm_defs.h	42;"	d	line:42
+YAXIS::1	X:\mandm\mandm\mandm_defs.h	156;"	d	line:156
+YD_BIT::0b00100000	X:\mandm\mandm\mandm_defs.h	163;"	d	line:163
+YES::HIGH	X:\mandm\mandm\mandm_defs.h	26;"	d	line:26
+YES_M	X:\mandm\mandm\daq.h	28;"	e	line:28	enum:answer_t
+YES_M	X:\mandm\mandm\mandm8722.c	222;"	e	line:222	enum:answer_t	file:
+YES_M	X:\mandm\mandm\mandm_vector.h	48;"	e	line:48	enum:answer_t
+YM_BIT::0b00000010	X:\mandm\mandm\mandm_defs.h	160;"	d	line:160
+YNKEY	X:\mandm\mandm\mandm8722.c	223;"	v	line:223
+ZAP	X:\mandm\mandm\mandm_vector.c	11;"	l	line:11	file:
+ZAXIS::2	X:\mandm\mandm\mandm_defs.h	157;"	d	line:157
+ZD_BIT::0b01000000	X:\mandm\mandm\mandm_defs.h	164;"	d	line:164
+ZM_BIT::0b00000100	X:\mandm\mandm\mandm_defs.h	161;"	d	line:161
+__MANDMAPP_H	X:\mandm\mandm\mandm.h	4;"	d	line:4
+__MANDM_C::	X:\mandm\mandm\mandm8722.c	7;"	d	line:7	file:
+__XLCD_H	X:\mandm\mandm\xlcd.h	2;"	d	line:2
+a10_x	X:\mandm\mandm\mandm8722.c	181;"	v	line:181
+a10_x_t	X:\mandm\mandm\daq.c	40;"	l	line:40	file:
+a10_y	X:\mandm\mandm\mandm8722.c	181;"	v	line:181
+a10_y_t	X:\mandm\mandm\daq.c	40;"	l	line:40	file:
+a10_z	X:\mandm\mandm\mandm8722.c	181;"	v	line:181
+a10_z_t	X:\mandm\mandm\daq.c	40;"	l	line:40	file:
+active	X:\mandm\mandm\mandm.h	72;"	m	line:72	struct:motortype
+adc_cal	X:\mandm\mandm\mandm8722.c	218;"	v	line:218
+adc_count	X:\mandm\mandm\mandm.h	141;"	m	line:141	struct:V_data
+adcg0	X:\mandm\mandm\mandm_msg.h	120;"	v	line:120
+adcg1	X:\mandm\mandm\mandm_msg.h	121;"	v	line:121
+adcg2	X:\mandm\mandm\mandm_msg.h	122;"	v	line:122
+adcg3	X:\mandm\mandm\mandm_msg.h	123;"	v	line:123
+adcg4	X:\mandm\mandm\mandm_msg.h	124;"	v	line:124
+ahfp	X:\mandm\mandm\mandm8722.c	117;"	p	line:117	file:	signature:(long, char *)
+ahfp	X:\mandm\mandm\mandm8722.c	683;"	f	line:683	signature:(long millah, char *strprt)
+ahfrak	X:\mandm\mandm\mandm8722.c	206;"	v	line:206
+alarm_buffer	X:\mandm\mandm\mandm8722.c	175;"	v	line:175
+alarm_codes	X:\mandm\mandm\mandm8722.c	188;"	v	line:188
+alert	X:\mandm\mandm\mandm.h	96;"	m	line:96	struct:ccstype
+alm_count	X:\mandm\mandm\mandm.h	100;"	m	line:100	struct:almtype
+alm_flag	X:\mandm\mandm\mandm.h	100;"	m	line:100	struct:almtype
+alm_num	X:\mandm\mandm\mandm.h	104;"	m	line:104	struct:almbuffertype
+alm_num	X:\mandm\mandm\mandm8722.c	698;"	l	line:698	file:
+almbuffertype	X:\mandm\mandm\mandm.h	103;"	s	line:103
+almcode0	X:\mandm\mandm\mandm_msg.h	159;"	v	line:159
+almcode1	X:\mandm\mandm\mandm_msg.h	160;"	v	line:160
+almcode10	X:\mandm\mandm\mandm_msg.h	169;"	v	line:169
+almcode11	X:\mandm\mandm\mandm_msg.h	170;"	v	line:170
+almcode12	X:\mandm\mandm\mandm_msg.h	171;"	v	line:171
+almcode13	X:\mandm\mandm\mandm_msg.h	172;"	v	line:172
+almcode14	X:\mandm\mandm\mandm_msg.h	173;"	v	line:173
+almcode15	X:\mandm\mandm\mandm_msg.h	174;"	v	line:174
+almcode16	X:\mandm\mandm\mandm_msg.h	175;"	v	line:175
+almcode17	X:\mandm\mandm\mandm_msg.h	176;"	v	line:176
+almcode2	X:\mandm\mandm\mandm_msg.h	161;"	v	line:161
+almcode3	X:\mandm\mandm\mandm_msg.h	162;"	v	line:162
+almcode4	X:\mandm\mandm\mandm_msg.h	163;"	v	line:163
+almcode5	X:\mandm\mandm\mandm_msg.h	164;"	v	line:164
+almcode6	X:\mandm\mandm\mandm_msg.h	165;"	v	line:165
+almcode7	X:\mandm\mandm\mandm_msg.h	166;"	v	line:166
+almcode8	X:\mandm\mandm\mandm_msg.h	167;"	v	line:167
+almcode9	X:\mandm\mandm\mandm_msg.h	168;"	v	line:168
+almcode99	X:\mandm\mandm\mandm_msg.h	177;"	v	line:177
+almctr	X:\mandm\mandm\mandm8722.c	190;"	v	line:190
+almtype	X:\mandm\mandm\mandm.h	99;"	s	line:99
+ansidraw	X:\mandm\mandm\hwconf.h	16;"	p	line:16	signature:(int)
+ansidraw	X:\mandm\mandm\mandm8722.c	804;"	f	line:804	signature:(int mode)
+answer_t	X:\mandm\mandm\daq.h	27;"	g	line:27
+answer_t	X:\mandm\mandm\mandm8722.c	221;"	g	line:221	file:
+answer_t	X:\mandm\mandm\mandm_vector.h	47;"	g	line:47
+axis	X:\mandm\mandm\mandm.h	72;"	m	line:72	struct:motortype
+b	X:\mandm\mandm\mandm.h	112;"	m	line:112	struct:lcdb
+b0	X:\mandm\mandm\mandm.h	141;"	m	line:141	struct:V_data
+b1	X:\mandm\mandm\mandm.h	141;"	m	line:141	struct:V_data
+b2	X:\mandm\mandm\mandm.h	141;"	m	line:141	struct:V_data
+b3	X:\mandm\mandm\mandm.h	141;"	m	line:141	struct:V_data
+b_read	X:\mandm\mandm\mandm_vector.c	10;"	l	line:10	file:
+back_stop	X:\mandm\mandm\mandm.h	88;"	m	line:88	struct:qeitype
+band	X:\mandm\mandm\mandm.h	78;"	m	line:78	struct:knobtype
+band	X:\mandm\mandm\mandm.h	87;"	m	line:87	struct:qeitype
+band_max	X:\mandm\mandm\mandm_vector.c	15;"	l	line:15	file:
+battbuffer0	X:\mandm\mandm\mandm_msg.h	149;"	v	line:149
+battheader0	X:\mandm\mandm\mandm_msg.h	145;"	v	line:145
+battheader1	X:\mandm\mandm\mandm_msg.h	146;"	v	line:146
+blink	X:\mandm\mandm\mandm.h	143;"	m	line:143	struct:V_data
+blink_led	X:\mandm\mandm\power.c	175;"	f	line:175	signature:(uint8_t led, uint8_t start)
+blink_led	X:\mandm\mandm\power.h	29;"	p	line:29	signature:(BYTE, BYTE)
+blinktype	X:\mandm\mandm\mandm.h	47;"	s	line:47
+bn	X:\mandm\mandm\mandm.h	104;"	m	line:104	struct:almbuffertype
+bn	X:\mandm\mandm\mandm.h	96;"	m	line:96	struct:ccstype
+boc	X:\mandm\mandm\mandm.h	96;"	m	line:96	struct:ccstype
+boi	X:\mandm\mandm\mandm.h	96;"	m	line:96	struct:ccstype
+bootstr2	X:\mandm\mandm\mandm8722.c	168;"	v	line:168
+build_date	X:\mandm\mandm\mandm8722.c	200;"	v	line:200
+build_time	X:\mandm\mandm\mandm8722.c	200;"	v	line:200
+button	X:\mandm\mandm\mandm8722.c	193;"	v	line:193
+buttonint_count	X:\mandm\mandm\mandm.h	140;"	m	line:140	struct:V_data
+buttontype	X:\mandm\mandm\mandm.h	39;"	s	line:39
+buzzer_ticks	X:\mandm\mandm\mandm_vector.c	470;"	f	line:470	signature:(unsigned char length)
+buzzer_ticks	X:\mandm\mandm\mandm_vector.h	22;"	p	line:22	signature:(unsigned char)
+buzzertime	X:\mandm\mandm\mandm.h	143;"	m	line:143	struct:V_data
+byTemp	X:\mandm\mandm\mandm.h	36;"	m	line:36	struct:QuadEncoderType
+c	X:\mandm\mandm\mandm.h	78;"	m	line:78	struct:knobtype
+c	X:\mandm\mandm\mandm.h	87;"	m	line:87	struct:qeitype
+c	X:\mandm\mandm\mandm8722.c	250;"	l	line:250
+c1	X:\mandm\mandm\mandm_vector.c	10;"	l	line:10	file:
+c1_int	X:\mandm\mandm\mandm.h	140;"	m	line:140	struct:V_data
+c1rx_int	X:\mandm\mandm\mandm.h	142;"	m	line:142	struct:V_data
+c2	X:\mandm\mandm\mandm_vector.c	10;"	l	line:10	file:
+c2_int	X:\mandm\mandm\mandm.h	140;"	m	line:140	struct:V_data
+cable_type	X:\mandm\mandm\mandm8722.c	219;"	v	line:219
+cal	X:\mandm\mandm\mandm.h	27;"	m	line:27	struct:modetype
+cal_failed	X:\mandm\mandm\mandm.h	66;"	m	line:66	struct:pottype
+cal_high	X:\mandm\mandm\mandm.h	66;"	m	line:66	struct:pottype
+cal_low	X:\mandm\mandm\mandm.h	66;"	m	line:66	struct:pottype
+ccstype	X:\mandm\mandm\mandm.h	95;"	s	line:95
+ccstype	X:\mandm\mandm\mandm.h	97;"	t	line:97
+ccw	X:\mandm\mandm\mandm.h	79;"	m	line:79	struct:knobtype
+ccw	X:\mandm\mandm\mandm.h	88;"	m	line:88	struct:qeitype
+cdelay	X:\mandm\mandm\mandm8722.c	186;"	v	line:186
+change	X:\mandm\mandm\daq.c	39;"	l	line:39	file:
+change_count	X:\mandm\mandm\daq.c	4;"	v	line:4
+change_x	X:\mandm\mandm\mandm.h	128;"	m	line:128	struct:R_data
+change_y	X:\mandm\mandm\mandm.h	128;"	m	line:128	struct:R_data
+change_z	X:\mandm\mandm\mandm.h	128;"	m	line:128	struct:R_data
+charger0	X:\mandm\mandm\mandm_msg.h	197;"	v	line:197
+charger1	X:\mandm\mandm\mandm_msg.h	198;"	v	line:198
+charger2	X:\mandm\mandm\mandm_msg.h	199;"	v	line:199
+charger3	X:\mandm\mandm\mandm_msg.h	200;"	v	line:200
+charger4	X:\mandm\mandm\mandm_msg.h	201;"	v	line:201
+charger99	X:\mandm\mandm\mandm_msg.h	202;"	v	line:202
+check_alarm	X:\mandm\mandm\mandm8722.c	133;"	p	line:133	file:	signature:(unsigned char, const rom char*)
+check_alarm	X:\mandm\mandm\mandm8722.c	696;"	f	line:696	signature:(unsigned char bn, const rom char* where)
+check_cable	X:\mandm\mandm\mandm8722.c	1045;"	f	line:1045	signature:(uint8_t *menu)
+check_cable	X:\mandm\mandm\mandm8722.c	162;"	p	line:162	file:	signature:(uint8_t *)
+check_menu	X:\mandm\mandm\mandm8722.c	1046;"	l	line:1046	file:
+checktime	X:\mandm\mandm\mandm8722.c	138;"	p	line:138	file:	signature:(unsigned long, uint8_t)
+checktime	X:\mandm\mandm\mandm8722.c	350;"	f	line:350	signature:(unsigned long delay, uint8_t set)
+checktime_cal	X:\mandm\mandm\mandm8722.c	141;"	p	line:141	file:	signature:(unsigned long, uint8_t)
+checktime_cal	X:\mandm\mandm\mandm8722.c	404;"	f	line:404	signature:(unsigned long delay, uint8_t set)
+checktime_eep	X:\mandm\mandm\daq.h	41;"	p	line:41	signature:(unsigned long, BYTE)
+checktime_eep	X:\mandm\mandm\mandm8722.c	142;"	p	line:142	file:	signature:(unsigned long, uint8_t)
+checktime_eep	X:\mandm\mandm\mandm8722.c	422;"	f	line:422	signature:(unsigned long delay, uint8_t set)
+checktime_motor	X:\mandm\mandm\mandm8722.c	140;"	p	line:140	file:	signature:(unsigned long, uint8_t)
+checktime_motor	X:\mandm\mandm\mandm8722.c	386;"	f	line:386	signature:(unsigned long delay, uint8_t set)
+checktime_select	X:\mandm\mandm\mandm8722.c	139;"	p	line:139	file:	signature:(unsigned long, uint8_t)
+checktime_select	X:\mandm\mandm\mandm8722.c	368;"	f	line:368	signature:(unsigned long delay, uint8_t set)
+checktime_track	X:\mandm\mandm\mandm8722.c	143;"	p	line:143	file:	signature:(unsigned long, uint8_t)
+checktime_track	X:\mandm\mandm\mandm8722.c	440;"	f	line:440	signature:(unsigned long delay, uint8_t set)
+chrg_v	X:\mandm\mandm\mandm8722.c	208;"	v	line:208
+chrgcode0	X:\mandm\mandm\mandm_msg.h	180;"	v	line:180
+chrgcode1	X:\mandm\mandm\mandm_msg.h	181;"	v	line:181
+chrgcode10	X:\mandm\mandm\mandm_msg.h	190;"	v	line:190
+chrgcode11	X:\mandm\mandm\mandm_msg.h	191;"	v	line:191
+chrgcode12	X:\mandm\mandm\mandm_msg.h	192;"	v	line:192
+chrgcode13	X:\mandm\mandm\mandm_msg.h	193;"	v	line:193
+chrgcode14	X:\mandm\mandm\mandm_msg.h	194;"	v	line:194
+chrgcode15	X:\mandm\mandm\mandm_msg.h	195;"	v	line:195
+chrgcode16	X:\mandm\mandm\mandm_msg.h	196;"	v	line:196
+chrgcode2	X:\mandm\mandm\mandm_msg.h	182;"	v	line:182
+chrgcode3	X:\mandm\mandm\mandm_msg.h	183;"	v	line:183
+chrgcode4	X:\mandm\mandm\mandm_msg.h	184;"	v	line:184
+chrgcode5	X:\mandm\mandm\mandm_msg.h	185;"	v	line:185
+chrgcode6	X:\mandm\mandm\mandm_msg.h	186;"	v	line:186
+chrgcode7	X:\mandm\mandm\mandm_msg.h	187;"	v	line:187
+chrgcode8	X:\mandm\mandm\mandm_msg.h	188;"	v	line:188
+chrgcode9	X:\mandm\mandm\mandm_msg.h	189;"	v	line:189
+cid	X:\mandm\mandm\mandm8722.c	172;"	v	line:172
+clear_crit	X:\mandm\mandm\crit.c	45;"	f	line:45	signature:(void)
+clear_crit	X:\mandm\mandm\crit.h	10;"	p	line:10	signature:(void)
+clock20	X:\mandm\mandm\mandm.h	142;"	m	line:142	struct:V_data
+clocks_hz	X:\mandm\mandm\mandm8722.c	336;"	l	line:336	file:
+clocks_hz	X:\mandm\mandm\mandm8722.c	352;"	l	line:352	file:
+clocks_hz	X:\mandm\mandm\mandm8722.c	370;"	l	line:370	file:
+clocks_hz	X:\mandm\mandm\mandm8722.c	388;"	l	line:388	file:
+clocks_hz	X:\mandm\mandm\mandm8722.c	406;"	l	line:406	file:
+clocks_hz	X:\mandm\mandm\mandm8722.c	424;"	l	line:424	file:
+clocks_hz	X:\mandm\mandm\mandm8722.c	442;"	l	line:442	file:
+clr_lcd	X:\mandm\mandm\mandm8722.c	116;"	p	line:116	file:	signature:(void)
+clr_lcd	X:\mandm\mandm\mandm8722.c	491;"	f	line:491
+commint_count	X:\mandm\mandm\mandm.h	142;"	m	line:142	struct:V_data
+config_pic	X:\mandm\mandm\hwconf.c	3;"	f	line:3	signature:(unsigned int hw_config)
+config_pic	X:\mandm\mandm\hwconf.h	10;"	p	line:10	signature:(unsigned int)
+critc_count	X:\mandm\mandm\mandm8722.c	191;"	v	line:191
+critc_level	X:\mandm\mandm\mandm8722.c	182;"	v	line:182
+csd	X:\mandm\mandm\mandm8722.c	172;"	v	line:172
+current_x	X:\mandm\mandm\mandm.h	129;"	m	line:129	struct:R_data
+current_y	X:\mandm\mandm\mandm.h	129;"	m	line:129	struct:R_data
+current_z	X:\mandm\mandm\mandm.h	129;"	m	line:129	struct:R_data
+currentload	X:\mandm\mandm\mandm.h	134;"	m	line:134	struct:C_data
+cw	X:\mandm\mandm\mandm.h	72;"	m	line:72	struct:motortype
+cw	X:\mandm\mandm\mandm.h	79;"	m	line:79	struct:knobtype
+cw	X:\mandm\mandm\mandm.h	88;"	m	line:88	struct:qeitype
+data	X:\mandm\mandm\xlcd\readaddr.c	18;"	l	line:18
+data	X:\mandm\mandm\xlcd\readdata.c	18;"	l	line:18
+data_default	X:\mandm\mandm\mandm.h	108;"	m	line:108	struct:datadefaulttype
+datadefaulttype	X:\mandm\mandm\mandm.h	107;"	s	line:107
+day	X:\mandm\mandm\mandm.h	116;"	m	line:116	struct:timeruntype
+dcount	X:\mandm\mandm\mandm8722.c	327;"	l	line:327	file:
+dcount	X:\mandm\mandm\mandm8722.c	336;"	l	line:336	file:
+dcount	X:\mandm\mandm\mandm8722.c	352;"	l	line:352	file:
+dcount	X:\mandm\mandm\mandm8722.c	370;"	l	line:370	file:
+dcount	X:\mandm\mandm\mandm8722.c	388;"	l	line:388	file:
+dcount	X:\mandm\mandm\mandm8722.c	406;"	l	line:406	file:
+dcount	X:\mandm\mandm\mandm8722.c	424;"	l	line:424	file:
+dcount	X:\mandm\mandm\mandm8722.c	442;"	l	line:442	file:
+deadband	X:\mandm\mandm\mandm8722.c	868;"	l	line:868	file:
+default_display	X:\mandm\mandm\mandm8722.c	1506;"	f	line:1506	signature:(void)
+default_display	X:\mandm\mandm\mandm8722.c	154;"	p	line:154	file:	signature:(void)
+demos	X:\mandm\mandm\mandm.h	27;"	m	line:27	struct:modetype
+demos_init	X:\mandm\mandm\mandm.h	27;"	m	line:27	struct:modetype
+display_cal	X:\mandm\mandm\mandm8722.c	158;"	p	line:158	file:	signature:(void)
+display_cal	X:\mandm\mandm\mandm8722.c	1936;"	f	line:1936	signature:(void)
+display_count	X:\mandm\mandm\mandm.h	141;"	m	line:141	struct:V_data
+display_system	X:\mandm\mandm\daq.h	37;"	p	line:37	signature:(void)
+divert0	X:\mandm\mandm\mandm_msg.h	154;"	v	line:154
+divert1	X:\mandm\mandm\mandm_msg.h	155;"	v	line:155
+divert99	X:\mandm\mandm\mandm_msg.h	156;"	v	line:156
+do_sim	X:\mandm\mandm\daq.h	14;"	p	line:14	signature:(void)
+do_sim	X:\mandm\mandm\daq.h	36;"	p	line:36	signature:(void)
+ds	X:\mandm\mandm\mandm8722.c	178;"	v	line:178
+dsi	X:\mandm\mandm\mandm8722.c	203;"	v	line:203
+e220_m_display	X:\mandm\mandm\mandm8722.c	1415;"	f	line:1415	signature:(void)
+e220_m_display	X:\mandm\mandm\mandm8722.c	151;"	p	line:151	file:	signature:(void)
+e220_qei_display	X:\mandm\mandm\mandm8722.c	1478;"	f	line:1478	signature:(void)
+e220_qei_display	X:\mandm\mandm\mandm8722.c	152;"	p	line:152	file:	signature:(void)
+e220_qei_exer	X:\mandm\mandm\mandm8722.c	1300;"	f	line:1300	signature:(unsigned char times)
+e220_qei_exer	X:\mandm\mandm\mandm8722.c	132;"	p	line:132	file:	signature:(unsigned char)
+e_crit	X:\mandm\mandm\crit.c	24;"	f	line:24	signature:(void)
+e_crit	X:\mandm\mandm\crit.h	9;"	p	line:9	signature:(void)
+eep_char	X:\mandm\mandm\mandm8722.c	1971;"	l	line:1971	file:
+eeprom_count	X:\mandm\mandm\mandm.h	140;"	m	line:140	struct:V_data
+emo	X:\mandm\mandm\mandm.h	27;"	m	line:27	struct:modetype
+emo_bumps	X:\mandm\mandm\mandm_vector.c	10;"	l	line:10	file:
+emotor_cw	X:\mandm\mandm\power.c	117;"	f	line:117	signature:(uint8_t motor_bit, uint8_t cw)
+emotor_cw	X:\mandm\mandm\power.h	22;"	p	line:22	signature:(BYTE,BYTE)
+emotor_is_all_off	X:\mandm\mandm\power.c	132;"	f	line:132	signature:(void)
+emotor_is_all_off	X:\mandm\mandm\power.h	23;"	p	line:23	signature:(void)
+emotor_power	X:\mandm\mandm\power.c	93;"	f	line:93	signature:(uint8_t motor_bit, uint8_t on)
+emotor_power	X:\mandm\mandm\power.h	20;"	p	line:20	signature:(BYTE,BYTE)
+emotor_power_off	X:\mandm\mandm\power.c	144;"	f	line:144	signature:(void)
+emotor_power_off	X:\mandm\mandm\power.h	26;"	p	line:26	signature:(void)
+emotor_power_on	X:\mandm\mandm\power.c	148;"	f	line:148	signature:(void)
+emotor_power_on	X:\mandm\mandm\power.h	27;"	p	line:27	signature:(void)
+emotor_relays	X:\mandm\mandm\power.c	107;"	f	line:107	signature:(void)
+emotor_relays	X:\mandm\mandm\power.h	21;"	p	line:21	signature:(void)
+emotor_slow_start	X:\mandm\mandm\power.c	111;"	f	line:111	signature:(void)
+emotor_slow_start	X:\mandm\mandm\power.h	16;"	p	line:16	signature:(void)
+emotor_switch_ccw	X:\mandm\mandm\power.c	139;"	f	line:139	signature:(void)
+emotor_switch_ccw	X:\mandm\mandm\power.h	28;"	p	line:28	signature:(void)
+emotor_v24	X:\mandm\mandm\power.c	152;"	f	line:152	signature:(uint8_t volts24)
+emotor_v24	X:\mandm\mandm\power.h	24;"	p	line:24	signature:(BYTE)
+error	X:\mandm\mandm\mandm.h	64;"	m	line:64	struct:pottype
+exerciser	X:\mandm\mandm\mandm8722.c	131;"	p	line:131	file:	signature:(void)
+exerciser	X:\mandm\mandm\mandm8722.c	1335;"	f	line:1335	signature:(void)
+f1	X:\mandm\mandm\mandm8722.c	173;"	v	line:173
+f2	X:\mandm\mandm\mandm8722.c	173;"	v	line:173
+f3	X:\mandm\mandm\mandm8722.c	173;"	v	line:173
+f4	X:\mandm\mandm\mandm8722.c	173;"	v	line:173
+fail_all_motors	X:\mandm\mandm\mandm8722.c	1554;"	f	line:1554	signature:(uint8_t fail)
+fail_all_motors	X:\mandm\mandm\mandm8722.c	163;"	p	line:163	file:
+fail_safe	X:\mandm\mandm\mandm8722.c	123;"	p	line:123	file:	signature:(void)
+fail_safe	X:\mandm\mandm\mandm8722.c	781;"	f	line:781	signature:(void)
+fast_ticks	X:\mandm\mandm\mandm_vector.c	12;"	l	line:12	file:
+forward_stop	X:\mandm\mandm\mandm.h	88;"	m	line:88	struct:qeitype
+free	X:\mandm\mandm\mandm.h	27;"	m	line:27	struct:modetype
+free	X:\mandm\mandm\mandm.h	72;"	m	line:72	struct:motortype
+get_hid	X:\mandm\mandm\mandm8722.c	1107;"	f	line:1107	signature:(void)
+get_out	X:\mandm\mandm\mandm8722.c	1110;"	l	line:1110	file:
+glitch_count	X:\mandm\mandm\mandm8722.c	183;"	v	line:183
+gsd_m_display	X:\mandm\mandm\mandm8722.c	1394;"	f	line:1394	signature:(void)
+gsd_m_display	X:\mandm\mandm\mandm8722.c	153;"	p	line:153	file:	signature:(void)
+h	X:\mandm\mandm\mandm8722.c	607;"	l	line:607	file:
+h	X:\mandm\mandm\mandm8722.c	621;"	l	line:621	file:
+hello0	X:\mandm\mandm\mandm_msg.h	136;"	v	line:136
+hello1	X:\mandm\mandm\mandm_msg.h	137;"	v	line:137
+help_m_display	X:\mandm\mandm\mandm8722.c	1376;"	f	line:1376	signature:(void)
+help_m_display	X:\mandm\mandm\mandm8722.c	148;"	p	line:148	file:	signature:(void)
+help_pos	X:\mandm\mandm\mandm8722.c	203;"	v	line:203
+hid_idle	X:\mandm\mandm\mandm_vector.c	15;"	l	line:15	file:
+hid_menu	X:\mandm\mandm\mandm8722.c	1366;"	f	line:1366	signature:(void)
+high	X:\mandm\mandm\mandm.h	66;"	m	line:66	struct:pottype
+highint_count	X:\mandm\mandm\mandm.h	140;"	m	line:140	struct:V_data
+hm	X:\mandm\mandm\mandm8722.c	125;"	p	line:125	file:	signature:(unsigned long)
+hm	X:\mandm\mandm\mandm8722.c	619;"	f	line:619	signature:(unsigned long sec)
+hms	X:\mandm\mandm\mandm8722.c	124;"	p	line:124	file:	signature:(unsigned long)
+hms	X:\mandm\mandm\mandm8722.c	605;"	f	line:605	signature:(unsigned long sec)
+hms_string	X:\mandm\mandm\mandm8722.c	180;"	v	line:180
+hold0	X:\mandm\mandm\mandm_msg.h	138;"	v	line:138
+hold1	X:\mandm\mandm\mandm_msg.h	139;"	v	line:139
+hold_process	X:\mandm\mandm\mandm8722.c	128;"	p	line:128	file:	signature:(void)
+hold_process	X:\mandm\mandm\mandm8722.c	535;"	f	line:535	signature:(void)
+home	X:\mandm\mandm\mandm.h	88;"	m	line:88	struct:qeitype
+hour	X:\mandm\mandm\mandm.h	116;"	m	line:116	struct:timeruntype
+hunt_count	X:\mandm\mandm\mandm.h	140;"	m	line:140	struct:V_data
+hunt_count	X:\mandm\mandm\mandm.h	73;"	m	line:73	struct:motortype
+i	X:\mandm\mandm\daq.c	39;"	l	line:39	file:
+i	X:\mandm\mandm\mandm8722.c	698;"	l	line:698	file:
+ib	X:\mandm\mandm\mandm8722.c	262;"	l	line:262	file:
+idle	X:\mandm\mandm\mandm.h	27;"	m	line:27	struct:modetype
+idle_loop	X:\mandm\mandm\crit.h	19;"	p	line:19	signature:(void)
+idle_loop	X:\mandm\mandm\mandm_vector.c	446;"	f	line:446	signature:(void)
+idle_loop	X:\mandm\mandm\mandm_vector.h	18;"	p	line:18	signature:(void)
+info_only	X:\mandm\mandm\mandm.h	27;"	m	line:27	struct:modetype
+init_lcd	X:\mandm\mandm\mandm8722.c	161;"	p	line:161	file:	signature:(void)
+init_lcd	X:\mandm\mandm\mandm8722.c	1951;"	f	line:1951	signature:(void)
+init_motordata	X:\mandm\mandm\config.c	4;"	f	line:4	signature:(uint8_t part)
+init_motordata	X:\mandm\mandm\config.h	12;"	p	line:12	signature:(BYTE)
+init_motordata	X:\mandm\mandm\mandm8722.c	159;"	p	line:159	file:
+int16_t	X:\mandm\mandm\mandm.h	20;"	t	line:20
+int32_t	X:\mandm\mandm\mandm.h	21;"	t	line:21
+int64_t	X:\mandm\mandm\mandm.h	22;"	t	line:22
+int8_t	X:\mandm\mandm\mandm.h	19;"	t	line:19
+ip	X:\mandm\mandm\mandm8722.c	210;"	v	line:210
+is_led_blinking	X:\mandm\mandm\power.c	189;"	f	line:189	signature:(uint8_t led)
+is_led_blinking	X:\mandm\mandm\power.h	30;"	p	line:30	signature:(BYTE)
+iw	X:\mandm\mandm\mandm8722.c	210;"	v	line:210
+keycmds0	X:\mandm\mandm\mandm_msg.h	143;"	v	line:143
+keycmds1	X:\mandm\mandm\mandm_msg.h	144;"	v	line:144
+knob1	X:\mandm\mandm\mandm8722.c	214;"	v	line:214
+knob2	X:\mandm\mandm\mandm8722.c	214;"	v	line:214
+knob_to_pot	X:\mandm\mandm\mandm8722.c	209;"	v	line:209
+knobtype	X:\mandm\mandm\mandm.h	77;"	s	line:77
+knobtype	X:\mandm\mandm\mandm.h	84;"	t	line:84
+last_c	X:\mandm\mandm\mandm.h	78;"	m	line:78	struct:knobtype
+last_c	X:\mandm\mandm\mandm.h	87;"	m	line:87	struct:qeitype
+last_shape	X:\mandm\mandm\mandm8722.c	249;"	l	line:249	file:
+lastmotor	X:\mandm\mandm\power.c	11;"	l	line:11	file:
+lcd18	X:\mandm\mandm\mandm8722.c	228;"	v	line:228
+lcdb	X:\mandm\mandm\mandm.h	111;"	s	line:111
+lcdhits	X:\mandm\mandm\mandm.h	141;"	m	line:141	struct:V_data
+lcdhits_18tcy	X:\mandm\mandm\mandm.h	141;"	m	line:141	struct:V_data
+limit_change	X:\mandm\mandm\mandm.h	65;"	m	line:65	struct:pottype
+limit_offset	X:\mandm\mandm\mandm.h	65;"	m	line:65	struct:pottype
+limit_span	X:\mandm\mandm\mandm.h	65;"	m	line:65	struct:pottype
+locked	X:\mandm\mandm\mandm.h	27;"	m	line:27	struct:modetype
+low	X:\mandm\mandm\mandm.h	66;"	m	line:66	struct:pottype
+lowbatt0	X:\mandm\mandm\mandm_msg.h	115;"	v	line:115
+lowint_count	X:\mandm\mandm\mandm.h	140;"	m	line:140	struct:V_data
+lp_filter	X:\mandm\mandm\daq.h	35;"	p	line:35	signature:(float, int, int)
+lp_filter	X:\mandm\mandm\mandm8722.c	126;"	p	line:126	file:	signature:(float, int, int)
+lp_filter	X:\mandm\mandm\mandm8722.c	508;"	f	line:508	signature:(float new, int bn, int slow)
+lp_speed	X:\mandm\mandm\mandm8722.c	196;"	v	line:196
+lp_x	X:\mandm\mandm\mandm8722.c	196;"	v	line:196
+m	X:\mandm\mandm\mandm8722.c	607;"	l	line:607	file:
+m	X:\mandm\mandm\mandm8722.c	621;"	l	line:621	file:
+main	X:\mandm\mandm\mandm8722.c	1969;"	f	line:1969	signature:(void)
+max	X:\mandm\mandm\mandm.h	87;"	m	line:87	struct:qeitype
+menu_pos	X:\mandm\mandm\mandm8722.c	1109;"	l	line:1109	file:
+menu_pos	X:\mandm\mandm\mandm8722.c	1367;"	l	line:1367	file:
+menu_pos	X:\mandm\mandm\mandm8722.c	1973;"	l	line:1973	file:
+menu_pos	X:\mandm\mandm\mandm8722.c	871;"	l	line:871
+menuselect_free	X:\mandm\mandm\mandm_msg.h	89;"	v	line:89
+menuselect_track	X:\mandm\mandm\mandm_msg.h	102;"	v	line:102
+menutext	X:\mandm\mandm\mandm_msg.h	63;"	v	line:63
+menutext_template	X:\mandm\mandm\mandm_msg.h	19;"	v	line:19
+mode	X:\mandm\mandm\mandm8722.c	189;"	v	line:189
+model_data	X:\mandm\mandm\model.h	9;"	p	line:9	signature:(void)
+model_learn	X:\mandm\mandm\model.h	10;"	p	line:10	signature:(unsigned char)
+modelheader0	X:\mandm\mandm\mandm_msg.h	147;"	v	line:147
+modelheader1	X:\mandm\mandm\mandm_msg.h	148;"	v	line:148
+modetype	X:\mandm\mandm\mandm.h	26;"	s	line:26
+motor_control	X:\mandm\mandm\power.c	10;"	f	line:10	signature:(motortype *motor)
+motor_control	X:\mandm\mandm\power.h	19;"	p	line:19	signature:(motortype*)
+motor_counts	X:\mandm\mandm\mandm8722.c	1564;"	l	line:1564
+motor_ptr	X:\mandm\mandm\mandm8722.c	212;"	v	line:212
+motordata	X:\mandm\mandm\mandm8722.c	212;"	v	line:212
+motortype	X:\mandm\mandm\mandm.h	71;"	s	line:71
+motortype	X:\mandm\mandm\mandm.h	75;"	t	line:75
+motorvoltage	X:\mandm\mandm\mandm.h	128;"	m	line:128	struct:R_data
+move	X:\mandm\mandm\mandm.h	27;"	m	line:27	struct:modetype
+movement	X:\mandm\mandm\mandm.h	62;"	m	line:62	struct:pottype
+movement	X:\mandm\mandm\mandm.h	83;"	m	line:83	struct:knobtype
+movement	X:\mandm\mandm\mandm.h	92;"	m	line:92	struct:qeitype
+movement_t	X:\mandm\mandm\mandm.h	60;"	g	line:60	struct:pottype
+movement_t	X:\mandm\mandm\mandm.h	81;"	g	line:81	struct:knobtype
+movement_t	X:\mandm\mandm\mandm.h	90;"	g	line:90	struct:qeitype
+movement_t	X:\mandm\mandm\mandm_vector.h	43;"	g	line:43
+msi	X:\mandm\mandm\mandm8722.c	203;"	v	line:203
+my_struct_cmp	X:\mandm\mandm\power.c	6;"	f	line:6	signature:(const motortype *lhs, const motortype *rhs)
+my_struct_cmp	X:\mandm\mandm\power.h	31;"	p	line:31	signature:(const motortype*, const motortype*)
+n	X:\mandm\mandm\mandm8722.c	459;"	l	line:459	file:
+nav_menu	X:\mandm\mandm\mandm8722.c	1270;"	f	line:1270	signature:(void)
+nav_menu	X:\mandm\mandm\mandm8722.c	164;"	p	line:164	file:	signature:(void)
+new_menu	X:\mandm\mandm\mandm8722.c	1046;"	l	line:1046	file:
+noload_soc	X:\mandm\mandm\model.h	16;"	p	line:16	signature:(unsigned char)
+offset	X:\mandm\mandm\mandm.h	66;"	m	line:66	struct:pottype
+old_error	X:\mandm\mandm\mandm8722.c	869;"	l	line:869	file:
+old_menu	X:\mandm\mandm\mandm8722.c	1046;"	l	line:1046	file:
+on_off_only	X:\mandm\mandm\mandm.h	27;"	m	line:27	struct:modetype
+on_off_only	X:\mandm\mandm\mandm.h	72;"	m	line:72	struct:motortype
+operate	X:\mandm\mandm\mandm.h	27;"	m	line:27	struct:modetype
+p	X:\mandm\mandm\mandm8722.c	1566;"	l	line:1566
+p1	X:\mandm\mandm\mandm8722.c	170;"	v	line:170
+p2	X:\mandm\mandm\mandm8722.c	170;"	v	line:170
+p3	X:\mandm\mandm\mandm8722.c	174;"	v	line:174
+pick	X:\mandm\mandm\mandm.h	96;"	m	line:96	struct:ccstype
+pos_actual	X:\mandm\mandm\mandm.h	64;"	m	line:64	struct:pottype
+pos_actual_prev	X:\mandm\mandm\mandm.h	64;"	m	line:64	struct:pottype
+pos_change	X:\mandm\mandm\mandm.h	64;"	m	line:64	struct:pottype
+pos_set	X:\mandm\mandm\mandm.h	64;"	m	line:64	struct:pottype
+pos_x	X:\mandm\mandm\mandm.h	128;"	m	line:128	struct:R_data
+pos_y	X:\mandm\mandm\mandm.h	128;"	m	line:128	struct:R_data
+pos_z	X:\mandm\mandm\mandm.h	128;"	m	line:128	struct:R_data
+position	X:\mandm\mandm\mandm8722.c	816;"	l	line:816	file:
+pot	X:\mandm\mandm\mandm.h	74;"	m	line:74	struct:motortype
+pottype	X:\mandm\mandm\mandm.h	58;"	s	line:58
+pottype	X:\mandm\mandm\mandm.h	69;"	t	line:69
+putc2	X:\mandm\mandm\mandm8722.c	127;"	p	line:127	file:	signature:(unsigned char c)
+putc2	X:\mandm\mandm\mandm8722.c	481;"	f	line:481	signature:(unsigned char c)
+putcXLCD::WriteDataXLCD	X:\mandm\mandm\xlcd.h	114;"	d	line:114
+putrsXLCD	X:\mandm\mandm\xlcd.h	124;"	p	line:124	signature:(PARAM_SCLASS const MEM_MODEL rom char *)
+putrsXLCD	X:\mandm\mandm\xlcd\putrxlcd.c	16;"	f	line:16	signature:(const rom char *buffer)
+putsXLCD	X:\mandm\mandm\xlcd.h	119;"	p	line:119	signature:(PARAM_SCLASS char *)
+putsXLCD	X:\mandm\mandm\xlcd\putsxlcd.c	16;"	f	line:16	signature:(char *buffer)
+pwm4int_count	X:\mandm\mandm\mandm.h	141;"	m	line:141	struct:V_data
+qei	X:\mandm\mandm\mandm.h	27;"	m	line:27	struct:modetype
+qei1	X:\mandm\mandm\mandm8722.c	229;"	v	line:229
+qei1_tmp	X:\mandm\mandm\mandm8722.c	1565;"	l	line:1565
+qei_counts	X:\mandm\mandm\mandm.h	143;"	m	line:143	struct:V_data
+qeitype	X:\mandm\mandm\mandm.h	86;"	s	line:86
+qeitype	X:\mandm\mandm\mandm.h	93;"	t	line:93
+rawp	X:\mandm\mandm\mandm8722.c	208;"	v	line:208
+read_data_eeprom	X:\mandm\mandm\crit.c	73;"	f	line:73	signature:(unsigned int addr, unsigned int offset)
+read_data_eeprom	X:\mandm\mandm\crit.h	12;"	p	line:12	signature:(unsigned int, unsigned int)
+real_ticks	X:\mandm\mandm\mandm_vector.c	12;"	l	line:12	file:
+relay_v24	X:\mandm\mandm\power.c	166;"	f	line:166	signature:(void)
+relay_v24	X:\mandm\mandm\power.h	25;"	p	line:25	signature:(void)
+reversed	X:\mandm\mandm\mandm.h	72;"	m	line:72	struct:motortype
+run	X:\mandm\mandm\mandm.h	72;"	m	line:72	struct:motortype
+run_cal	X:\mandm\mandm\mandm8722.c	1562;"	f	line:1562	signature:(void)
+run_cal	X:\mandm\mandm\mandm8722.c	157;"	p	line:157	file:	signature:(void)
+run_demos	X:\mandm\mandm\mandm8722.c	156;"	p	line:156	file:	signature:(unsigned char)
+rx_tmp	X:\mandm\mandm\mandm_vector.c	13;"	l	line:13	file:
+s	X:\mandm\mandm\mandm8722.c	249;"	l	line:249	file:
+s	X:\mandm\mandm\mandm8722.c	607;"	l	line:607	file:
+s	X:\mandm\mandm\mandm8722.c	621;"	l	line:621	file:
+s_crit	X:\mandm\mandm\crit.c	5;"	f	line:5	signature:(uint8_t mode)
+s_crit	X:\mandm\mandm\crit.h	8;"	p	line:8	signature:(unsigned char)
+s_delay	X:\mandm\mandm\mandm8722.c	847;"	l	line:847	file:
+scale_in	X:\mandm\mandm\mandm.h	67;"	m	line:67	struct:pottype
+scale_out	X:\mandm\mandm\mandm.h	67;"	m	line:67	struct:pottype
+scaled_actual	X:\mandm\mandm\mandm.h	68;"	m	line:68	struct:pottype
+scaled_error	X:\mandm\mandm\mandm.h	68;"	m	line:68	struct:pottype
+scaled_set	X:\mandm\mandm\mandm.h	68;"	m	line:68	struct:pottype
+sddump0	X:\mandm\mandm\mandm_msg.h	150;"	v	line:150
+sddump1	X:\mandm\mandm\mandm_msg.h	151;"	v	line:151
+sddump2	X:\mandm\mandm\mandm_msg.h	152;"	v	line:152
+sddump3	X:\mandm\mandm\mandm_msg.h	153;"	v	line:153
+shape	X:\mandm\mandm\mandm8722.c	847;"	l	line:847	file:
+sign	X:\mandm\mandm\mandm8722.c	195;"	v	line:195
+slow	X:\mandm\mandm\mandm.h	27;"	m	line:27	struct:modetype
+slow	X:\mandm\mandm\mandm.h	72;"	m	line:72	struct:motortype
+slow	X:\mandm\mandm\mandm8722.c	815;"	l	line:815	file:
+slow_bypass	X:\mandm\mandm\mandm.h	27;"	m	line:27	struct:modetype
+slow_only	X:\mandm\mandm\mandm.h	72;"	m	line:72	struct:motortype
+slow_timer	X:\mandm\mandm\mandm8722.c	230;"	v	line:230
+slow_timer_start	X:\mandm\mandm\mandm_vector.c	487;"	f	line:487	signature:(void)
+slow_timer_start	X:\mandm\mandm\mandm_vector.h	25;"	p	line:25	signature:(void)
+slow_timer_start	X:\mandm\mandm\power.h	17;"	p	line:17	signature:(void)
+smooth	X:\mandm\mandm\mandm8722.c	176;"	v	line:176
+solar_t	X:\mandm\mandm\mandm8722.c	208;"	v	line:208
+span	X:\mandm\mandm\mandm.h	66;"	m	line:66	struct:pottype
+spin	X:\mandm\mandm\mandm_msg.h	8;"	v	line:8
+spinners	X:\mandm\mandm\mandm8722.c	165;"	p	line:165	file:	signature:(unsigned char, unsigned char)
+spinners	X:\mandm\mandm\mandm8722.c	248;"	f	line:248	signature:(unsigned char shape, unsigned char reset)
+stable_x	X:\mandm\mandm\mandm.h	130;"	m	line:130	struct:R_data
+stable_y	X:\mandm\mandm\mandm.h	130;"	m	line:130	struct:R_data
+stable_z	X:\mandm\mandm\mandm.h	130;"	m	line:130	struct:R_data
+start_delay	X:\mandm\mandm\mandm8722.c	487;"	f	line:487	signature:(void)
+start_pic	X:\mandm\mandm\hwconf.c	136;"	f	line:136	signature:(unsigned int hw_config)
+start_pic	X:\mandm\mandm\hwconf.h	11;"	p	line:11	signature:(unsigned int)
+start_workerthread	X:\mandm\mandm\hwconf.c	143;"	f	line:143	signature:(void)
+start_workerthread	X:\mandm\mandm\hwconf.h	12;"	p	line:12	signature:(void)
+status_count	X:\mandm\mandm\mandm.h	142;"	m	line:142	struct:V_data
+sync0	X:\mandm\mandm\mandm_msg.h	140;"	v	line:140
+sync1	X:\mandm\mandm\mandm_msg.h	141;"	v	line:141
+sync2	X:\mandm\mandm\mandm_msg.h	142;"	v	line:142
+system_data	X:\mandm\mandm\mandm8722.c	129;"	p	line:129	file:	signature:(void)
+system_data	X:\mandm\mandm\mandm8722.c	554;"	f	line:554	signature:(void)
+system_help	X:\mandm\mandm\mandm8722.c	130;"	p	line:130	file:	signature:(void)
+system_help	X:\mandm\mandm\mandm8722.c	599;"	f	line:599	signature:(void)
+systemvoltage	X:\mandm\mandm\mandm.h	128;"	m	line:128	struct:R_data
+t1	X:\mandm\mandm\mandm8722.c	204;"	v	line:204
+t2	X:\mandm\mandm\mandm8722.c	204;"	v	line:204
+t3	X:\mandm\mandm\mandm8722.c	204;"	v	line:204
+t4	X:\mandm\mandm\mandm8722.c	204;"	v	line:204
+t5	X:\mandm\mandm\mandm8722.c	204;"	v	line:204
+t6	X:\mandm\mandm\mandm8722.c	204;"	v	line:204
+t7	X:\mandm\mandm\mandm8722.c	204;"	v	line:204
+t_comp	X:\mandm\mandm\mandm.h	136;"	m	line:136	struct:C_data
+t_time	X:\mandm\mandm\mandm8722.c	204;"	v	line:204
+temp_drate	X:\mandm\mandm\mandm.h	135;"	m	line:135	struct:C_data
+term_time	X:\mandm\mandm\config.h	19;"	p	line:19	signature:(void)
+term_time	X:\mandm\mandm\daq.h	40;"	p	line:40	signature:(void)
+term_time	X:\mandm\mandm\mandm8722.c	146;"	p	line:146	file:	signature:(void)
+term_time	X:\mandm\mandm\mandm8722.c	528;"	f	line:528	signature:(void)
+term_time	X:\mandm\mandm\model.h	18;"	p	line:18	signature:(void)
+termstr	X:\mandm\mandm\mandm8722.c	171;"	v	line:171
+test_counts	X:\mandm\mandm\mandm8722.c	1567;"	l	line:1567
+thermo_batt	X:\mandm\mandm\mandm.h	127;"	m	line:127	struct:R_data
+tick_handler	X:\mandm\mandm\mandm_vector.c	8;"	f	line:8	signature:(void)
+tick_handler	X:\mandm\mandm\mandm_vector.h	16;"	p	line:16	signature:(void)
+tick_int	X:\mandm\mandm\mandm8722.c	235;"	f	line:235	signature:(void)
+ticks	X:\mandm\mandm\mandm.h	79;"	m	line:79	struct:knobtype
+ticks	X:\mandm\mandm\mandm.h	88;"	m	line:88	struct:qeitype
+timer	X:\mandm\mandm\mandm_vector.c	14;"	l	line:14	file:
+timerint_count	X:\mandm\mandm\mandm.h	140;"	m	line:140	struct:V_data
+timerl	X:\mandm\mandm\mandm_vector.c	14;"	l	line:14	file:
+timeruntype	X:\mandm\mandm\mandm.h	115;"	s	line:115
+timetemp	X:\mandm\mandm\mandm8722.c	336;"	l	line:336	file:
+timetemp	X:\mandm\mandm\mandm8722.c	352;"	l	line:352	file:
+timetemp	X:\mandm\mandm\mandm8722.c	370;"	l	line:370	file:
+timetemp	X:\mandm\mandm\mandm8722.c	388;"	l	line:388	file:
+timetemp	X:\mandm\mandm\mandm8722.c	406;"	l	line:406	file:
+timetemp	X:\mandm\mandm\mandm8722.c	424;"	l	line:424	file:
+timetemp	X:\mandm\mandm\mandm8722.c	442;"	l	line:442	file:
+track_knob_to_pot	X:\mandm\mandm\mandm8722.c	870;"	l	line:870
+track_motor	X:\mandm\mandm\mandm8722.c	160;"	p	line:160	file:	signature:(void)
+track_motor	X:\mandm\mandm\mandm8722.c	867;"	f	line:867	signature:(void)
+tweak0	X:\mandm\mandm\mandm_msg.h	125;"	v	line:125
+tweak1	X:\mandm\mandm\mandm_msg.h	126;"	v	line:126
+tweak2	X:\mandm\mandm\mandm_msg.h	127;"	v	line:127
+tweak3	X:\mandm\mandm\mandm_msg.h	128;"	v	line:128
+tweak4	X:\mandm\mandm\mandm_msg.h	129;"	v	line:129
+tweak5	X:\mandm\mandm\mandm_msg.h	130;"	v	line:130
+tweak_t1	X:\mandm\mandm\mandm_msg.h	131;"	v	line:131
+tweak_t2	X:\mandm\mandm\mandm_msg.h	132;"	v	line:132
+tweak_t3	X:\mandm\mandm\mandm_msg.h	133;"	v	line:133
+tweak_t4	X:\mandm\mandm\mandm_msg.h	134;"	v	line:134
+tweak_tw	X:\mandm\mandm\mandm_msg.h	135;"	v	line:135
+type	X:\mandm\mandm\mandm.h	72;"	m	line:72	struct:motortype
+uint16_t	X:\mandm\mandm\mandm.h	15;"	t	line:15
+uint32_t	X:\mandm\mandm\mandm.h	16;"	t	line:16
+uint64_t	X:\mandm\mandm\mandm.h	17;"	t	line:17
+uint8_t	X:\mandm\mandm\mandm.h	14;"	t	line:14
+unused	X:\mandm\mandm\mandm.h	31;"	m	line:31	struct:QuadEncoderType
+unused	X:\mandm\mandm\mandm.h	44;"	m	line:44	struct:buttontype
+update_hist	X:\mandm\mandm\mandm8722.c	145;"	p	line:145	file:	signature:(void)
+update_hist	X:\mandm\mandm\mandm8722.c	297;"	f	line:297	signature:(void)
+update_hist	X:\mandm\mandm\model.h	17;"	p	line:17	signature:(void)
+update_lcd_menu	X:\mandm\mandm\mandm8722.c	814;"	f	line:814	signature:(uint8_t menu_text_pos)
+v24	X:\mandm\mandm\mandm.h	27;"	m	line:27	struct:modetype
+v24	X:\mandm\mandm\mandm.h	72;"	m	line:72	struct:motortype
+varian_v_display	X:\mandm\mandm\mandm8722.c	150;"	p	line:150	file:	signature:(void)
+varian_v_display	X:\mandm\mandm\mandm8722.c	1527;"	f	line:1527	signature:(void)
+vbatol_t	X:\mandm\mandm\mandm8722.c	208;"	v	line:208
+vc_count	X:\mandm\mandm\mandm_vector.c	11;"	l	line:11	file:
+viision_m_display	X:\mandm\mandm\mandm8722.c	1436;"	f	line:1436	signature:(void)
+viision_m_display	X:\mandm\mandm\mandm8722.c	147;"	p	line:147	file:	signature:(void)
+viision_ms_display	X:\mandm\mandm\mandm8722.c	1457;"	f	line:1457	signature:(void)
+viision_ms_display	X:\mandm\mandm\mandm8722.c	149;"	p	line:149	file:	signature:(void)
+voice1_ticks	X:\mandm\mandm\mandm_vector.c	475;"	f	line:475	signature:(unsigned char length)
+voice1_ticks	X:\mandm\mandm\mandm_vector.h	23;"	p	line:23	signature:(unsigned char)
+voice1time	X:\mandm\mandm\mandm.h	143;"	m	line:143	struct:V_data
+voice2_ticks	X:\mandm\mandm\mandm_vector.c	481;"	f	line:481	signature:(unsigned char length)
+voice2_ticks	X:\mandm\mandm\mandm_vector.h	24;"	p	line:24	signature:(unsigned char)
+voice2time	X:\mandm\mandm\mandm.h	143;"	m	line:143	struct:V_data
+voltfp	X:\mandm\mandm\mandm8722.c	118;"	p	line:118	file:	signature:(unsigned long, char *)
+voltfp	X:\mandm\mandm\mandm8722.c	646;"	f	line:646	signature:(unsigned long millvolts, char *strprt)
+voltfpi	X:\mandm\mandm\mandm8722.c	120;"	p	line:120	file:	signature:(long, char *)
+voltfpi	X:\mandm\mandm\mandm8722.c	664;"	f	line:664	signature:(long millvolts, char *strprt)
+voltfps	X:\mandm\mandm\mandm8722.c	119;"	p	line:119	file:	signature:(unsigned long, char *)
+voltfps	X:\mandm\mandm\mandm8722.c	655;"	f	line:655	signature:(unsigned long millvolts, char *strprt)
+voltfrak	X:\mandm\mandm\mandm8722.c	205;"	v	line:205
+was_running	X:\mandm\mandm\mandm8722.c	869;"	l	line:869	file:
+wdtdelay	X:\mandm\mandm\daq.h	38;"	p	line:38	signature:(unsigned long)
+wdtdelay	X:\mandm\mandm\mandm8722.c	144;"	p	line:144	file:	signature:(unsigned long)
+wdtdelay	X:\mandm\mandm\mandm8722.c	326;"	f	line:326	signature:(unsigned long delay)
+wdttime	X:\mandm\mandm\daq.h	39;"	p	line:39	signature:(unsigned long)
+wdttime	X:\mandm\mandm\mandm8722.c	137;"	p	line:137	file:	signature:(unsigned long)
+wdttime	X:\mandm\mandm\mandm8722.c	334;"	f	line:334	signature:(unsigned long delay)
+wdttime	X:\mandm\mandm\power.h	15;"	p	line:15	signature:(unsigned long)
+weeks	X:\mandm\mandm\mandm.h	116;"	m	line:116	struct:timeruntype
+work_handler	X:\mandm\mandm\mandm_vector.c	442;"	f	line:442	signature:(void)
+work_handler	X:\mandm\mandm\mandm_vector.h	17;"	p	line:17	signature:(void)
+work_int	X:\mandm\mandm\mandm8722.c	242;"	f	line:242	signature:(void)
+worker_count	X:\mandm\mandm\mandm.h	141;"	m	line:141	struct:V_data
+worker_timer	X:\mandm\mandm\mandm_vector.c	12;"	l	line:12	file:
+worktick	X:\mandm\mandm\mandm8722.c	181;"	v	line:181
+write_data_eeprom	X:\mandm\mandm\crit.c	52;"	f	line:52	signature:(uint8_t data, uint8_t count, unsigned int addr, unsigned int offset)
+write_data_eeprom	X:\mandm\mandm\crit.h	11;"	p	line:11	signature:(unsigned char, unsigned char, unsigned int, unsigned int)
+z	X:\mandm\mandm\config.c	6;"	l	line:6	file:
+z	X:\mandm\mandm\daq.c	208;"	l	line:208	file:
+z	X:\mandm\mandm\daq.c	39;"	l	line:39	file:
+z	X:\mandm\mandm\hwconf.c	5;"	l	line:5	file:
+z	X:\mandm\mandm\mandm8722.c	1301;"	l	line:1301
+z	X:\mandm\mandm\mandm8722.c	1555;"	l	line:1555
+z	X:\mandm\mandm\mandm8722.c	1564;"	l	line:1564
+z	X:\mandm\mandm\mandm8722.c	1972;"	l	line:1972	file:
+z	X:\mandm\mandm\mandm8722.c	556;"	l	line:556	file:
+z	X:\mandm\mandm\mandm8722.c	847;"	l	line:847	file:
+zero0	X:\mandm\mandm\mandm_msg.h	116;"	v	line:116
+zero1	X:\mandm\mandm\mandm_msg.h	117;"	v	line:117
+zero2	X:\mandm\mandm\mandm_msg.h	118;"	v	line:118
+zero3	X:\mandm\mandm\mandm_msg.h	119;"	v	line:119
+zero_amploc	X:\mandm\mandm\daq.c	206;"	f	line:206	signature:(void)
+zero_amploc	X:\mandm\mandm\daq.h	13;"	p	line:13	signature:(void)
