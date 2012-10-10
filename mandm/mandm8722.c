@@ -512,9 +512,9 @@ void clr_lcd() {
         0
         1
         2
-        3	current
-        4	currentin
-        5	currentcharger
+        3
+        4
+        5
         6
         7
         8
