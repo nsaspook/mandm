@@ -28,7 +28,7 @@ void slow_timer_start(void);
 
 extern volatile unsigned char TIMERFLAG,SYSTEM_STABLE, COOLING,
         almctr, WORKERFLAG, DISPLAY_MODE, dsi, C2RAW, FAILSAFE, SYS_HELP, SYS_DATA,
-        HOLD_PROC, RESET_ZEROS, SET_ADC, TWEAK, KEYNUM, SET_BATT, D_UPDATE,SLOW_STATUS;
+        HOLD_PROC, RESET_ZEROS, SET_TLOG, TWEAK, KEYNUM, SET_BATT, D_UPDATE,SLOW_STATUS;
 extern volatile unsigned char GLITCH_CHECK, cdelay, knob_to_pot;
 extern volatile long slow_timer;
 

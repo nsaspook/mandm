@@ -111,7 +111,7 @@ uint8_t emotor_relays(void) {
 
 void emotor_slow_start(void) {
     SLOW_STATUS = POWER_S;	// save the current relay state
-    POWER_S = LOW;	// turn off fast relay
+    if (mode.qei) POWER_S = LOW;	// turn off fast relay
     slow_timer_start();	//	start the background counter to return POWER_S to the original state
 }
 
@@ -145,6 +145,10 @@ uint8_t emotor_is_all_off(void) {
 void emotor_switch_ccw(void) {
     if (mode.on_off_only) return; // no reverse on valves
     ERELAYS |= ALL_CW_BITS; // fixed // switch to CCW
+}
+
+void emotor_switch_cw(void) {
+    ERELAYS &= (~ALL_CW_BITS); // fixed // switch to CW
 }
 
 void emotor_power_off(void) {

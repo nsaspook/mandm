@@ -26,22 +26,22 @@ void config_pic(unsigned int hw_config)
 	TRISBbits.TRISB5 = HIGH; // quad1 b
 	TRISBbits.TRISB6 = HIGH; // quad2 a
 	TRISBbits.TRISB7 = HIGH; // quad2 b
-	TRISC = 0x00;		// LED outputs
-	LATC = 0x00;		// all front display LEDs off
+	TRISC = 0x00; // LED outputs
+	LATC = 0x00; // all front display LEDs off
 
-	TRISD = 0xff;		// dip switch inputs
+	TRISD = 0xff; // dip switch inputs
 
-	TRISE = LOW;		// motor relay outputs
+	TRISE = LOW; // motor relay outputs
 	LATE = R_ALL_OFF;
 
-        TRISF=0xff;             // all inputs
+	TRISF = 0xff; // all inputs
 
-	LATGbits.LATG0 = LOW; 		// output latch to zero Alarm signal
-	LATGbits.LATG3 = LOW; 		// output latch to zero Voice1 signal
-	LATGbits.LATG4 = LOW; 		// output latch to zero Voice2 signal
-	TRISGbits.TRISG4 = HIGH; 	//
-	TRISGbits.TRISG3 = HIGH; 	// set to input for OFF and output for ON
-	TRISGbits.TRISG0 = LOW;		// output
+	LATGbits.LATG0 = LOW; // output latch to zero Alarm signal
+	LATGbits.LATG3 = LOW; // output latch to zero Voice1 signal
+	LATGbits.LATG4 = LOW; // output latch to zero Voice2 signal
+	TRISGbits.TRISG4 = HIGH; //
+	TRISGbits.TRISG3 = HIGH; // set to input for OFF and output for ON
+	TRISGbits.TRISG0 = LOW; // output
 
 	TRISH = LOW; // mpuled and LCD
 	LATH = 0xff;
@@ -69,8 +69,8 @@ void config_pic(unsigned int hw_config)
 	};
 	ansidraw(TRUE); // Clear and home screen
 
-	OpenADC(ADC_FOSC_RC & ADC_RIGHT_JUST & ADC_20_TAD, ADC_CH0 & ADC_REF_VDD_VSS & ADC_INT_OFF, ADC_9ANA); // open ADC channels for current and voltage readings
-        ADCON1 = 0x06; // adc [0..8] enable, the OpenADC ADC_9ANA sets this also
+	OpenADC(ADC_FOSC_32 & ADC_RIGHT_JUST & ADC_16_TAD, ADC_CH0 & ADC_REF_VDD_VSS & ADC_INT_OFF, ADC_9ANA); // open ADC channels for current and voltage readings
+	ADCON1 = 0x06; // adc [0..8] enable, the OpenADC ADC_9ANA sets this also
 	PIE1bits.ADIE = LOW; // the ADC interrupt enable bit
 	IPR1bits.ADIP = HIGH; // ADC use high pri
 
@@ -79,11 +79,11 @@ void config_pic(unsigned int hw_config)
 		T1_OSC1EN_OFF & T1_SYNC_EXT_OFF);
 	PR4 = 0xFF;
 	OpenTimer4(TIMER_INT_ON & T4_PS_1_16 & T4_POST_1_16); // no int, only for pwm
-//	OpenPWM4(0xFF);
-//	T3CONbits.T3CCP1 = 1; // Bits for Timer4 for PWM
-//	T3CONbits.T3CCP2 = 1; // same
-//	PIE3bits.TMR4IE = LOW; // TIMER4 int enable bit
-//	SetDCPWM4(512); // 0.1% power
+	//	OpenPWM4(0xFF);
+	//	T3CONbits.T3CCP1 = 1; // Bits for Timer4 for PWM
+	//	T3CONbits.T3CCP2 = 1; // same
+	//	PIE3bits.TMR4IE = LOW; // TIMER4 int enable bit
+	//	SetDCPWM4(512); // 0.1% power
 
 	INTCONbits.RBIE = HIGH; // enable PORTB interrupts 1=enable
 	INTCON2bits.RBIP = HIGH; // Set the PORTB interrupt-on-change as a high priority interrupt

@@ -24,6 +24,11 @@
 #define R_ALL_ON	0xff
 #define NO		LOW
 #define YES		HIGH
+#define MOK             0
+#define MERR_ERR        1
+#define MERR_INT        2
+#define MERR_INV        3
+#define MERR_STOP       4
 #if defined(__18CXX)
 #define NULL0           (unsigned char)0
 #endif
@@ -194,15 +199,15 @@
 #define MAX_MOTOR       3               // number of motors to control
 #define MAX_POT         3               // number of axis that pots will control
 #define MAX_EMO         3               // number of putton presses to stop all motors
-#define KNOBTICKS       6               // a knob  Qenc is stopped if no change after this many low ints
-#define QEITICKS        20              // a motor Qenc is stopped ...
+#define KNOBTICKS       4               // a knob  Qenc is stopped if not change after this many low ints
+#define QEITICKS        10              // a motor Qenc is stopped ... 20
 #define QEI_FAST        300l            // error counts above this are in high speed 24vdc mode
 #define QEI_VERY_FAST	400l		// same as above but with no slowing resistor
 #define EMO_BAND	30		// knob2 2 band movement to reset motor emo button
-#define TRACK_DB_L      -12             // deadband limits LOW
-#define TRACK_DB_H      12              // deadband limits HIGH
-#define TRACK_DB_L_S    -35             // deadband limits LOW SLOW
-#define TRACK_DB_H_S    35              // deadband limits HIGH SLOW
+#define TRACK_DB_L      -10             // deadband limits LOW
+#define TRACK_DB_H      10              // deadband limits HIGH
+#define TRACK_DB_L_S    -25             // deadband limits LOW SLOW
+#define TRACK_DB_H_S    25              // deadband limits HIGH SLOW
 #define TRACK_TIMEOUT   2000l           // tracking motor movment timeout
 #define TRACK_DISPLAY	225		// display info below this error count(normally)
 #define DEADB_STOP      1.0

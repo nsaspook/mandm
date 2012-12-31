@@ -25,6 +25,7 @@ BYTE relay_v24(void);
 void emotor_power_off(void);
 void emotor_power_on(void);
 void emotor_switch_ccw(void);
+void emotor_switch_cw(void);
 void emotor_slow_start(void);
 void emotor_slow_stop(void);
 void blink_led(BYTE, BYTE);
