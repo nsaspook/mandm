@@ -84,8 +84,8 @@ void ADC_read(void) // update all voltage/current readings and set load current 
     a10_x_t = (long) Vin * (ADC2_MV - ADC_NULL + adc_cal[2]);
     if (ABSL(a10_x_t) < AMPZ)
         a10_x_t = 0; // zero bit noise
-    a10_x_t = (long) ((float) a10_x_t / (float) AMP10_SEN);
-    a10_x_t = (long) lp_filter((float) a10_x_t, LP_CURRENT_X, TRUE); // use digital filter
+    a10_x_t = (long) ((float) a10_x_t / (float) AMP10_SEN_H);
+    a10_x_t = (long) lp_filter((float) a10_x_t, LP_CURRENT_X, FALSE); // use digital filter
     if (a10_x == NULL0) a10_x_t = 0; // if sensor disconnected read zero
 
     ADC_zero();
@@ -104,8 +104,8 @@ void ADC_read(void) // update all voltage/current readings and set load current 
     a10_y_t = (long) Vin * (ADC3_MV - ADC_NULL + adc_cal[3]);
     if (ABSL(a10_y_t) < AMPZ)
         a10_y_t = 0; // zero bit noise
-    a10_y_t = (long) ((float) a10_y_t / (float) AMP10_SEN);
-    a10_y_t = (long) lp_filter((float) a10_y_t, LP_CURRENT_Y, TRUE); //      use digital filter
+    a10_y_t = (long) ((float) a10_y_t / (float) AMP10_SEN_L);
+    a10_y_t = (long) lp_filter((float) a10_y_t, LP_CURRENT_Y, FALSE); //      use digital filter
     if (a10_y == NULL0) a10_y_t = 0; // if sensor disconnected (zero) read zero current
 
     ADC_zero();
@@ -123,8 +123,8 @@ void ADC_read(void) // update all voltage/current readings and set load current 
     a10_z_t = Vin * (ADC4_MV - ADC_NULL + adc_cal[4]);
     if (ABSL(a10_z_t) < AMPZ)
         a10_z_t = 0; // zero bit noise
-    a10_z_t = (long) ((float) a10_z_t / (float) AMP10_SEN);
-    a10_z_t = (long) lp_filter((float) a10_z_t, LP_CURRENT_Z, TRUE);
+    a10_z_t = (long) ((float) a10_z_t / (float) AMP10_SEN_L);
+    a10_z_t = (long) lp_filter((float) a10_z_t, LP_CURRENT_Z, FALSE);
     if (a10_z == NULL0) a10_z_t = 0; // if sensor disconnected read zero
 
     ADC_zero();
@@ -166,12 +166,12 @@ void ADC_read(void) // update all voltage/current readings and set load current 
 
     R.motorvoltage = solar_t;
     R.systemvoltage = vbatol_t;
-    R.current_z = a10_z_t;
-    R.current_y = a10_y_t;
-    R.current_x = a10_x_t;
 
     if (SYSTEM_STABLE) {
         s_crit(HL);
+        R.current_z = a10_z_t;
+        R.current_y = a10_y_t;
+        R.current_x = a10_x_t;
         R.pos_x = rawp[XAXIS];
         R.pos_y = rawp[YAXIS];
         R.pos_z = rawp[ZAXIS];
@@ -196,6 +196,16 @@ void ADC_read(void) // update all voltage/current readings and set load current 
             motordata[z].pot.scaled_actual = (int) ((float) (motordata[z].pot.pos_actual - motordata[z].pot.offset) * motordata[z].pot.scale_out);
             if (motordata[z].pot.scaled_actual > SCALED) motordata[z].pot.scaled_actual = SCALED;
             motordata[z].pot.pos_set = (int) (((float) motordata[z].pot.scaled_set * motordata[z].pot.scale_in) + motordata[z].pot.offset);
+        }
+        if (mode.emo) {
+            term_time();
+            sprintf(bootstr2, "\n\r EMO flag tripped, possible short circuit in the assy wiring.\r\n");
+            puts2USART(bootstr2);
+            while (TRUE) {
+                emo_display();
+                buzzer_ticks(200);
+                ClrWdt(); // reset the WDT timer
+            }
         }
     }
 

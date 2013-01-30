@@ -2,8 +2,8 @@
 #define MANDM_DEFS_H_INCLUDED
 
 /* Program operation parameters */
-#define MANDM_VERSION 	"    MANDM  02.5B FB  "                 // version text header
-#define	MAGIC			0x0025  			// data version checkmark
+#define MANDM_VERSION 	"    MANDM  02.7B FB  "                 // version text header
+#define	MAGIC			0x0027  			// data version checkmark
 #define	START1			"MCHP, F. Brooks 2012   "	// first LCD message
 #define SIMULA			" \x1b[7m RUNNING IN SIMULATION MODE \x1b[0m "
 #define	PIC_8722		8722
@@ -223,6 +223,15 @@
 #define MAX_IDLE        6000l           // idle user interface countup limit, sets mode.idle to TRUE
 #define CHANGE_COUNT    20            	// number of ADC updates before the R.change_ variable are updated
 #define	MIN_CHANGE	10l		// ADC counts change between stable checks
+#define MAX_MOTOR_CURRENT_H	160
+#define MAX_MOTOR_CURRENT_L	260
+
+
+/* Calibration results benchmarks */
+#define VIISION_M_CHANGE    30
+#define VIISION_M_SPAN      250       // lowest good span count during cal
+#define VIISION_M_OFFSET_H    400
+#define VIISION_M_OFFSET_L    200
 
 #define E_MOTOR_NULL_P  -1
 #define E_MOTOR_NONE    -2
@@ -241,7 +250,8 @@
 #define AMP50c_SEN	23ul            // mV/A
 #define AMP10_ZERO	510u            // dc offset for honeywell 100A sensor raw bit count
 #define AMP10_MAX	5000ul          // Vo at max current n/a
-#define AMP10_SEN	225u            // mV/A for 9 wraps
+#define AMP10_SEN_H	550u            // mV/A for 20 wraps
+#define AMP10_SEN_L	120u            // mV/A for 9 wraps
 #define	AMPZ		2               // ADC value less that this is still zero.
 /*	ADC gain offsets	mV per bit step defines */
 #define ADC0_MV 	490             // 5vdc monitor

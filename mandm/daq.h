@@ -7,6 +7,7 @@
 #include "mandm.h"
 #include "mandm_shared.h"
 #include "crit.h"
+#include "mandm_vector.h"
 
 void ADC_zero(void);
 void ADC_read(void);
@@ -39,6 +40,8 @@ extern void wdtdelay(unsigned long);
 extern void wdttime(unsigned long);
 extern void term_time(void);
 extern BYTE checktime_eep(unsigned long, BYTE);
+extern void buzzer_ticks(unsigned char);
+extern void emo_display(void);
 
 
 #endif /* DAQ_H_INCLUDED */

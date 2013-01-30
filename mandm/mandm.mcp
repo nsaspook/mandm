@@ -8,8 +8,8 @@ dir_src=
 dir_bin=
 dir_tmp=
 dir_sin=
-dir_inc=C:\Program Files\Microchip\mplabc18\v3.40\h
-dir_lib=\.
+dir_inc=
+dir_lib=
 dir_lkr=
 [CAT_FILTERS]
 filter_src=*.asm;*.c
@@ -56,7 +56,6 @@ file_028=.
 file_029=.
 file_030=.
 file_031=.
-file_032=.
 [GENERATED_FILES]
 file_000=no
 file_001=no
@@ -90,7 +89,6 @@ file_028=no
 file_029=no
 file_030=no
 file_031=no
-file_032=no
 [OTHER_FILES]
 file_000=no
 file_001=no
@@ -122,9 +120,8 @@ file_026=no
 file_027=no
 file_028=no
 file_029=no
-file_030=no
+file_030=yes
 file_031=yes
-file_032=yes
 [FILE_INFO]
 file_000=crit.c
 file_001=hwconf.c
@@ -156,15 +153,14 @@ file_026=mandm_vector.h
 file_027=mandm_shared.h
 file_028=daq.h
 file_029=xlcd.h
-file_030=18f8722_g.lkr
-file_031=ET-BASE 8722 ICD2 ENG.pdf
-file_032=mandm_manual.doc
+file_030=ET-BASE 8722 ICD2 ENG.pdf
+file_031=mandm_manual.doc
 [SUITE_INFO]
 suite_guid={5B7D72DD-9861-47BD-9F60-2BE967BF8416}
 suite_state=
 [TOOL_SETTINGS]
-TS{DD2213A8-6310-47B1-8376-9430CDFC013F}=/x"$(BINDIR_)$(INFILEBASE).xrf"
-TS{BFD27FBA-4A02-4C0E-A5E5-B812F3E7707C}=/m"$(BINDIR_)$(TARGETBASE).map" /w /o"$(BINDIR_)$(TARGETBASE).cof"
+TS{DD2213A8-6310-47B1-8376-9430CDFC013F}=
+TS{BFD27FBA-4A02-4C0E-A5E5-B812F3E7707C}=/o"$(BINDIR_)$(TARGETBASE).cof" /M"$(BINDIR_)$(TARGETBASE).map" /W
 TS{C2AF05E7-1416-4625-923D-E114DB6E2B96}=--verbose -mL
 TS{ADE93A55-C7C7-4D4D-A4BA-59305F7D0391}=
 [INSTRUMENTED_TRACE]

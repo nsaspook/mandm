@@ -25,6 +25,18 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <logicalFolder name="xlcd" displayName="xlcd" projectFiles="true">
+        <itemPath>../xlcd/putsxlcd.c</itemPath>
+        <itemPath>../xlcd/setcgram.c</itemPath>
+        <itemPath>../xlcd/openxlcd.c</itemPath>
+        <itemPath>../xlcd/setddram.c</itemPath>
+        <itemPath>../xlcd/writdata.c</itemPath>
+        <itemPath>../xlcd/readaddr.c</itemPath>
+        <itemPath>../xlcd/readdata.c</itemPath>
+        <itemPath>../xlcd/busyxlcd.c</itemPath>
+        <itemPath>../xlcd/putrxlcd.c</itemPath>
+        <itemPath>../xlcd/wcmdxlcd.c</itemPath>
+      </logicalFolder>
       <itemPath>../crit.c</itemPath>
       <itemPath>../hwconf.c</itemPath>
       <itemPath>../model.c</itemPath>
@@ -32,16 +44,6 @@
       <itemPath>../daq.c</itemPath>
       <itemPath>../mandm8722.c</itemPath>
       <itemPath>../mandm_vector.c</itemPath>
-      <itemPath>../../../../media/usb1/mandm/mandm/xlcd/writdata.c</itemPath>
-      <itemPath>../../../../media/usb1/mandm/mandm/xlcd/openxlcd.c</itemPath>
-      <itemPath>../../../../media/usb1/mandm/mandm/xlcd/putrxlcd.c</itemPath>
-      <itemPath>../../../../media/usb1/mandm/mandm/xlcd/putsxlcd.c</itemPath>
-      <itemPath>../../../../media/usb1/mandm/mandm/xlcd/readaddr.c</itemPath>
-      <itemPath>../../../../media/usb1/mandm/mandm/xlcd/readdata.c</itemPath>
-      <itemPath>../../../../media/usb1/mandm/mandm/xlcd/setcgram.c</itemPath>
-      <itemPath>../../../../media/usb1/mandm/mandm/xlcd/setddram.c</itemPath>
-      <itemPath>../../../../media/usb1/mandm/mandm/xlcd/wcmdxlcd.c</itemPath>
-      <itemPath>../../../../media/usb1/mandm/mandm/xlcd/busyxlcd.c</itemPath>
       <itemPath>../config.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
