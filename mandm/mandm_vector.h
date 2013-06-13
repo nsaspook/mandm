@@ -34,6 +34,7 @@ extern volatile long slow_timer;
 
 extern struct C_data C;
 extern struct V_data V;
+extern struct	emodefaulttype 	emodump;
 extern volatile struct knobtype knob1, knob2;
 extern volatile struct qeitype qei1;
 extern volatile struct buttontype button;

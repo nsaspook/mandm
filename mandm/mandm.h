@@ -101,11 +101,17 @@ struct almtype {
 };
 
 struct almbuffertype {
+	uint32_t	time;
     uint8_t alm_num, bn;
 };
 
 struct datadefaulttype {
     uint32_t data_default;
+};
+
+struct emodefaulttype {
+    int32_t emo[6];
+    int32_t peak[6];
 };
 
 struct lcdb {
@@ -125,7 +131,7 @@ struct timeruntype {
 
 typedef struct R_data { // set only in adc_read
     int32_t thermo_batt;
-    uint32_t systemvoltage, motorvoltage, pos_x, pos_y, pos_z, change_x, change_y, change_z;
+    uint32_t systemvoltage, motorvoltage, pos_x, pos_y, pos_z, change_x, change_y, change_z, max_x,max_y,max_z;
     int32_t current_x, current_y, current_z;
     uint8_t stable_x, stable_y, stable_z;
 } R_data;

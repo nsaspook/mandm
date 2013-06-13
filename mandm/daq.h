@@ -17,12 +17,13 @@ void Reset_Change_Count(void);  // the motor adc change counter
 BYTE Change_Count(void);        // check for ADC readings being stable.
 
 extern const rom char adcg0[], adcg1[], adcg2[], adcg3[], adcg4[], zero0[], zero1[], zero2[], zero3[];
-extern unsigned long Vin, rawp[MAX_POT], vbatol_t, solar_t;
+extern unsigned long Vin, rawp[MAX_POT], vbatol_t, solar_t, rawa[MAX_POT];
 extern unsigned char adc_cal[];
 extern volatile unsigned char C2RAW, PRIPOWEROK, KEYNUM,SYSTEM_STABLE;
 extern int a10_x, a10_y, a10_z;
 extern struct R_data R;
 extern struct C_data C;
+extern struct	emodefaulttype 	emodump;
 extern volatile struct modetype mode;
 
 extern volatile enum answer_t {

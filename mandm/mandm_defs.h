@@ -2,9 +2,9 @@
 #define MANDM_DEFS_H_INCLUDED
 
 /* Program operation parameters */
-#define MANDM_VERSION 	"    MANDM  02.7B FB  "                 // version text header
-#define	MAGIC			0x0027  			// data version checkmark
-#define	START1			"MCHP, F. Brooks 2012   "	// first LCD message
+#define MANDM_VERSION 	"    MANDM  02.9B FB  "                 // version text header
+#define	MAGIC			0x0029  			// data version checkmark
+#define	START1			"MCHP, F. Brooks 2013   "	// first LCD message
 #define SIMULA			" \x1b[7m RUNNING IN SIMULATION MODE \x1b[0m "
 #define	PIC_8722		8722
 #define CHECKMARK		0x59		// EEPROM checkmark
@@ -188,9 +188,10 @@
 #define MAX_HELP        2               // max number of help screens per menu.
 #define MENU_ACTION     8              	// knob movement timer value
 #define MOTOR_ACTION    4               // knob movement timer value
-#define SELECT_ACTION	25		// selection delay
+#define SELECT_ACTION	25				// selection delay
 #define MENU_BAND       35l             // movement travel counts for menu actions 40, higher means less sensitive to movement
 #define MOTOR_BAND      1l             	// movement travel counts for motor actions 4
+#define POT_BAND_RATIO	8l				// Scaling factor
 #define POT_BAND_MAX_P  10l             // fastest cw pot travel
 #define POT_BAND_MAX_N  -10l            // fastest ccw pot travel
 #define POT_MAX_CHANGE  100             // if the change in readback between ADC reads is this or greater, it's a possible error
@@ -202,14 +203,14 @@
 #define KNOBTICKS       4               // a knob  Qenc is stopped if not change after this many low ints
 #define QEITICKS        10              // a motor Qenc is stopped ... 20
 #define QEI_FAST        300l            // error counts above this are in high speed 24vdc mode
-#define QEI_VERY_FAST	400l		// same as above but with no slowing resistor
-#define EMO_BAND	30		// knob2 2 band movement to reset motor emo button
+#define QEI_VERY_FAST	400l			// same as above but with no slowing resistor
+#define EMO_BAND		30				// knob2 2 band movement to reset motor emo button
 #define TRACK_DB_L      -10             // deadband limits LOW
 #define TRACK_DB_H      10              // deadband limits HIGH
 #define TRACK_DB_L_S    -25             // deadband limits LOW SLOW
 #define TRACK_DB_H_S    25              // deadband limits HIGH SLOW
 #define TRACK_TIMEOUT   2000l           // tracking motor movment timeout
-#define TRACK_DISPLAY	225		// display info below this error count(normally)
+#define TRACK_DISPLAY	225				// display info below this error count(normally)
 #define DEADB_STOP      1.0
 #define DEADB_RUN       1.5
 #define DEADB_KNOB      5.0
@@ -219,12 +220,12 @@
 #define HUNT_MAX        4
 #define SCALED          999
 #define SCALED_FLOAT    999.9
-#define ACTUAL          1023		// adc counts
+#define ACTUAL          1023			// adc counts
 #define MAX_IDLE        6000l           // idle user interface countup limit, sets mode.idle to TRUE
 #define CHANGE_COUNT    20            	// number of ADC updates before the R.change_ variable are updated
-#define	MIN_CHANGE	10l		// ADC counts change between stable checks
-#define MAX_MOTOR_CURRENT_H	160
-#define MAX_MOTOR_CURRENT_L	260
+#define	MIN_CHANGE	10l					// ADC counts change between stable checks
+#define MAX_MOTOR_CURRENT_H	200
+#define MAX_MOTOR_CURRENT_L	300
 
 
 /* Calibration results benchmarks */
@@ -232,6 +233,14 @@
 #define VIISION_M_SPAN      250       // lowest good span count during cal
 #define VIISION_M_OFFSET_H    400
 #define VIISION_M_OFFSET_L    200
+
+#define VIISION_MS_CHANGE    30
+#define VIISION_MS_SPAN      30       // lowest good span count during cal
+#define VIISION_MS_OFFSET_H    400
+#define VIISION_MS_OFFSET_L    200
+
+#define E220E500_M_SPAN_Y      150  	// lowest good span count during cal
+										// some units might need a 3 turn instead of a 10 turn pot for the correct span.
 
 #define E_MOTOR_NULL_P  -1
 #define E_MOTOR_NONE    -2
@@ -248,7 +257,7 @@
 #define AMP50c_ZERO	510u            // dc offset for amploc amp50 sensor raw bit count
 #define AMP50c_MAX	11400ul         // Vo at max current n/a
 #define AMP50c_SEN	23ul            // mV/A
-#define AMP10_ZERO	510u            // dc offset for honeywell 100A sensor raw bit count
+#define AMP10_ZERO	510u            // dc offset for honeywell 100A CSLT6B100 sensor raw bit count
 #define AMP10_MAX	5000ul          // Vo at max current n/a
 #define AMP10_SEN_H	550u            // mV/A for 20 wraps
 #define AMP10_SEN_L	120u            // mV/A for 9 wraps
