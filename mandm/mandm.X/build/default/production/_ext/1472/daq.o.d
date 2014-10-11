@@ -1,18 +1,20 @@
 build/default/production/_ext/1472/daq.o:  \
-	/fred/mandm/mandm/daq.c  \
+	/audio/mandm/mandm/daq.c  \
+	/audio/mandm/mandm/daq.h  \
 	/opt/microchip/mplabc18/v3.40/h/adc.h  \
+	/opt/microchip/mplabc18/v3.40/h/pconfig.h  \
+	/opt/microchip/mplabc18/v3.40/h/p18cxxx.h  \
+	/opt/microchip/mplabc18/v3.40/h/p18f8722.h  \
 	/opt/microchip/mplabc18/v3.40/h/delays.h  \
 	/opt/microchip/mplabc18/v3.40/h/usart.h  \
 	/opt/microchip/mplabc18/v3.40/h/stdio.h  \
-	/opt/microchip/mplabc18/v3.40/h/timers.h  \
-	/opt/microchip/mplabc18/v3.40/h/EEP.h  \
-	/fred/mandm/mandm/crit.h  \
-	/opt/microchip/mplabc18/v3.40/h/string.h  \
-	/fred/mandm/mandm/power.h  \
-	/fred/mandm/mandm/config.h  \
-	/fred/mandm/mandm/mandm_vector.h  \
-	/fred/mandm/mandm/daq.h  \
-	/fred/mandm/mandm/mandm.h  \
-	/fred/mandm/mandm/mandm_defs.h  \
-	/fred/mandm/mandm/mandm_shared.h  \
+	/opt/microchip/mplabc18/v3.40/h/stdarg.h  \
+	/opt/microchip/mplabc18/v3.40/h/stddef.h  \
+	/audio/mandm/mandm/mandm.h  \
+	/audio/mandm/mandm/mandm_defs.h  \
+	/audio/mandm/mandm/mandm_shared.h  \
+	/audio/mandm/mandm/crit.h  \
+	/audio/mandm/mandm/mandm_vector.h  \
+	/audio/mandm/mandm/config.h  \
+	/audio/mandm/mandm/power.h  \
 

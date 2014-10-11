@@ -6,12 +6,12 @@
 
 void tick_handler(void) // This is the high priority ISR routine
 {
-        static unsigned char c1, c2, emo_bumps = 0, HID_IDLE_FLAG = TRUE, b_read = 0;
-        static unsigned char ZAP = FALSE, vc_count = NULL0;
-        static unsigned char worker_timer = WORKSEC, real_ticks = NULL0, fast_ticks = FT20;
-        static int rx_tmp = 0;
+        static uint8_t c1, c2, emo_bumps = 0, HID_IDLE_FLAG = TRUE, b_read = 0;
+        static uint8_t ZAP = FALSE, vc_count = NULL0;
+        static uint8_t worker_timer = WORKSEC, real_ticks = NULL0, fast_ticks = FT20;
+        static int16_t rx_tmp = 0;
         static union Timers timer, timerl;
-        static long band_max = 0, hid_idle = 0;
+        static int32_t band_max = 0, hid_idle = 0;
 
         _asm nop _endasm // asm code to disable compiler optimizations
                 V.highint_count++; // high int counter
@@ -259,7 +259,7 @@ void tick_handler(void) // This is the high priority ISR routine
         if (INTCONbits.INT0IF) {
                 INTCONbits.INT0IF = LOW;
                 V.b0++;
-                if (SYSTEM_STABLE && (PB0 == 0)) {
+                if (SYSTEM_STABLE && (PB0 == 0u)) {
                         DLED_0 = ON;
                         button.B0 = 1;
                 }
@@ -269,7 +269,7 @@ void tick_handler(void) // This is the high priority ISR routine
         if (INTCON3bits.INT1IF) {
                 INTCON3bits.INT1IF = LOW;
                 V.b1++;
-                if (SYSTEM_STABLE && (PB1 == 0)) {
+                if (SYSTEM_STABLE && (PB1 == 0u)) {
                         DLED_1 = ON;
                         button.B1 = 1;
                 }
@@ -279,7 +279,7 @@ void tick_handler(void) // This is the high priority ISR routine
         if (INTCON3bits.INT2IF) {
                 INTCON3bits.INT2IF = LOW;
                 V.b2++;
-                if (SYSTEM_STABLE && (PB2 == 0)) {
+                if (SYSTEM_STABLE && (PB2 == 0u)) {
                         DLED_2 = ON;
                         ALARMOUT = LOW;
                         button.B2 = 1;
@@ -328,7 +328,9 @@ void tick_handler(void) // This is the high priority ISR routine
                         }
                 }
                 V.lowint_count++; // low int trigger entropy counter
-                if (R.current_x > MAX_MOTOR_CURRENT_H || R.current_y > MAX_MOTOR_CURRENT_L || R.current_z > MAX_MOTOR_CURRENT_L) { // over-current errors
+                //FIXME watchout for int uint conversions that make negative number high
+                // check for currrent overloads using the current sensors
+                if (FALSE && (((int32_t) R.current_x > (int32_t) MAX_MOTOR_CURRENT_H) || ((int32_t) R.current_y > (int32_t) MAX_MOTOR_CURRENT_L) || ((int32_t) R.current_z > (int32_t) MAX_MOTOR_CURRENT_L))) { // over-current errors
                         LED_3 = HIGH;
                         LED_1 = LOW;
                         mode.emo = TRUE;
@@ -343,18 +345,18 @@ void tick_handler(void) // This is the high priority ISR routine
                         emodump.emo[5] = R.pos_z;
                 }
 
-                if (V.buzzertime == 0) {
+                if (V.buzzertime == 0u) {
                         ALARMOUT = LOW;
                 } else {
                         V.buzzertime--;
                 }
 
-                if (V.voice1time == 0) {
+                if (V.voice1time == 0u) {
                         VOICE1_TRIS = HIGH; // back to input on vox button
                 } else {
                         V.voice1time--;
                 }
-                if (V.voice2time == 0) {
+                if (V.voice2time == 0u) {
                         VOICE2_TRIS = HIGH; // back to input on vox button
                 } else {
                         V.voice2time--;
@@ -493,20 +495,20 @@ void Clear_All_Buttons(void)
         mode.cal = FALSE;
 }
 
-void buzzer_ticks(unsigned char length)
+void buzzer_ticks(uint8_t length)
 {
         ALARMOUT = HIGH;
         V.buzzertime = length;
 }
 
-void voice1_ticks(unsigned char length)
+void voice1_ticks(uint8_t length)
 {
         VOICE1_TRIS = LOW; // send low (button press) to vox board
         VOICE1 = LOW;
         V.voice1time = length;
 }
 
-void voice2_ticks(unsigned char length)
+void voice2_ticks(uint8_t length)
 {
         VOICE2_TRIS = LOW; // send low (button press) to vox board
         VOICE2 = LOW;

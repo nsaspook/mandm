@@ -13,7 +13,7 @@ void config_pic(unsigned int hw_config)
                 TRISAbits.TRISA0 = HIGH; // an0	systemvoltage
                 TRISAbits.TRISA1 = HIGH; // an1 motorvoltage
                 TRISAbits.TRISA2 = HIGH; // an2 current_x
-                TRISAbits.TRISA3 = HIGH; // an3 current_y
+                TRISAbits.TRISA3 = HIGH; // VREF input
                 TRISAbits.TRISA5 = HIGH; // an4 current_z
 
                 TRISB = 0x00; // all outputs first
@@ -34,7 +34,7 @@ void config_pic(unsigned int hw_config)
                 TRISE = LOW; // motor relay outputs
                 LATE = R_ALL_OFF;
 
-                TRISF = 0xff; // all inputs
+                TRISF = 0xff; // all inputs for ADC inputs
 
                 LATGbits.LATG0 = LOW; // output latch to zero Alarm signal
                 LATGbits.LATG3 = LOW; // output latch to zero Voice1 signal
@@ -73,7 +73,7 @@ void config_pic(unsigned int hw_config)
                 };
                 ansidraw(TRUE); // Clear and home screen
 
-                OpenADC(ADC_FOSC_32 & ADC_RIGHT_JUST & ADC_16_TAD, ADC_CH0 & ADC_REF_VDD_VSS & ADC_INT_OFF, ADC_11ANA); // open ADC channels for current and voltage readings
+                OpenADC(ADC_FOSC_32 & ADC_RIGHT_JUST & ADC_16_TAD, ADC_CH0 & ADC_REF_VREFPLUS_VSS & ADC_INT_OFF, ADC_11ANA); // open ADC channels for current and voltage readings
                 ADCON1 = 0x03; // adc [0..11] enable, the OpenADC ADC_11ANA sets this also
                 PIE1bits.ADIE = LOW; // the ADC interrupt enable bit
                 IPR1bits.ADIP = HIGH; // ADC use high pri

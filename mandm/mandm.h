@@ -70,7 +70,7 @@ typedef struct pottype {
 
 typedef struct motortype {
     uint8_t type, run, cw, axis, free, slow, active, reversed, v24, slow_only, on_off_only;
-    int16_t hunt_count;
+    int16_t hunt_count,cal_pos;
     struct pottype pot;
 } volatile motortype;
 

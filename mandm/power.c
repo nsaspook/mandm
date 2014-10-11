@@ -194,7 +194,7 @@ uint8_t relay_v24(void) // status of 5/24 volt relay
 
 void blink_led(uint8_t led, uint8_t start) // blink and store status of 4 leds
 {
-        if (led > 3) return;
+        if (led > 3u) return;
 
         if (start) {
                 V.blink |= ((LEDS >> led)&0b00000001) << (led + 4); // read the state of the LED on the LATCH and store it on [4..7] of blink

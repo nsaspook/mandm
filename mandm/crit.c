@@ -49,7 +49,7 @@ volatile void clear_crit(void)
         INTCONbits.GIEL = HIGH;
 }
 
-void write_data_eeprom(uint8_t data, uint8_t count, unsigned int addr, unsigned int offset)
+void write_data_eeprom(uint8_t data, uint8_t count, uint16_t addr, uint16_t offset)
 {
 
         //  eeprom data array: 0=CHECKMARK checksum, 1=length of array 2=start of array data, array offset, writes must be protected from ISR
@@ -70,7 +70,7 @@ void write_data_eeprom(uint8_t data, uint8_t count, unsigned int addr, unsigned 
         e_crit();
 }
 
-uint8_t read_data_eeprom(unsigned int addr, unsigned int offset)
+uint8_t read_data_eeprom(uint16_t addr, uint16_t offset)
 {
         Busy_eep();
         return Read_b_eep(addr + offset);

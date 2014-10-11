@@ -19,18 +19,18 @@ void idle_loop(void);
 void P1wait(void);
 void P2wait(void);
 void Clear_All_Buttons(void);
-void buzzer_ticks(unsigned char);
-void voice1_ticks(unsigned char);
-void voice2_ticks(unsigned char);
+void buzzer_ticks(uint8_t);
+void voice1_ticks(uint8_t);
+void voice2_ticks(uint8_t);
 void slow_timer_start(void);
 
 /* BEGIN HIGH ISR */
 
-extern volatile unsigned char TIMERFLAG,SYSTEM_STABLE, COOLING,
+extern volatile uint8_t TIMERFLAG,SYSTEM_STABLE, COOLING,
         almctr, WORKERFLAG, DISPLAY_MODE, dsi, C2RAW, FAILSAFE, SYS_HELP, SYS_DATA,
         HOLD_PROC, RESET_ZEROS, SET_TLOG, TWEAK, KEYNUM, SET_BATT, D_UPDATE,SLOW_STATUS;
-extern volatile unsigned char GLITCH_CHECK, cdelay, knob_to_pot;
-extern volatile long slow_timer;
+extern volatile uint8_t GLITCH_CHECK, cdelay, knob_to_pot;
+extern volatile int32_t slow_timer;
 
 extern struct C_data C;
 extern struct V_data V;
@@ -50,7 +50,7 @@ extern volatile enum answer_t {
 } YNKEY;
 
 /* BEGIN IDLE_LOOP EXTRAS */
-extern volatile unsigned char IDLEFLAG;
+extern volatile uint8_t IDLEFLAG;
 
 /* END IDLE_LOOP EXTRAS */
 #endif /* MANDM_VECTOR_H_INCLUDED */

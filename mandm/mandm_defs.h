@@ -1,10 +1,11 @@
 #ifndef MANDM_DEFS_H_INCLUDED
 #define MANDM_DEFS_H_INCLUDED
 
+//#define HOUSE_DEMO
 /* Program operation parameters */
-#define MANDM_VERSION 	"    MANDM  02.9B FB  "                 // version text header
-#define	MAGIC			0x0029  			// data version checkmark
-#define	START1			"MCHP, F. Brooks 2013   "	// first LCD message
+#define MANDM_VERSION 	"    MANDM  03.3B FB  "                 // version text header
+#define	MAGIC			0x0033  			// data version checkmark
+#define	START1			"MCHP, F. Brooks 2014   "	// first LCD message
 #define SIMULA			" \x1b[7m RUNNING IN SIMULATION MODE \x1b[0m "
 #define	PIC_8722		8722
 #define CHECKMARK		0x59		// EEPROM checkmark
@@ -59,20 +60,20 @@
 #define	LL2		0x40
 #define LL3		0x14
 #define	LL4		0x54
-#define	VC_MAX		3
-#define VS_SLOTS	12                      // storage array size
-#define	VC0		0			// LCD Virtual Screens
-#define	VC1		4
-#define	VC2		8
-#define VS0		0			// Virtual screen select
-#define VS1		1
-#define VS2		2
-#define	DS0		0			// LCD line index
-#define	DS1		1
-#define	DS2		2
-#define	DS3		3
-#define	DS4		4
-#define	DS5		5
+#define	VC_MAX		3u
+#define VS_SLOTS	12u                      // storage array size
+#define	VC0		0u			// LCD Virtual Screens
+#define	VC1		4u
+#define	VC2		8u
+#define VS0		0u			// Virtual screen select
+#define VS1		1u
+#define VS2		2u
+#define	DS0		0u			// LCD line index
+#define	DS1		1u
+#define	DS2		2u
+#define	DS3		3u
+#define	DS4		4u
+#define	DS5		5u
 /* DIO defines */
 
 #define LOW_VECTOR      0x18                // ISR low address
@@ -148,14 +149,14 @@
 
 #define QENC1BITS	0b00110000	// PORTB 4..5
 #define QENC2BITS	0b11000000	// PORTB 6..7
-#define VIISION_M       0               // VIISION man motors
-#define E220E500_M      1               // E220/E500 man motors
-#define GSD_M           2               // ACCELLIS man motors
-#define VIISION_MS	3		// Viision Mass-slit
-#define E220E500_E	4		// E220 QEI encoder
-#define MISC_2		5		// future
-#define VARIAN_V	6		// Varian Vacuum Valves				
-#define HELP_M          7		// default disconnect code
+#define VIISION_M       0u               // VIISION man motors
+#define E220E500_M      1u               // E220/E500 man motors
+#define GSD_M           2u               // ACCELLIS man motors
+#define VIISION_MS	3u		// Viision Mass-slit
+#define E220E500_E	4u		// E220 QEI encoder
+#define MISC_2		5u		// future
+#define VARIAN_V	6u		// Varian Vacuum Valves
+#define HELP_M          7u		// default disconnect code
 //#define E220E500_E      8             // E200 elevator motor with qei
 #define XAXIS           0
 #define YAXIS           1
@@ -167,7 +168,7 @@
 #define XD_BIT          0b00010000
 #define YD_BIT          0b00100000
 #define ZD_BIT          0b01000000
-#define ALL_OFF_BITS    0b00000000
+#define ALL_OFF_BITS    0b00000000u
 #define ALL_MOTOR_BITS  0b00000111
 #define ALL_CW_BITS     0b01110000
 #define HIGH_DRIVE_24   0b10000000
@@ -184,27 +185,27 @@
 #define	WORKSEC		10      	// run every this time seconds
 #define DISPSEC		600		//
 #define EEP_UPDATE	99999l
-#define MAX_MENU        8               // max number of menu items to select.
-#define MAX_HELP        2               // max number of help screens per menu.
-#define MENU_ACTION     8              	// knob movement timer value
-#define MOTOR_ACTION    4               // knob movement timer value
-#define SELECT_ACTION	25				// selection delay
+#define MAX_MENU        8u               // max number of menu items to select.
+#define MAX_HELP        2u               // max number of help screens per menu.
+#define MENU_ACTION     8u              // knob movement timer value
+#define MOTOR_ACTION    4u               // knob movement timer value
+#define SELECT_ACTION	25u		// selection delay
 #define MENU_BAND       35l             // movement travel counts for menu actions 40, higher means less sensitive to movement
 #define MOTOR_BAND      1l             	// movement travel counts for motor actions 4
-#define POT_BAND_RATIO	8l				// Scaling factor
+#define POT_BAND_RATIO	8l		// Scaling factor
 #define POT_BAND_MAX_P  10l             // fastest cw pot travel
 #define POT_BAND_MAX_N  -10l            // fastest ccw pot travel
 #define POT_MAX_CHANGE  100             // if the change in readback between ADC reads is this or greater, it's a possible error
 #define POT_MAX_OFFSET  500             // if the change in readback between ADC reads is this or greater, it's a possible error
 #define POT_MIN_SPAN    200             // if the change in readback between ADC reads is this or less, it's a possible error
-#define MAX_MOTOR       3               // number of motors to control
-#define MAX_POT         3               // number of axis that pots will control
-#define MAX_EMO         3               // number of putton presses to stop all motors
-#define KNOBTICKS       4               // a knob  Qenc is stopped if not change after this many low ints
-#define QEITICKS        10              // a motor Qenc is stopped ... 20
+#define MAX_MOTOR       3u               // number of motors to control
+#define MAX_POT         3u               // number of axis that pots will control
+#define MAX_EMO         3u               // number of putton presses to stop all motors
+#define KNOBTICKS       4u               // a knob  Qenc is stopped if not change after this many low ints
+#define QEITICKS        10u              // a motor Qenc is stopped ... 20
 #define QEI_FAST        300l            // error counts above this are in high speed 24vdc mode
-#define QEI_VERY_FAST	400l			// same as above but with no slowing resistor
-#define EMO_BAND		30				// knob2 2 band movement to reset motor emo button
+#define QEI_VERY_FAST	400l		// same as above but with no slowing resistor
+#define EMO_BAND	30				// knob2 2 band movement to reset motor emo button
 #define TRACK_DB_L      -10             // deadband limits LOW
 #define TRACK_DB_H      10              // deadband limits HIGH
 #define TRACK_DB_L_S    -25             // deadband limits LOW SLOW
@@ -224,8 +225,8 @@
 #define MAX_IDLE        6000l           // idle user interface countup limit, sets mode.idle to TRUE
 #define CHANGE_COUNT    20            	// number of ADC updates before the R.change_ variable are updated
 #define	MIN_CHANGE	10l					// ADC counts change between stable checks
-#define MAX_MOTOR_CURRENT_H	200
-#define MAX_MOTOR_CURRENT_L	300
+#define MAX_MOTOR_CURRENT_H	200l
+#define MAX_MOTOR_CURRENT_L	300l
 
 
 /* Calibration results benchmarks */
@@ -235,7 +236,7 @@
 #define VIISION_M_OFFSET_L    200
 
 #define VIISION_MS_CHANGE    30
-#define VIISION_MS_SPAN      30       // lowest good span count during cal
+#define VIISION_MS_SPAN      480       // lowest good span count during cal
 #define VIISION_MS_OFFSET_H    400
 #define VIISION_MS_OFFSET_L    200
 
@@ -297,8 +298,8 @@
 #define	US	0x1f
 #define	ESCZ	0x1a
 
-#define MAXALM		7		// alarm message buffer size
-#define	MAX_TWEAK_CMD	4      		// number of T tweak command choices
+#define MAXALM		7u		// alarm message buffer size
+#define	MAX_TWEAK_CMD	4u      		// number of T tweak command choices
 #define LCDW_SIZE       21              // add term char
 #define FT20		20              // default value for fast ticks
 #define SD_18		18
