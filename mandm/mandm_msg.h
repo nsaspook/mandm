@@ -61,7 +61,7 @@ xxx39\
 
 const rom char \
 menutext[] = "\
-                V80 M      E220 M     GSD M     V80 MS    E220 QEI         VAR V      HELP   \
+                V80 M      E220 M     GSD M     V80 MS    E220 QEI    V810 MS   VAR V    HELP   \
      \
   x20\
 xxx21\
@@ -92,7 +92,7 @@ menuselect_free[MAX_MENU + 1][22] = {
     " GSD Manipulator   F",
     " V80 Var Mass-Slit F",
     " E220 QEI MOTOR    F",
-    " Misc 2            F",
+    " Vista Mass-Slit   F",
     " Varian Valves     F",
     " Test Procedure    F",
     " Exit              F"
@@ -105,7 +105,7 @@ menuselect_track[MAX_MENU + 1][22] = {
     " GSD Manipulator   T",
     " V80 Var Mass-Slit T",
     " E220 QEI MOTOR    T",
-    " Misc 2            T",
+    " Vista Mass-Slit   T",
     " Varian Valves     T",
     " Test Procedure    T",
     " Exit              T"

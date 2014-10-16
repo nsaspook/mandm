@@ -154,7 +154,7 @@
 #define GSD_M           2u               // ACCELLIS man motors
 #define VIISION_MS	3u		// Viision Mass-slit
 #define E220E500_E	4u		// E220 QEI encoder
-#define MISC_2		5u		// future
+#define V810_MS		5u		// vista 810 mass-slit
 #define VARIAN_V	6u		// Varian Vacuum Valves
 #define HELP_M          7u		// default disconnect code
 //#define E220E500_E      8             // E200 elevator motor with qei
@@ -240,8 +240,13 @@
 #define VIISION_MS_OFFSET_H    400
 #define VIISION_MS_OFFSET_L    200
 
+#define V810_MS_CHANGE    40
+#define V810_MS_SPAN      280       // lowest good span count during cal
+#define V810_MS_OFFSET_H    400
+#define V810_MS_OFFSET_L    200
+
 #define E220E500_M_SPAN_Y      150  	// lowest good span count during cal
-										// some units might need a 3 turn instead of a 10 turn pot for the correct span.
+// some units might need a 3 turn instead of a 10 turn pot for the correct span.
 
 #define E_MOTOR_NULL_P  -1
 #define E_MOTOR_NONE    -2

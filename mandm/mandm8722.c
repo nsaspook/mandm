@@ -229,6 +229,7 @@ void term_time(void);
 void viision_m_display(void);
 void help_m_display(void);
 void viision_ms_display(void);
+void v810_ms_display(void);
 void varian_v_display(void);
 void e220_m_display(void);
 void e220_qei_display(void);
@@ -1387,7 +1388,10 @@ void nav_menu(void) {
         case VIISION_MS:
             viision_ms_display();
             break;
-        case VARIAN_V:
+        case V810_MS:
+            v810_ms_display();
+            break;
+    case VARIAN_V:
             varian_v_display();
             break;
         case HELP_M:
@@ -1512,7 +1516,10 @@ void exerciser(void) {
         case VIISION_MS:
             nonqei_exer(2);
             break;
-        case VARIAN_V:
+        case V810_MS:
+            nonqei_exer(2);
+            break;
+    case VARIAN_V:
             nonqei_exer(4);
             break;
         case HELP_M:
@@ -1641,6 +1648,27 @@ void viision_ms_display(void) {
         LCD_VC_puts(VC0, DS1, YES);
         sprintf(bootstr2, "                     ");
         if (motordata[1].active) sprintf(bootstr2, "Y Pot%3i O%2i S%2i C%2i               ", motordata[1].pot.pos_actual, motordata[1].pot.offset / 10, motordata[1].pot.span / 10, motordata[1].pot.pos_change);
+        LCD_VC_puts(VC0, DS2, YES);
+        puts2USART(bootstr2);
+        putrs2USART("\r\n");
+        sprintf(bootstr2, "                     ");
+        LCD_VC_puts(VC0, DS3, YES);
+    }
+}
+
+void v810_ms_display(void) {
+    if (help_pos == 0) {
+        sprintf(bootstr2, "                    "); // info display data
+        LCD_VC_puts(VC0, DS1, YES);
+        sprintf(bootstr2, "%cR%2i Set%2i V%3li I%2li               ", Cursor[0], motordata[0].pot.scaled_actual / 10, motordata[0].pot.scaled_set / 10, R.pos_y, R.current_y);
+        LCD_VC_puts(VC0, DS2, YES);
+        sprintf(bootstr2, "                    "); // info display data
+        LCD_VC_puts(VC0, DS3, YES);
+    } else {
+        sprintf(bootstr2, "                     ");
+        LCD_VC_puts(VC0, DS1, YES);
+        sprintf(bootstr2, "                     ");
+        if (motordata[0].active) sprintf(bootstr2, "X Pot%3i O%2i S%2i C%2i               ", motordata[0].pot.pos_actual, motordata[0].pot.offset / 10, motordata[0].pot.span / 10, motordata[0].pot.pos_change);
         LCD_VC_puts(VC0, DS2, YES);
         puts2USART(bootstr2);
         putrs2USART("\r\n");
@@ -1802,6 +1830,7 @@ void run_cal(void) // routines to test and set position data for assy motors or 
     wdttime(RELAYRUNF); // wait for .5 seconds.
     if (mode.operate == VIISION_M) motor_counts *= 2;
     if (mode.operate == VIISION_MS) motor_counts *= 2;
+//    if (mode.operate == V810_MS) motor_counts *= 2;
     fail_all_motors(FALSE); // clear the failed flag on all motors
     emotor_power_on();
     checktime_cal(motor_counts, TRUE);
@@ -2143,6 +2172,10 @@ void run_cal(void) // routines to test and set position data for assy motors or 
             //            if ((motordata[z].pot.offset < motordata[z].pot.limit_offset) && motordata[z].active) motordata[z].pot.cal_failed = TRUE;
         }
         if (mode.operate == VIISION_MS) {
+            if ((motordata[z].pot.pos_change > motordata[z].pot.limit_change) && motordata[z].active) motordata[z].pot.cal_failed = TRUE;
+            if ((motordata[z].pot.span < motordata[z].pot.limit_span) && motordata[z].active) motordata[z].pot.cal_failed = TRUE;
+        }
+        if (mode.operate == V810_MS) {
             if ((motordata[z].pot.pos_change > motordata[z].pot.limit_change) && motordata[z].active) motordata[z].pot.cal_failed = TRUE;
             if ((motordata[z].pot.span < motordata[z].pot.limit_span) && motordata[z].active) motordata[z].pot.cal_failed = TRUE;
         }
