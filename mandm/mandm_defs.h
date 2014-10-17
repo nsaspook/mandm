@@ -240,11 +240,13 @@
 #define VIISION_MS_SPAN      480       // lowest good span count during cal
 #define VIISION_MS_OFFSET_H    400
 #define VIISION_MS_OFFSET_L    200
+#define VIISION_MS_CAL		999
 
 #define V810_MS_CHANGE    40
 #define V810_MS_SPAN      280       // lowest good span count during cal
 #define V810_MS_OFFSET_H    400
 #define V810_MS_OFFSET_L    200
+#define V810_MS_CAL	    999
 
 #define E220E500_M_SPAN_Y      150  	// lowest good span count during cal
 // some units might need a 3 turn instead of a 10 turn pot for the correct span.

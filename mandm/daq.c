@@ -244,6 +244,7 @@ void ADC_read(void) // update all voltage/current readings and set load current 
 			term_time();
 			sprintf(bootstr2, "\n\r EMO DUMP Current %li, %li, %li : Position %li, %li, %li\r\n", emodump.emo[0], emodump.emo[1], emodump.emo[2], emodump.emo[3], emodump.emo[4], emodump.emo[5]);
 			puts2USART(bootstr2);
+			voice2_ticks(40);
 			while (TRUE) {
 				emo_display();
 				buzzer_ticks(200);

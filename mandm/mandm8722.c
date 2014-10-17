@@ -1388,6 +1388,14 @@ uint8_t get_hid(void) // mode is global
 void nav_menu(void) // call the correct screen display function
 {
 	Set_Cursor();
+	mode.display();
+
+}
+
+/* assembly selection */
+void old_nav_menu(void) // call the correct screen display function
+{
+	Set_Cursor();
 	if (mode.operate == HELP_M) {
 		help_m_display();
 		return;

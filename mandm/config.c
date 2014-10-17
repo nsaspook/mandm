@@ -12,7 +12,7 @@ void init_motordata(uint8_t part)
 	mode.v24 = FALSE;
 	mode.free = TRUE;
 	mode.operate = part;
-	mode.display = default_display;	// display screen function pointer
+	mode.display = default_display; // display screen function pointer
 	mode.on_off_only = FALSE;
 	mode.info_only = FALSE;
 	mode.qei = FALSE;
@@ -49,6 +49,7 @@ void init_motordata(uint8_t part)
 
 	if (part == E220E500_E) {
 		term_time();
+		mode.display = e220_qei_display;
 		putrs2USART("\x1b[7m Init E220E500 QEI MOTOR. \x1b[0m\r\n");
 		for (z = 0; z < MAX_MOTOR; z++) {
 			motordata[z].slow = FALSE;
@@ -75,7 +76,7 @@ void init_motordata(uint8_t part)
 			motordata[z].active = FALSE;
 			motordata[z].reversed = FALSE;
 			motordata[z].v24 = FALSE;
-			motordata[z].cal_pos = 999;
+			motordata[z].cal_pos = V810_MS_CAL;
 			motordata[z].pot.limit_change = V810_MS_CHANGE;
 			motordata[z].pot.limit_span = V810_MS_SPAN;
 			motordata[z].pot.limit_offset = V810_MS_OFFSET_H;
@@ -85,6 +86,7 @@ void init_motordata(uint8_t part)
 
 	if (part == VIISION_M) {
 		term_time();
+		mode.display = viision_m_display;
 		putrs2USART("\x1b[7m Init VIISION MANIPULATOR. \x1b[0m\r\n");
 		for (z = 0; z < MAX_MOTOR; z++) {
 			motordata[z].pot.limit_change = VIISION_M_CHANGE;
@@ -98,6 +100,7 @@ void init_motordata(uint8_t part)
 
 	if (part == E220E500_M) {
 		term_time();
+		mode.display = e220_m_display;
 		putrs2USART("\x1b[7m Init E220E500 MANIPULATOR. \x1b[0m\r\n");
 		for (z = 0; z < MAX_MOTOR; z++) {
 			motordata[z].slow = FALSE;
@@ -107,6 +110,7 @@ void init_motordata(uint8_t part)
 
 	if (part == GSD_M) {
 		term_time();
+		mode.display = gsd_m_display;
 		putrs2USART("\x1b[7m Init GSD MANIPULATOR. \x1b[0m\r\n");
 		for (z = 0; z < MAX_MOTOR; z++) {
 			motordata[z].slow = TRUE;
@@ -129,6 +133,7 @@ void init_motordata(uint8_t part)
 
 	if (part == VIISION_MS) {
 		term_time();
+		mode.display = viision_ms_display;
 		putrs2USART("\x1b[7m Init VIISION MASS SLIT. \x1b[0m\r\n");
 		for (z = 0; z < MAX_MOTOR; z++) {
 			motordata[z].slow = FALSE;
@@ -136,7 +141,7 @@ void init_motordata(uint8_t part)
 			motordata[z].active = FALSE;
 			motordata[z].reversed = TRUE;
 			motordata[z].v24 = TRUE;
-			motordata[z].cal_pos = 999;
+			motordata[z].cal_pos = VIISION_MS_CAL;
 			motordata[z].pot.limit_change = VIISION_MS_CHANGE;
 			motordata[z].pot.limit_span = VIISION_MS_SPAN;
 			motordata[z].pot.limit_offset = VIISION_MS_OFFSET_H;
@@ -146,6 +151,7 @@ void init_motordata(uint8_t part)
 
 	if (part == VARIAN_V) { // Open SW on Z pot, Closed SW on X POT, Y POT is not used
 		term_time();
+		mode.display = varian_v_display;
 		putrs2USART("\x1b[7m Init VARIAN TYPE VALVE. \x1b[0m\r\n");
 		for (z = 0; z < MAX_MOTOR; z++) {
 			motordata[z].active = FALSE;
