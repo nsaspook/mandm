@@ -22,9 +22,10 @@
  typedef signed long long int64_t;
  #endif
 
-
+typedef   void (*display_func)(void);
 struct modetype {
     volatile uint8_t demos, move, free, operate, demos_init, slow, emo, v24, cal, on_off_only, idle, locked, info_only, qei, slow_bypass;
+    display_func display;
 };
 
 struct QuadEncoderType {

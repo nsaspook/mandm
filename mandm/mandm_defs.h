@@ -227,6 +227,7 @@
 #define	MIN_CHANGE	10l					// ADC counts change between stable checks
 #define MAX_MOTOR_CURRENT_H	200l
 #define MAX_MOTOR_CURRENT_L	300l
+#define MENU_SPEED	10
 
 
 /* Calibration results benchmarks */

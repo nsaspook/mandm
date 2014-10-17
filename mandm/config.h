@@ -17,4 +17,13 @@ extern volatile struct knobtype knob2;
 extern volatile struct qeitype qei1;
 extern struct V_data V;
 extern void term_time(void);
+extern void viision_m_display(void);
+extern void help_m_display(void);
+extern void viision_ms_display(void);
+extern void v810_ms_display(void);
+extern void varian_v_display(void);
+extern void e220_m_display(void);
+extern void e220_qei_display(void);
+extern void gsd_m_display(void);
+extern void default_display(void);
 #endif /* CONFIG_H_INCLUDED */
