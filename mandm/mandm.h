@@ -7,24 +7,25 @@
 #include <GenericTypeDefs.h>
 
 #ifdef INTTYPES
- #include <stdint.h>
- #else
- #define INTTYPES
- /*unsigned types*/
- typedef unsigned char uint8_t;
- typedef unsigned int  uint16_t;
- typedef unsigned long uint32_t;
- typedef unsigned long long uint64_t;
- /*signed types*/
- typedef signed char int8_t;
- typedef signed int  int16_t;
- typedef signed long int32_t;
- typedef signed long long int64_t;
- #endif
+#include <stdint.h>
+#else
+#define INTTYPES
+/*unsigned types*/
+typedef unsigned char uint8_t;
+typedef unsigned int uint16_t;
+typedef unsigned long uint32_t;
+typedef unsigned long long uint64_t;
+/*signed types*/
+typedef signed char int8_t;
+typedef signed int int16_t;
+typedef signed long int32_t;
+typedef signed long long int64_t;
+#endif
 
-typedef   void (*display_func)(void);
+typedef void (*display_func)(void);
+
 struct modetype {
-    volatile uint8_t demos, move, free, operate, demos_init, slow, emo, v24, cal, on_off_only, idle, locked, info_only, qei, slow_bypass;
+    volatile uint8_t demos, move, free, operate, demos_init, slow, emo, v24, cal, on_off_only, idle, locked, info_only, qei, slow_bypass, change;
     display_func display;
 };
 
@@ -71,7 +72,7 @@ typedef struct pottype {
 
 typedef struct motortype {
     uint8_t type, run, cw, axis, free, slow, active, reversed, v24, slow_only, on_off_only;
-    int16_t hunt_count,cal_pos;
+    int16_t hunt_count, cal_pos;
     struct pottype pot;
 } volatile motortype;
 
@@ -102,7 +103,7 @@ struct almtype {
 };
 
 struct almbuffertype {
-	uint32_t	time;
+    uint32_t time;
     uint8_t alm_num, bn;
 };
 
@@ -132,7 +133,7 @@ struct timeruntype {
 
 typedef struct R_data { // set only in adc_read
     int32_t thermo_batt;
-    uint32_t systemvoltage, motorvoltage, pos_x, pos_y, pos_z, change_x, change_y, change_z, max_x,max_y,max_z;
+    uint32_t systemvoltage, motorvoltage, pos_x, pos_y, pos_z, change_x, change_y, change_z, max_x, max_y, max_z;
     int32_t current_x, current_y, current_z;
     uint8_t stable_x, stable_y, stable_z;
 } R_data;

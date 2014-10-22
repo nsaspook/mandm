@@ -1,0 +1,11 @@
+Adapter Plug ms3111f18-32p
+
+black	b	bit-0		1
+black	c	select gnd
+white	d	bit-1		2
+red	e	bit-2		4
+green	f	bit-3		8
+
+
+Main plug
+blue	g	controller power 5vdc

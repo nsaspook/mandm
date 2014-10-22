@@ -3,8 +3,8 @@
 
 //#define HOUSE_DEMO
 /* Program operation parameters */
-#define MANDM_VERSION 	"    MANDM  03.3B FB  "                 // version text header
-#define	MAGIC			0x0033  			// data version checkmark
+#define MANDM_VERSION 	"    MANDM  03.4B FB  "                 // version text header
+#define	MAGIC			0x0034  			// data version checkmark
 #define	START1			"MCHP, F. Brooks 2014   "	// first LCD message
 #define SIMULA			" \x1b[7m RUNNING IN SIMULATION MODE \x1b[0m "
 #define	PIC_8722		8722
@@ -157,7 +157,14 @@
 #define V810_MS		5u		// vista 810 mass-slit
 #define VARIAN_V	6u		// Varian Vacuum Valves
 #define HELP_M          7u		// default disconnect code
-//#define E220E500_E      8             // E200 elevator motor with qei
+#define EVIISION_M      8u               // VIISION man motors
+#define EE220E500_M     9u               // E220/E500 man motors
+#define EGSD_M          10u              // ACCELLIS man motors
+#define EVIISION_MS	11u		// Viision Mass-slit
+#define EE220E500_E	12u		// E220 QEI encoder
+#define EV810_MS	13u		// vista 810 mass-slit
+#define EVARIAN_V	14u		// Varian Vacuum Valves
+#define EHELP_M         15u		// default disconnect code
 #define XAXIS           0
 #define YAXIS           1
 #define ZAXIS           2
@@ -185,7 +192,7 @@
 #define	WORKSEC		10      	// run every this time seconds
 #define DISPSEC		600		//
 #define EEP_UPDATE	99999l
-#define MAX_MENU        8u               // max number of menu items to select.
+#define MAX_MENU        17u               // max number of menu items to select.
 #define MAX_HELP        2u               // max number of help screens per menu.
 #define MENU_ACTION     8u              // knob movement timer value
 #define MOTOR_ACTION    4u               // knob movement timer value
@@ -242,11 +249,11 @@
 #define VIISION_MS_OFFSET_L    200
 #define VIISION_MS_CAL		999
 
-#define V810_MS_CHANGE    40
-#define V810_MS_SPAN      280       // lowest good span count during cal
+#define V810_MS_CHANGE    35
+#define V810_MS_SPAN      360       // lowest good span count during cal
 #define V810_MS_OFFSET_H    400
 #define V810_MS_OFFSET_L    200
-#define V810_MS_CAL	    999
+#define V810_MS_CAL	    500
 
 #define E220E500_M_SPAN_Y      150  	// lowest good span count during cal
 // some units might need a 3 turn instead of a 10 turn pot for the correct span.

@@ -8,6 +8,8 @@ build/default/production/_ext/1472/mandm_vector.o:  \
 	/audio/mandm/mandm/mandm_shared.h  \
 	/audio/mandm/mandm/config.h  \
 	/opt/microchip/mplabc18/v3.40/h/string.h  \
+	/opt/microchip/mplabc18/v3.40/h/stdio.h  \
+	/opt/microchip/mplabc18/v3.40/h/stdarg.h  \
 	/audio/mandm/mandm/crit.h  \
 	/opt/microchip/mplabc18/v3.40/h/timers.h  \
 	/opt/microchip/mplabc18/v3.40/h/pconfig.h  \
