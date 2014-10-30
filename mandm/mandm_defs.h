@@ -160,10 +160,10 @@
 #define EVIISION_M      8u               // VIISION man motors
 #define EE220E500_M     9u               // E220/E500 man motors
 #define EGSD_M          10u              // ACCELLIS man motors
-#define EVIISION_MS	11u		// Viision Mass-slit
-#define EE220E500_E	12u		// E220 QEI encoder
-#define EV810_MS	13u		// vista 810 mass-slit
-#define EVARIAN_V	14u		// Varian Vacuum Valves
+#define VISTA4  	11u		// Viision Mass-slit
+#define VISTA5  	12u		//
+#define EV810_MS  	13u		//
+#define VISTA7  	14u		//
 #define EHELP_M         15u		// default disconnect code
 #define XAXIS           0
 #define YAXIS           1
@@ -203,7 +203,9 @@
 #define POT_BAND_MAX_P  10l             // fastest cw pot travel
 #define POT_BAND_MAX_N  -10l            // fastest ccw pot travel
 #define POT_MAX_CHANGE  100             // if the change in readback between ADC reads is this or greater, it's a possible error
-#define POT_MAX_OFFSET  500             // if the change in readback between ADC reads is this or greater, it's a possible error
+#define POT_M_OFFSET  500		// offset mean
+#define POT_H_OFFSET	999             // offset high limit
+#define POT_L_OFFSET	50              // offset low limit
 #define POT_MIN_SPAN    200             // if the change in readback between ADC reads is this or less, it's a possible error
 #define MAX_MOTOR       3u               // number of motors to control
 #define MAX_POT         3u               // number of axis that pots will control

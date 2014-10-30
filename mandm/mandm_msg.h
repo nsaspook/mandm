@@ -71,9 +71,9 @@ xxx24\
 xxx25\
 xxx26\
 xxx27\
-xxx28\
-xxx29\
-xxx30\
+     \
+V810_\
+MS   \
 xxx31\
 xxx32\
 xxx33\
@@ -95,16 +95,16 @@ menuselect_free[MAX_MENU + 1][22] = {
     " Vista Mass-Slit   F",
     " Varian Valves     F",
     " Test Procedure    F",
-    " Exit              F",
-    " V80 Manipulator   F",
-    " E220 Manipulator  F",
-    " GSD Manipulator   F",
-    " V80 Var Mass-Slit F",
-    " E220 QEI MOTOR    F",
+    " vista 1           F",
+    " vista 2           F",
+    " vista 3           F",
+    " vista 4           F",
+    " vista 5           F",
     " Vista Mass-Slit   F",
-    " Varian Valves     F",
-    " Test Procedure    F",
-    " Exit              F"
+    " vista 7           F",
+    " vista 8           F",
+    " vista 9           F",
+    " vista 10          F"
 };
 
 const rom char \
@@ -121,9 +121,9 @@ menuselect_track[MAX_MENU + 1][22] = {
     " V80 Manipulator   T",
     " E220 Manipulator  T",
     " GSD Manipulator   T",
-    " V80 Var Mass-Slit T",
-    " E220 QEI MOTOR    T",
+    " vista 5           T",
     " Vista Mass-Slit   T",
+    " vista 7           T",
     " Varian Valves     T",
     " Test Procedure    T",
     " Exit              T"

@@ -1162,15 +1162,16 @@ uint8_t check_cable(uint8_t *menu) { //adapter cables codes
                 term_time();
                 sprintf(bootstr2, " Cable Disconnected %i \r\n", (int) check_menu);
                 puts2USART(bootstr2);
+                old_menu = cable_type;
             }
             if (mode.locked) { // note change
                 term_time();
-                sprintf(bootstr2, " Menu selection is UNLOCKED \r\n ");
+                sprintf(bootstr2, " Menu selection is UNLOCKED \r\n");
                 puts2USART(bootstr2);
                 old_menu = cable_type;
                 *menu = HELP_M; // always update to help on true disconnect when unlocking
                 mode.move = TRUE;
-                mode.change=FALSE;
+                mode.change = FALSE;
             }
             mode.locked = FALSE; // we can change the equipment mode
             init_motordata(mode.operate);
@@ -1178,7 +1179,7 @@ uint8_t check_cable(uint8_t *menu) { //adapter cables codes
             cable_return = cable_type; // no cable connected OK to modify *menu
         } else {
             term_time();
-            sprintf(bootstr2, " Disconnect Glitch!! Prev Cable Selection Code %i, New Cable Selection Code %i \r\n ", (int) old_menu, (int) check_menu);
+            sprintf(bootstr2, " Disconnect Glitch!! Prev Cable Selection Code %i, New Cable Selection Code %i \r\n", (int) old_menu, (int) check_menu);
             puts2USART(bootstr2);
             *menu = old_menu;
             cable_return = 0;
@@ -1195,23 +1196,23 @@ uint8_t check_cable(uint8_t *menu) { //adapter cables codes
             mode.operate = *menu;
             help_pos = 0;
             term_time();
-            sprintf(bootstr2, " Old Cable Selection Code %i, New Cable Selection Code %i \r\n ", (int) old_menu, (int) *menu);
+            sprintf(bootstr2, " Old Cable Selection Code %i, New Cable Selection Code %i \r\n", (int) old_menu, (int) *menu);
             puts2USART(bootstr2);
             old_menu = *menu;
             if (!mode.locked) { // note change
                 term_time();
-                sprintf(bootstr2, " Menu selection is LOCKED \r\n ");
+                sprintf(bootstr2, " Menu selection is LOCKED \r\n");
                 puts2USART(bootstr2);
-                mode.change=FALSE;
+                mode.change = FALSE;
             }
             mode.locked = TRUE; // equipment mode is locked, we can change the info screen
             init_motordata(mode.operate);
-            mode.move = TRUE;
+            mode.move = FALSE;
             update_lcd_menu(mode.operate);
             return 0;
         } else {
             term_time();
-            sprintf(bootstr2, " Selection Glitch!! Prev Cable Selection Code %i, New Cable Selection Code %i \r\n ", (int) old_menu, (int) check_menu);
+            sprintf(bootstr2, " Selection Glitch!! Prev Cable Selection Code %i, New Cable Selection Code %i \r\n", (int) old_menu, (int) check_menu);
             puts2USART(bootstr2);
         }
     }
@@ -1506,6 +1507,7 @@ void exerciser(void) {
             nonqei_exer(2);
             break;
         case V810_MS:
+        case EV810_MS:
             nonqei_exer(2);
             break;
         case VARIAN_V:
@@ -1802,7 +1804,7 @@ void run_cal(void) // routines to test and set position data for assy motors or 
     mode.cal = FALSE;
     ADC_read();
     ADC_read();
-    mode.change=TRUE;
+    mode.change = TRUE;
     button.B2 = 0;
     help_pos = 0;
     init_motordata(mode.operate);
@@ -1965,6 +1967,7 @@ void run_cal(void) // routines to test and set position data for assy motors or 
             emotor_v24(mode.v24);
             if (z % 1000 == 0) {
                 if (Change_Count()) {
+                    term_time();
                     sprintf(bootstr2, " X Y Z change %li,%li,%li \r\n", ABSL(R.pos_x - R.change_x), ABSL(R.pos_y - R.change_y), ABSL(R.pos_z - R.change_z));
                     puts2USART(bootstr2);
                     if (R.stable_x && R.stable_y && R.stable_z) {
@@ -2024,6 +2027,7 @@ void run_cal(void) // routines to test and set position data for assy motors or 
                 emotor_v24(mode.v24);
                 if (z % 1000 == 0) {
                     if (Change_Count()) {
+                        term_time();
                         sprintf(bootstr2, " X Y Z change %li,%li,%li \r\n", ABSL(R.pos_x - R.change_x), ABSL(R.pos_y - R.change_y), ABSL(R.pos_z - R.change_z));
                         puts2USART(bootstr2);
                         if (R.stable_x && R.stable_y && R.stable_z) {
@@ -2196,13 +2200,13 @@ void run_cal(void) // routines to test and set position data for assy motors or 
                 term_time();
                 sprintf(bootstr2, "\x1b[7m Calibrate/Test motor %c PASSED. \x1b[0m\r\n", p);
                 puts2USART(bootstr2);
-                sprintf(bootstr2, "If Dead %i < %i      ", motordata[z].pot.pos_change, motordata[z].pot.limit_change);
+                sprintf(bootstr2, " If Dead %i < %i      ", motordata[z].pot.pos_change, motordata[z].pot.limit_change);
                 puts2USART(bootstr2);
                 putrs2USART("\r\n");
-                sprintf(bootstr2, "If Span %i > %i      ", motordata[z].pot.span, motordata[z].pot.limit_span);
+                sprintf(bootstr2, " If Span %i > %i      ", motordata[z].pot.span, motordata[z].pot.limit_span);
                 puts2USART(bootstr2);
                 putrs2USART("\r\n");
-                sprintf(bootstr2, "Offset %i , %i     ", motordata[z].pot.offset, motordata[z].pot.limit_offset);
+                sprintf(bootstr2, " Offset %i , %i     ", motordata[z].pot.offset, motordata[z].pot.limit_offset);
                 puts2USART(bootstr2);
                 putrs2USART("\r\n");
             }
@@ -2220,15 +2224,15 @@ void run_cal(void) // routines to test and set position data for assy motors or 
                 LCD_VC_puts(dsi, DS0, YES);
                 puts2USART(bootstr2);
                 putrs2USART("\r\n");
-                sprintf(bootstr2, "If Dead %i > %i      ", motordata[z].pot.pos_change, motordata[z].pot.limit_change);
+                sprintf(bootstr2, " If Dead %i > %i      ", motordata[z].pot.pos_change, motordata[z].pot.limit_change);
                 LCD_VC_puts(VC0, DS1, YES);
                 puts2USART(bootstr2);
                 putrs2USART("\r\n");
-                sprintf(bootstr2, "If Span %i < %i      ", motordata[z].pot.span, motordata[z].pot.limit_span);
+                sprintf(bootstr2, " If Span %i < %i      ", motordata[z].pot.span, motordata[z].pot.limit_span);
                 LCD_VC_puts(VC0, DS2, YES);
                 puts2USART(bootstr2);
                 putrs2USART("\r\n");
-                sprintf(bootstr2, "Offset %i , %i     ", motordata[z].pot.offset, motordata[z].pot.limit_offset);
+                sprintf(bootstr2, " Offset %i , %i     ", motordata[z].pot.offset, motordata[z].pot.limit_offset);
                 LCD_VC_puts(VC0, DS3, YES);
                 puts2USART(bootstr2);
                 putrs2USART("\r\n");
@@ -2264,7 +2268,9 @@ void run_cal(void) // routines to test and set position data for assy motors or 
             LCD_VC_puts(dsi, DS0, YES);
             if (button.B2 == TRUE) {
                 ALARMOUT = HIGH;
-                sprintf(bootstr2, "  EXER running      "); // info display data
+                term_time();
+                sprintf(bootstr2, "  EXER running             \r\n"); // info display data
+                puts2USART(bootstr2);
                 LCD_VC_puts(dsi, DS0, YES);
                 wdttime(RELAYRUN); // wait for .5 seconds.
                 Clear_All_Buttons();
@@ -2275,7 +2281,9 @@ void run_cal(void) // routines to test and set position data for assy motors or 
                 sprintf(bootstr2, "                     ");
                 LCD_VC_puts(VC0, DS3, YES);
                 nonqei_exer(2);
-                sprintf(bootstr2, "  EXER completed.      "); // info display data
+                term_time();
+                sprintf(bootstr2, "  EXER completed.         \r\n"); // info display data
+                puts2USART(bootstr2);
                 LCD_VC_puts(dsi, DS0, YES);
                 wdttime(RELAYRUN); // wait for .5 seconds.
                 z = 100000;
@@ -2482,9 +2490,11 @@ void main(void) // Lets Party
     sprintf(bootstr2, "Sys %sV,Mot %sV         ", f1, f2); // display Power info
     LCD_VC_puts(VC0, DS0, YES);
 
-    sprintf(bootstr2, "DIPSW %i%i%i%i%i%i%i%i           ", DIPSW1, DIPSW2,
-            DIPSW3, DIPSW4, DIPSW5, DIPSW6, DIPSW7, DIPSW8);
+    sprintf(bootstr2, " DIPSW %i%i%i%i%i%i%i%i LSB           \r\n", DIPSW8, DIPSW7,
+            DIPSW6, DIPSW5, DIPSW4, DIPSW3, DIPSW2, DIPSW1);
     LCD_VC_puts(VC0, DS1, YES);
+    term_time();
+    puts2USART(bootstr2);
 
     start_delay();
 
@@ -2496,6 +2506,9 @@ void main(void) // Lets Party
     start_workerthread();
     LEDS = R_ALL_OFF;
 
+    mode.locked = FALSE;
+    mode.change = FALSE;
+    mode.move = FALSE;
     check_cable((uint8_t*) mode.operate);
     init_motordata(mode.operate);
 
@@ -2509,7 +2522,6 @@ void main(void) // Lets Party
     start_delay();
     voice1_ticks(40);
     wdttime(BATRUNF);
-    mode.move = TRUE;
     Set_Cursor();
     checktime_eep(1, TRUE);
 

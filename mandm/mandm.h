@@ -64,7 +64,7 @@ typedef struct pottype {
     } movement;
 
     int16_t pos_actual, pos_set, error, pos_actual_prev, pos_change; // in ADC counts
-    int16_t limit_change, limit_span, limit_offset; // AXIS limits for error checking
+    int16_t limit_change, limit_span, limit_offset,limit_offset_l,limit_offset_h; // AXIS limits for error checking
     int16_t low, high, offset, span, cal_low, cal_high, cal_failed; // end of travel ADC count values
     float scale_out, scale_in; // scaling factor from actual to scaled and back
     int16_t scaled_actual, scaled_set, scaled_error; // 0..1023 value of pot for LCD readback
