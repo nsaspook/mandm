@@ -2202,7 +2202,7 @@ void run_cal(void) // routines to test and set position data for assy motors or 
 
 	for (z = 0; z < MAX_MOTOR; z++) { // Lets look at the results of the calibration.
 
-		if (motordata[z].active) {
+		if (motordata[z].active) { // check for failing results
 			if ((motordata[z].pot.pos_change > motordata[z].pot.limit_change)) motordata[z].pot.cal_failed = TRUE;
 			if ((motordata[z].pot.span < motordata[z].pot.limit_span)) motordata[z].pot.cal_failed = TRUE;
 			if (((motordata[z].pot.offset < motordata[z].pot.limit_offset_l) || (motordata[z].pot.offset > motordata[z].pot.limit_offset_h))) {
@@ -2229,7 +2229,7 @@ void run_cal(void) // routines to test and set position data for assy motors or 
 				sprintf(bootstr2, " If Span %i > %i      ", motordata[z].pot.span, motordata[z].pot.limit_span);
 				puts2USART(bootstr2);
 				putrs2USART("\r\n");
-				sprintf(bootstr2, " Offset %i , %i     ", motordata[z].pot.offset, motordata[z].pot.limit_offset);
+				sprintf(bootstr2, " Offset %i <%i >%i    ", motordata[z].pot.offset, motordata[z].pot.limit_offset_l, motordata[z].pot.limit_offset_h);
 				puts2USART(bootstr2);
 				putrs2USART("\r\n");
 			}
