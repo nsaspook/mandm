@@ -10,7 +10,7 @@ LanguageToolID={E56A1C86-9D32-4DF6-8C34-FE0388B1B644}
 LanguageToolLocation=C:\Program Files\Microchip\mplabc18\v3.46\bin\mcc18.exe
 PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
 SOLK=<src>|crit.c|hwconf.c|model.c|power.c|daq.c|mandm8722.c|mandm_vector.c|xlcd\writdata.c|xlcd\openxlcd.c|xlcd\putrxlcd.c|xlcd\putsxlcd.c|xlcd\readaddr.c|xlcd\readdata.c|xlcd\setcgram.c|xlcd\setddram.c|xlcd\wcmdxlcd.c|xlcd\busyxlcd.c|config.c||<obj>||<lib>||<lkr>||
-SuiteArgsString=extended-mode stack-analysis
+SuiteArgsString=extended-mode
 ToolArgsString=--verbose -mL -pa=4
 TraceCmdString=
 DebugOptions=
@@ -23,7 +23,7 @@ LanguageToolID={E56A1C86-9D32-4DF6-8C34-FE0388B1B644}
 LanguageToolLocation=C:\Program Files\Microchip\mplabc18\v3.46\bin\mcc18.exe
 PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
 SOLK=<src>|crit.c|hwconf.c|model.c|power.c|daq.c|mandm8722.c|mandm_vector.c|xlcd\writdata.c|xlcd\openxlcd.c|xlcd\putrxlcd.c|xlcd\putsxlcd.c|xlcd\readaddr.c|xlcd\readdata.c|xlcd\setcgram.c|xlcd\setddram.c|xlcd\wcmdxlcd.c|xlcd\busyxlcd.c|config.c||<obj>||<lib>||<lkr>||
-SuiteArgsString=extended-mode stack-analysis
+SuiteArgsString=extended-mode
 ToolArgsString=--verbose -mL -pa=4
 TraceCmdString=
 DebugOptions=
@@ -36,7 +36,7 @@ LanguageToolID={E56A1C86-9D32-4DF6-8C34-FE0388B1B644}
 LanguageToolLocation=C:\Program Files\Microchip\mplabc18\v3.46\bin\mcc18.exe
 PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
 SOLK=<src>|crit.c|hwconf.c|model.c|power.c|daq.c|mandm8722.c|mandm_vector.c|xlcd\writdata.c|xlcd\openxlcd.c|xlcd\putrxlcd.c|xlcd\putsxlcd.c|xlcd\readaddr.c|xlcd\readdata.c|xlcd\setcgram.c|xlcd\setddram.c|xlcd\wcmdxlcd.c|xlcd\busyxlcd.c|config.c||<obj>||<lib>||<lkr>||
-SuiteArgsString=extended-mode stack-analysis
+SuiteArgsString=extended-mode
 ToolArgsString=--verbose -mL -pa=4
 TraceCmdString=
 DebugOptions=
@@ -49,7 +49,7 @@ LanguageToolID={E56A1C86-9D32-4DF6-8C34-FE0388B1B644}
 LanguageToolLocation=C:\Program Files\Microchip\mplabc18\v3.46\bin\mcc18.exe
 PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
 SOLK=<src>|crit.c|hwconf.c|model.c|power.c|daq.c|mandm8722.c|mandm_vector.c|xlcd\writdata.c|xlcd\openxlcd.c|xlcd\putrxlcd.c|xlcd\putsxlcd.c|xlcd\readaddr.c|xlcd\readdata.c|xlcd\setcgram.c|xlcd\setddram.c|xlcd\wcmdxlcd.c|xlcd\busyxlcd.c|config.c||<obj>||<lib>||<lkr>||
-SuiteArgsString=extended-mode stack-analysis
+SuiteArgsString=extended-mode
 ToolArgsString=--verbose -mL -pa=4
 TraceCmdString=
 DebugOptions=
@@ -62,7 +62,7 @@ LanguageToolID={E56A1C86-9D32-4DF6-8C34-FE0388B1B644}
 LanguageToolLocation=C:\Program Files\Microchip\mplabc18\v3.46\bin\mcc18.exe
 PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
 SOLK=<src>|crit.c|hwconf.c|model.c|power.c|daq.c|mandm8722.c|mandm_vector.c|xlcd\writdata.c|xlcd\openxlcd.c|xlcd\putrxlcd.c|xlcd\putsxlcd.c|xlcd\readaddr.c|xlcd\readdata.c|xlcd\setcgram.c|xlcd\setddram.c|xlcd\wcmdxlcd.c|xlcd\busyxlcd.c|config.c||<obj>||<lib>||<lkr>||
-SuiteArgsString=extended-mode stack-analysis
+SuiteArgsString=extended-mode
 ToolArgsString=--verbose -mL -pa=4
 TraceCmdString=
 DebugOptions=
@@ -75,7 +75,7 @@ LanguageToolID={E56A1C86-9D32-4DF6-8C34-FE0388B1B644}
 LanguageToolLocation=C:\Program Files\Microchip\mplabc18\v3.46\bin\mcc18.exe
 PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
 SOLK=<src>|crit.c|hwconf.c|model.c|power.c|daq.c|mandm8722.c|mandm_vector.c|xlcd\writdata.c|xlcd\openxlcd.c|xlcd\putrxlcd.c|xlcd\putsxlcd.c|xlcd\readaddr.c|xlcd\readdata.c|xlcd\setcgram.c|xlcd\setddram.c|xlcd\wcmdxlcd.c|xlcd\busyxlcd.c|config.c||<obj>||<lib>||<lkr>||
-SuiteArgsString=extended-mode stack-analysis
+SuiteArgsString=extended-mode
 ToolArgsString=--verbose -mL -pa=4
 TraceCmdString=
 DebugOptions=
@@ -88,7 +88,7 @@ LanguageToolID={E56A1C86-9D32-4DF6-8C34-FE0388B1B644}
 LanguageToolLocation=C:\Program Files\Microchip\mplabc18\v3.46\bin\mcc18.exe
 PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
 SOLK=<src>|crit.c|hwconf.c|model.c|power.c|daq.c|mandm8722.c|mandm_vector.c|xlcd\writdata.c|xlcd\openxlcd.c|xlcd\putrxlcd.c|xlcd\putsxlcd.c|xlcd\readaddr.c|xlcd\readdata.c|xlcd\setcgram.c|xlcd\setddram.c|xlcd\wcmdxlcd.c|xlcd\busyxlcd.c|config.c||<obj>||<lib>||<lkr>||
-SuiteArgsString=extended-mode stack-analysis
+SuiteArgsString=extended-mode
 ToolArgsString=--verbose -mL -pa=4
 TraceCmdString=
 DebugOptions=
@@ -101,7 +101,7 @@ LanguageToolID={E56A1C86-9D32-4DF6-8C34-FE0388B1B644}
 LanguageToolLocation=C:\Program Files\Microchip\mplabc18\v3.46\bin\mcc18.exe
 PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
 SOLK=<src>|crit.c|hwconf.c|model.c|power.c|daq.c|mandm8722.c|mandm_vector.c|xlcd\writdata.c|xlcd\openxlcd.c|xlcd\putrxlcd.c|xlcd\putsxlcd.c|xlcd\readaddr.c|xlcd\readdata.c|xlcd\setcgram.c|xlcd\setddram.c|xlcd\wcmdxlcd.c|xlcd\busyxlcd.c|config.c||<obj>||<lib>||<lkr>||
-SuiteArgsString=extended-mode stack-analysis
+SuiteArgsString=extended-mode
 ToolArgsString=--verbose -mL -pa=4
 TraceCmdString=
 DebugOptions=
@@ -114,7 +114,7 @@ LanguageToolID={E56A1C86-9D32-4DF6-8C34-FE0388B1B644}
 LanguageToolLocation=C:\Program Files\Microchip\mplabc18\v3.46\bin\mcc18.exe
 PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
 SOLK=<src>|crit.c|hwconf.c|model.c|power.c|daq.c|mandm8722.c|mandm_vector.c|xlcd\writdata.c|xlcd\openxlcd.c|xlcd\putrxlcd.c|xlcd\putsxlcd.c|xlcd\readaddr.c|xlcd\readdata.c|xlcd\setcgram.c|xlcd\setddram.c|xlcd\wcmdxlcd.c|xlcd\busyxlcd.c|config.c||<obj>||<lib>||<lkr>||
-SuiteArgsString=extended-mode stack-analysis
+SuiteArgsString=extended-mode
 ToolArgsString=--verbose -mL -pa=4
 TraceCmdString=
 DebugOptions=
@@ -127,7 +127,7 @@ LanguageToolID={E56A1C86-9D32-4DF6-8C34-FE0388B1B644}
 LanguageToolLocation=C:\Program Files\Microchip\mplabc18\v3.46\bin\mcc18.exe
 PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
 SOLK=<src>|crit.c|hwconf.c|model.c|power.c|daq.c|mandm8722.c|mandm_vector.c|xlcd\writdata.c|xlcd\openxlcd.c|xlcd\putrxlcd.c|xlcd\putsxlcd.c|xlcd\readaddr.c|xlcd\readdata.c|xlcd\setcgram.c|xlcd\setddram.c|xlcd\wcmdxlcd.c|xlcd\busyxlcd.c|config.c||<obj>||<lib>||<lkr>||
-SuiteArgsString=extended-mode stack-analysis
+SuiteArgsString=extended-mode
 ToolArgsString=--verbose -mL -pa=4
 TraceCmdString=
 DebugOptions=
@@ -140,7 +140,7 @@ LanguageToolID={E56A1C86-9D32-4DF6-8C34-FE0388B1B644}
 LanguageToolLocation=C:\Program Files\Microchip\mplabc18\v3.46\bin\mcc18.exe
 PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
 SOLK=<src>|crit.c|hwconf.c|model.c|power.c|daq.c|mandm8722.c|mandm_vector.c|xlcd\writdata.c|xlcd\openxlcd.c|xlcd\putrxlcd.c|xlcd\putsxlcd.c|xlcd\readaddr.c|xlcd\readdata.c|xlcd\setcgram.c|xlcd\setddram.c|xlcd\wcmdxlcd.c|xlcd\busyxlcd.c|config.c||<obj>||<lib>||<lkr>||
-SuiteArgsString=extended-mode stack-analysis
+SuiteArgsString=extended-mode
 ToolArgsString=--verbose -mL -pa=4
 TraceCmdString=
 DebugOptions=
@@ -153,7 +153,7 @@ LanguageToolID={E56A1C86-9D32-4DF6-8C34-FE0388B1B644}
 LanguageToolLocation=C:\Program Files\Microchip\mplabc18\v3.46\bin\mcc18.exe
 PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
 SOLK=<src>|crit.c|hwconf.c|model.c|power.c|daq.c|mandm8722.c|mandm_vector.c|xlcd\writdata.c|xlcd\openxlcd.c|xlcd\putrxlcd.c|xlcd\putsxlcd.c|xlcd\readaddr.c|xlcd\readdata.c|xlcd\setcgram.c|xlcd\setddram.c|xlcd\wcmdxlcd.c|xlcd\busyxlcd.c|config.c||<obj>||<lib>||<lkr>||
-SuiteArgsString=extended-mode stack-analysis
+SuiteArgsString=extended-mode
 ToolArgsString=--verbose -mL -pa=4
 TraceCmdString=
 DebugOptions=
@@ -166,7 +166,7 @@ LanguageToolID={E56A1C86-9D32-4DF6-8C34-FE0388B1B644}
 LanguageToolLocation=C:\Program Files\Microchip\mplabc18\v3.46\bin\mcc18.exe
 PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
 SOLK=<src>|crit.c|hwconf.c|model.c|power.c|daq.c|mandm8722.c|mandm_vector.c|xlcd\writdata.c|xlcd\openxlcd.c|xlcd\putrxlcd.c|xlcd\putsxlcd.c|xlcd\readaddr.c|xlcd\readdata.c|xlcd\setcgram.c|xlcd\setddram.c|xlcd\wcmdxlcd.c|xlcd\busyxlcd.c|config.c||<obj>||<lib>||<lkr>||
-SuiteArgsString=extended-mode stack-analysis
+SuiteArgsString=extended-mode
 ToolArgsString=--verbose -mL -pa=4
 TraceCmdString=
 DebugOptions=
@@ -179,7 +179,7 @@ LanguageToolID={E56A1C86-9D32-4DF6-8C34-FE0388B1B644}
 LanguageToolLocation=C:\Program Files\Microchip\mplabc18\v3.46\bin\mcc18.exe
 PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
 SOLK=<src>|crit.c|hwconf.c|model.c|power.c|daq.c|mandm8722.c|mandm_vector.c|xlcd\writdata.c|xlcd\openxlcd.c|xlcd\putrxlcd.c|xlcd\putsxlcd.c|xlcd\readaddr.c|xlcd\readdata.c|xlcd\setcgram.c|xlcd\setddram.c|xlcd\wcmdxlcd.c|xlcd\busyxlcd.c|config.c||<obj>||<lib>||<lkr>||
-SuiteArgsString=extended-mode stack-analysis
+SuiteArgsString=extended-mode
 ToolArgsString=--verbose -mL -pa=4
 TraceCmdString=
 DebugOptions=
@@ -192,7 +192,7 @@ LanguageToolID={E56A1C86-9D32-4DF6-8C34-FE0388B1B644}
 LanguageToolLocation=C:\Program Files\Microchip\mplabc18\v3.46\bin\mcc18.exe
 PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
 SOLK=<src>|crit.c|hwconf.c|model.c|power.c|daq.c|mandm8722.c|mandm_vector.c|xlcd\writdata.c|xlcd\openxlcd.c|xlcd\putrxlcd.c|xlcd\putsxlcd.c|xlcd\readaddr.c|xlcd\readdata.c|xlcd\setcgram.c|xlcd\setddram.c|xlcd\wcmdxlcd.c|xlcd\busyxlcd.c|config.c||<obj>||<lib>||<lkr>||
-SuiteArgsString=extended-mode stack-analysis
+SuiteArgsString=extended-mode
 ToolArgsString=--verbose -mL -pa=4
 TraceCmdString=
 DebugOptions=
@@ -205,7 +205,7 @@ LanguageToolID={E56A1C86-9D32-4DF6-8C34-FE0388B1B644}
 LanguageToolLocation=C:\Program Files\Microchip\mplabc18\v3.46\bin\mcc18.exe
 PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
 SOLK=<src>|crit.c|hwconf.c|model.c|power.c|daq.c|mandm8722.c|mandm_vector.c|xlcd\writdata.c|xlcd\openxlcd.c|xlcd\putrxlcd.c|xlcd\putsxlcd.c|xlcd\readaddr.c|xlcd\readdata.c|xlcd\setcgram.c|xlcd\setddram.c|xlcd\wcmdxlcd.c|xlcd\busyxlcd.c|config.c||<obj>||<lib>||<lkr>||
-SuiteArgsString=extended-mode stack-analysis
+SuiteArgsString=extended-mode
 ToolArgsString=--verbose -mL -pa=4
 TraceCmdString=
 DebugOptions=
@@ -218,7 +218,7 @@ LanguageToolID={E56A1C86-9D32-4DF6-8C34-FE0388B1B644}
 LanguageToolLocation=C:\Program Files\Microchip\mplabc18\v3.46\bin\mcc18.exe
 PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
 SOLK=<src>|crit.c|hwconf.c|model.c|power.c|daq.c|mandm8722.c|mandm_vector.c|xlcd\writdata.c|xlcd\openxlcd.c|xlcd\putrxlcd.c|xlcd\putsxlcd.c|xlcd\readaddr.c|xlcd\readdata.c|xlcd\setcgram.c|xlcd\setddram.c|xlcd\wcmdxlcd.c|xlcd\busyxlcd.c|config.c||<obj>||<lib>||<lkr>||
-SuiteArgsString=extended-mode stack-analysis
+SuiteArgsString=extended-mode
 ToolArgsString=--verbose -mL -pa=4
 TraceCmdString=
 DebugOptions=
@@ -231,7 +231,7 @@ LanguageToolID={E56A1C86-9D32-4DF6-8C34-FE0388B1B644}
 LanguageToolLocation=C:\Program Files\Microchip\mplabc18\v3.46\bin\mcc18.exe
 PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
 SOLK=<src>|crit.c|hwconf.c|model.c|power.c|daq.c|mandm8722.c|mandm_vector.c|xlcd\writdata.c|xlcd\openxlcd.c|xlcd\putrxlcd.c|xlcd\putsxlcd.c|xlcd\readaddr.c|xlcd\readdata.c|xlcd\setcgram.c|xlcd\setddram.c|xlcd\wcmdxlcd.c|xlcd\busyxlcd.c|config.c||<obj>||<lib>||<lkr>||
-SuiteArgsString=extended-mode stack-analysis
+SuiteArgsString=extended-mode
 ToolArgsString=--verbose -mL -pa=4
 TraceCmdString=
 DebugOptions=
@@ -244,7 +244,7 @@ LanguageToolID={96C98149-AA1B-4CF9-B967-FAE79CAB663C}
 LanguageToolLocation=C:\Program Files\Microchip\mplabc18\v3.46\bin\mplink.exe
 PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
 SOLK=<src>|crit.c|hwconf.c|model.c|power.c|daq.c|mandm8722.c|mandm_vector.c|xlcd\writdata.c|xlcd\openxlcd.c|xlcd\putrxlcd.c|xlcd\putsxlcd.c|xlcd\readaddr.c|xlcd\readdata.c|xlcd\setcgram.c|xlcd\setddram.c|xlcd\wcmdxlcd.c|xlcd\busyxlcd.c|config.c||<obj>||<lib>||<lkr>||
-SuiteArgsString=extended-mode stack-analysis
+SuiteArgsString=extended-mode
 ToolArgsString=/o"$(BINDIR_)$(TARGETBASE).cof" /M"$(BINDIR_)$(TARGETBASE).map" /W
 TraceCmdString=
 DebugOptions=
@@ -257,7 +257,7 @@ LanguageToolID={96C98149-AA1B-4CF9-B967-FAE79CAB663C}
 LanguageToolLocation=C:\Program Files\Microchip\mplabc18\v3.46\bin\mplink.exe
 PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
 SOLK=<src>|crit.c|hwconf.c|model.c|power.c|daq.c|mandm8722.c|mandm_vector.c|xlcd\writdata.c|xlcd\openxlcd.c|xlcd\putrxlcd.c|xlcd\putsxlcd.c|xlcd\readaddr.c|xlcd\readdata.c|xlcd\setcgram.c|xlcd\setddram.c|xlcd\wcmdxlcd.c|xlcd\busyxlcd.c|config.c||<obj>||<lib>||<lkr>||
-SuiteArgsString=extended-mode stack-analysis
+SuiteArgsString=extended-mode
 ToolArgsString=/o"$(BINDIR_)$(TARGETBASE).cof" /M"$(BINDIR_)$(TARGETBASE).map" /W
 TraceCmdString=
 DebugOptions=

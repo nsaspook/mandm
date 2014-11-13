@@ -1676,7 +1676,7 @@ void v810_ms_display(void)
 	if (help_pos == 0) {
 		sprintf(bootstr2, "                    "); // info display data
 		LCD_VC_puts(VC0, DS1, YES);
-		sprintf(bootstr2, "%cR%2i Set%2i V%3li I%2li               ", Cursor[0], motordata[0].pot.scaled_actual / 10, motordata[0].pot.scaled_set / 10, R.pos_y, R.current_y);
+		sprintf(bootstr2, "%cR%2i Set%2i V%3li I%2li               ", Cursor[0], motordata[0].pot.scaled_actual / 10, motordata[0].pot.scaled_set / 10, R.pos_x, R.current_x);
 		LCD_VC_puts(VC0, DS2, YES);
 		sprintf(bootstr2, "                    "); // info display data
 		LCD_VC_puts(VC0, DS3, YES);

@@ -101,7 +101,7 @@ menuselect_free[MAX_MENU + 1][22] = {
     " vista 4           F",
     " vista 5           F",
     " Vista Mass-Slit   F",
-    " vista 7           F",
+    " V810 Manipulator  F",
     " vista 8           F",
     " vista 9           F",
     " vista 10          F"
@@ -123,7 +123,7 @@ menuselect_track[MAX_MENU + 1][22] = {
     " GSD Manipulator   T",
     " vista 5           T",
     " Vista Mass-Slit   T",
-    " vista 7           T",
+    " V810 Manipulator  T",
     " Varian Valves     T",
     " Test Procedure    T",
     " Exit              T"

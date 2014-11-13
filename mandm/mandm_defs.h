@@ -163,7 +163,7 @@
 #define VISTA4  	11u		// Viision Mass-slit
 #define VISTA5  	12u		//
 #define EV810_MS  	13u		//
-#define VISTA7  	14u		//
+#define V810_M  	14u		//
 #define EHELP_M         15u		// default disconnect code
 #define XAXIS           0
 #define YAXIS           1
@@ -205,7 +205,7 @@
 #define POT_MAX_CHANGE  100             // if the change in readback between ADC reads is this or greater, it's a possible error
 #define POT_M_OFFSET	500		// offset mean
 #define POT_H_OFFSET	999             // offset high fail limit
-#define POT_L_OFFSET	50              // offset low fail limit
+#define POT_L_OFFSET	1               // offset low fail limit
 #define POT_MIN_SPAN    200             // if the change in readback between ADC reads is this or less, it's a possible error
 #define MAX_MOTOR       3u               // number of motors to control
 #define MAX_POT         3u               // number of axis that pots will control
@@ -242,19 +242,19 @@
 /* Calibration results benchmarks */
 #define VIISION_M_CHANGE    30
 #define VIISION_M_SPAN      250       // lowest good span count during cal
-#define VIISION_M_OFFSET_H    400
-#define VIISION_M_OFFSET_L    200
+#define VIISION_M_OFFSET_H    300
+#define VIISION_M_OFFSET_L    10
 
-#define VIISION_MS_CHANGE    30
+#define VIISION_MS_CHANGE    60
 #define VIISION_MS_SPAN      480       // lowest good span count during cal
 #define VIISION_MS_OFFSET_H    400
-#define VIISION_MS_OFFSET_L    200
+#define VIISION_MS_OFFSET_L    35
 #define VIISION_MS_CAL		999
 
 #define V810_MS_CHANGE    35
 #define V810_MS_SPAN      360       // lowest good span count during cal
 #define V810_MS_OFFSET_H    400
-#define V810_MS_OFFSET_L    200
+#define V810_MS_OFFSET_L    10
 #define V810_MS_CAL	    500
 
 #define E220E500_M_SPAN_Y      150  	// lowest good span count during cal

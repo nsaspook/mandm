@@ -29,4 +29,5 @@ extern void e220_m_display(void);
 extern void e220_qei_display(void);
 extern void gsd_m_display(void);
 extern void default_display(void);
+extern void ADC_read(void);
 #endif /* CONFIG_H_INCLUDED */
