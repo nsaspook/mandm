@@ -7,13 +7,13 @@
 #include <stdio.h>
 
 void model_data(void);
-unsigned char model_learn(unsigned char); //
+uint8_t model_learn(uint8_t); //
 
-extern  far char bootstr2[MESG_W+1];
-extern  const rom char modelheader0[],modelheader1[];
+extern  far int8_t bootstr2[MESG_W+1];
+extern  const rom int8_t modelheader0[],modelheader1[];
 
-extern  unsigned char ChargeBatt(unsigned char, unsigned char, unsigned char);
-extern  void noload_soc(unsigned char);
+extern  uint8_t ChargeBatt(uint8_t, uint8_t, uint8_t);
+extern  void noload_soc(uint8_t);
 extern  void update_hist(void);
 extern  void term_time(void);
 

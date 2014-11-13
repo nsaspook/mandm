@@ -1,12 +1,12 @@
 #include "hwconf.h"
 
-void config_pic(unsigned int hw_config)
+void config_pic(uint16_t hw_config)
 {
         static char z;
         if (hw_config == 8722u) {
                 _asm nop _endasm // asm code to disable compiler optimizations
-                if (RCONbits.TO == (unsigned char) LOW) WDT_TO = TRUE;
-                if (EECON1bits.WRERR && (EECON1bits.EEPGD == (unsigned char) LOW)) EEP_ER = TRUE;
+                if (RCONbits.TO == (uint8_t) LOW) WDT_TO = TRUE;
+                if (EECON1bits.WRERR && (EECON1bits.EEPGD == (uint8_t) LOW)) EEP_ER = TRUE;
                 /* Configure all PORT  pins  */
 
                 TRISAbits.TRISA4 = LOW; // output
@@ -137,7 +137,7 @@ void config_pic(unsigned int hw_config)
         }
 }
 
-void start_pic(unsigned int hw_config)
+void start_pic(uint16_t hw_config)
 {
         if (hw_config == 8722u) {
                 IORELAYS = 0xff; // set control relays to off at powerup/reset

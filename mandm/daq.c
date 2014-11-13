@@ -48,7 +48,7 @@ void ADC_read(void) // update all voltage/current readings and set load current 
     for (i = 0; i < ADC_SAMP_F; i++) {
         ConvertADC();
         while (BusyADC());
-        Vin += (unsigned int) ReadADC();
+        Vin += (uint16_t) ReadADC();
     }
     Vin /= ADC_SAMP_F;
     vbatol_t = Vin * (ADC0_MV - ADC_NULL + adc_cal[0]); //      voltage correction factor
@@ -62,7 +62,7 @@ void ADC_read(void) // update all voltage/current readings and set load current 
     for (i = 0; i < ADC_SAMP_F; i++) {
         ConvertADC();
         while (BusyADC());
-        Vin += (unsigned int) ReadADC();
+        Vin += (uint16_t) ReadADC();
     }
     Vin /= ADC_SAMP_F;
     solar_t = Vin * (ADC1_MV - ADC_NULL + adc_cal[1]);
@@ -76,7 +76,7 @@ void ADC_read(void) // update all voltage/current readings and set load current 
     for (i = 0; i < ADC_SAMP_S; i++) {
         ConvertADC();
         while (BusyADC());
-        Vin += (unsigned int) ReadADC();
+        Vin += (uint16_t) ReadADC();
     }
     Vin /= ADC_SAMP_S;
     a10_x = Vin; // raw ADC value
@@ -96,7 +96,7 @@ void ADC_read(void) // update all voltage/current readings and set load current 
     for (i = 0; i < ADC_SAMP_S; i++) {
         ConvertADC();
         while (BusyADC());
-        Vin += (unsigned int) ReadADC();
+        Vin += (uint16_t) ReadADC();
     }
     Vin /= ADC_SAMP_S; //
     a10_y = Vin; // raw ADC value
@@ -116,7 +116,7 @@ void ADC_read(void) // update all voltage/current readings and set load current 
     for (i = 0; i < ADC_SAMP_S; i++) {
         ConvertADC();
         while (BusyADC());
-        Vin += (unsigned int) ReadADC();
+        Vin += (uint16_t) ReadADC();
     }
     Vin /= ADC_SAMP_S;
     a10_z = Vin;
@@ -135,7 +135,7 @@ void ADC_read(void) // update all voltage/current readings and set load current 
     for (i = 0; i < ADC_SAMP_F; i++) {
         ConvertADC();
         while (BusyADC());
-        Vin += (unsigned int) ReadADC();
+        Vin += (uint16_t) ReadADC();
     }
     Vin /= ADC_SAMP_F;
     rawp[0] = Vin;
@@ -147,7 +147,7 @@ void ADC_read(void) // update all voltage/current readings and set load current 
     for (i = 0; i < ADC_SAMP_F; i++) {
         ConvertADC();
         while (BusyADC());
-        Vin += (unsigned int) ReadADC();
+        Vin += (uint16_t) ReadADC();
     }
     Vin /= ADC_SAMP_F;
     rawp[1] = Vin;
@@ -159,7 +159,7 @@ void ADC_read(void) // update all voltage/current readings and set load current 
     for (i = 0; i < ADC_SAMP_F; i++) {
         ConvertADC();
         while (BusyADC());
-        Vin += (unsigned int) ReadADC();
+        Vin += (uint16_t) ReadADC();
     }
     Vin /= ADC_SAMP_F;
     rawp[2] = Vin;
@@ -171,7 +171,7 @@ void ADC_read(void) // update all voltage/current readings and set load current 
     for (i = 0; i < ADC_SAMP_F; i++) {
         ConvertADC();
         while (BusyADC());
-        Vin += (unsigned int) ReadADC();
+        Vin += (uint16_t) ReadADC();
     }
     Vin /= ADC_SAMP_F;
     rawa[0] = Vin;
@@ -183,7 +183,7 @@ void ADC_read(void) // update all voltage/current readings and set load current 
     for (i = 0; i < ADC_SAMP_F; i++) {
         ConvertADC();
         while (BusyADC());
-        Vin += (unsigned int) ReadADC();
+        Vin += (uint16_t) ReadADC();
     }
     Vin /= ADC_SAMP_F;
     rawa[1] = Vin;
@@ -195,7 +195,7 @@ void ADC_read(void) // update all voltage/current readings and set load current 
     for (i = 0; i < ADC_SAMP_F; i++) {
         ConvertADC();
         while (BusyADC());
-        Vin += (unsigned int) ReadADC();
+        Vin += (uint16_t) ReadADC();
     }
     Vin /= ADC_SAMP_F;
     rawa[2] = Vin;
@@ -269,14 +269,14 @@ void ADC_read(void) // update all voltage/current readings and set load current 
 
 void zero_amploc(void) // set zero current setpoint from ADC reading from a10_x a10_z a10_y, write to EEPROM
 {
-    static unsigned char z;
+    static uint8_t z;
 
     adc_cal[11] = adc_cal[12] = adc_cal[13] = adc_cal[14] = ADC_NULL; // reset offsets to zero (ADC_NULL)
     // read adc data for zero setpoint
     ADC_read(); // a10_x=adc_[11], a10_z=adc_cal[12], a10_y=adc_cal[13]
-    adc_cal[11] = (unsigned char) (ADC_NULL + (int) ((int) a10_x - (int) AMP10_ZERO));
-    adc_cal[12] = (unsigned char) (ADC_NULL + (int) ((int) a10_z - (int) AMP10_ZERO));
-    adc_cal[13] = (unsigned char) (ADC_NULL + (int) ((int) a10_y - (int) AMP10_ZERO));
+    adc_cal[11] = (uint8_t) (ADC_NULL + (int) ((int) a10_x - (int) AMP10_ZERO));
+    adc_cal[12] = (uint8_t) (ADC_NULL + (int) ((int) a10_z - (int) AMP10_ZERO));
+    adc_cal[13] = (uint8_t) (ADC_NULL + (int) ((int) a10_y - (int) AMP10_ZERO));
 
     if (checktime_eep(EEP_UPDATE, FALSE)) {
         term_time();

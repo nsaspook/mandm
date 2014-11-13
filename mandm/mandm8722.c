@@ -82,9 +82,9 @@
 /*
  *
  * standard program units:
- * Voltage  in (unsigned long/unsigned int) millivolts,
- * Current in (long) hundredths of amps
- * Watts Power in (unsigned long)
+ * Voltage  in (uint32_t/uint16_t) millivolts,
+ * Current in (int32_t) hundredths of amps
+ * Watts Power in (uint32_t)
  * 
  *
  * R: structure, real values from measurements
@@ -195,35 +195,35 @@
 #include "daq.h"
 
 void clr_lcd(void);
-char *ahfp(long, char *);
-char *voltfp(unsigned long, char *);
-char *voltfps(unsigned long, char *);
-char *voltfpi(long, char *);
-void MputsXLCD(char *);
+int8_t *ahfp(int32_t, int8_t *);
+int8_t *voltfp(uint32_t, int8_t *);
+int8_t *voltfps(uint32_t, int8_t *);
+int8_t *voltfpi(int32_t, int8_t *);
+void MputsXLCD(int8_t *);
 
 void fail_safe(void);
-char *hms(unsigned long);
-char *hm(unsigned long);
-float lp_filter(float, int, int);
-void putc2(unsigned char c);
+int8_t *hms(uint32_t);
+int8_t *hm(uint32_t);
+float lp_filter(float, int16_t, int16_t);
+void putc2(uint8_t c);
 void hold_process(void); // hold monitor progrsm
 void system_data(void); // send system variables to rs-232 terminal
 void system_help(void); // send system help menu to rs-232 terminal
 void exerciser(void); // test calibrated assy
-int e220_qei_exer(unsigned char);
-int nonqei_exer(unsigned char);
-unsigned char check_alarm(unsigned char, const rom char*);
-long ABSL(long);
-int ABSI(int);
-void LCD_VC_puts(unsigned char, unsigned char, unsigned char);
-void wdttime(unsigned long);
-uint8_t checktime(unsigned long, uint8_t);
-uint8_t checktime_select(unsigned long, uint8_t);
-uint8_t checktime_motor(unsigned long, uint8_t);
-uint8_t checktime_cal(unsigned long, uint8_t);
-uint8_t checktime_eep(unsigned long, uint8_t);
-uint8_t checktime_track(unsigned long, uint8_t);
-void wdtdelay(unsigned long);
+int16_t e220_qei_exer(uint8_t);
+int16_t nonqei_exer(uint8_t);
+uint8_t check_alarm(uint8_t, const rom int8_t*);
+int32_t ABSL(int32_t);
+int16_t ABSI(int16_t);
+void LCD_VC_puts(uint8_t, uint8_t, uint8_t);
+void wdttime(uint32_t);
+uint8_t checktime(uint32_t, uint8_t);
+uint8_t checktime_select(uint32_t, uint8_t);
+uint8_t checktime_motor(uint32_t, uint8_t);
+uint8_t checktime_cal(uint32_t, uint8_t);
+uint8_t checktime_eep(uint32_t, uint8_t);
+uint8_t checktime_track(uint32_t, uint8_t);
+void wdtdelay(uint32_t);
 void update_hist(void);
 void term_time(void);
 void viision_m_display(void);
@@ -236,34 +236,34 @@ void e220_qei_display(void);
 void gsd_m_display(void);
 void default_display(void);
 void Set_Cursor(void);
-void run_demos(unsigned char);
+void run_demos(uint8_t);
 void run_cal(void);
 void display_cal(void);
 void init_motordata(uint8_t);
-int track_motor(void);
+int16_t track_motor(void);
 void init_lcd(void);
 uint8_t check_cable(uint8_t *);
 void fail_all_motors(uint8_t);
 void nav_menu(void);
-unsigned char spinners(unsigned char, unsigned char);
+uint8_t spinners(uint8_t, uint8_t);
 
 #pragma udata gpr13
-far char bootstr2[MESG_W + 1];
+far int8_t bootstr2[MESG_W + 1];
 #pragma udata gpr1
-char p1[C_TEMP16], p2[C_TEMP16];
-char termstr[32];
-unsigned char csd[SD_18], cid[SD_18], HCRIT[CRIT_8], LCRIT[CRIT_8];
-far char f1[C_TEMP7], f2[C_TEMP7], f3[C_TEMP7], f4[C_TEMP7];
-char p3[C_TEMP16];
+int8_t p1[C_TEMP16], p2[C_TEMP16];
+int8_t termstr[32];
+uint8_t csd[SD_18], cid[SD_18], HCRIT[CRIT_8], LCRIT[CRIT_8];
+far int8_t f1[C_TEMP7], f2[C_TEMP7], f3[C_TEMP7], f4[C_TEMP7];
+int8_t p3[C_TEMP16];
 volatile struct almbuffertype alarm_buffer[MAXALM];
 float smooth[LPCHANC];
 #pragma udata gpr2
 struct lcdb ds[VS_SLOTS]; // , ms[VS_SLOTS]; //  LCD/MENU display strings, name
 #pragma udata gpr3
-far char hms_string[16];
-int a10_x, a10_y, a10_z, worktick;
-volatile unsigned char critc_level = 0, KEYNUM = 0, C2RAW, glitch_count, cdelay, SLOW_STATUS;
-volatile unsigned char TIMERFLAG = FALSE, PRIPOWEROK = TRUE, FORCEOUT = FALSE, WORKERFLAG = FALSE,
+far int8_t hms_string[16];
+int16_t a10_x, a10_y, a10_z, worktick;
+volatile uint8_t critc_level = 0, KEYNUM = 0, C2RAW, glitch_count, cdelay, SLOW_STATUS;
+volatile uint8_t TIMERFLAG = FALSE, PRIPOWEROK = TRUE, FORCEOUT = FALSE, WORKERFLAG = FALSE,
 	FAILSAFE = FALSE, SYSTEM_STABLE = FALSE, HOLD_PROC = FALSE,
 	DISPLAY_MODE = FALSE, D_UPDATE = TRUE, GLITCH_CHECK = TRUE, COOLING = FALSE,
 	UPDATE_EEP = FALSE, RESET_ZEROS = FALSE, SYS_DATA = FALSE, MOD_DATA = FALSE, SYS_HELP = FALSE, SET_TLOG = FALSE,
@@ -271,27 +271,27 @@ volatile unsigned char TIMERFLAG = FALSE, PRIPOWEROK = TRUE, FORCEOUT = FALSE, W
 #pragma udata gpr4
 volatile struct almtype alarm_codes = {FALSE, 0};
 volatile struct modetype mode = {FALSE, TRUE, TRUE, HELP_M, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, FALSE, FALSE, FALSE};
-volatile unsigned char almctr, RS232_DEBUG = FALSE;
-volatile unsigned long critc_count = 0;
+volatile uint8_t almctr, RS232_DEBUG = FALSE;
+volatile uint32_t critc_count = 0;
 #pragma udata gpr5
 volatile struct buttontype button;
 
-char sign = ' ';
+int8_t sign = ' ';
 float lp_speed = 0.0, lp_x = 0.0;
 struct R_data R;
 struct C_data C;
 struct V_data V;
-const rom char *build_date = __DATE__, *build_time = __TIME__;
+const rom int8_t *build_date = __DATE__, *build_time = __TIME__;
 #pragma udata gpr6
 
-volatile unsigned char dsi = 0, msi = 0, help_pos = 0; //      LCD display string index to console 0
+volatile uint8_t dsi = 0, msi = 0, help_pos = 0; //      LCD display string index to console 0
 float t1 = 0.0, t2 = 0.0, t3 = 0.0, t4 = 0.0, t5 = 0.0, t6 = 0.0, t7 = 0.0, t_time = 0.0;
 float voltfrak = 0.0;
 float ahfrak = 0.0;
 #pragma udata gpr7
-unsigned long Vin = 0, chrg_v = 0, vbatol_t = 0, solar_t = 0, rawp[MAX_POT], rawa[MAX_POT];
-volatile unsigned char IDLEFLAG = FALSE, knob_to_pot = XAXIS;
-long iw = 0, ip = 0;
+uint32_t Vin = 0, chrg_v = 0, vbatol_t = 0, solar_t = 0, rawp[MAX_POT], rawa[MAX_POT];
+volatile uint8_t IDLEFLAG = FALSE, knob_to_pot = XAXIS;
+int32_t iw = 0, ip = 0;
 #pragma udata gpr8
 volatile struct motortype motordata[MAX_MOTOR], *motor_ptr;
 #pragma udata gpr9
@@ -299,8 +299,8 @@ volatile struct knobtype knob1, knob2;
 
 /* ADC voltage/current default calibration values , adjusted with D command */
 // adc_cal[11-14]				current sensors zero offset stored in eeprom 11=x, 12=y, 13=z, 14=future
-unsigned char adc_cal[] = {127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 0};
-unsigned char CRITC = 0, LCD_OK = FALSE, Cursor[MAX_POT], cable_type = 0x07, TLOG = FALSE;
+uint8_t adc_cal[] = {127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 0};
+uint8_t CRITC = 0, LCD_OK = FALSE, Cursor[MAX_POT], cable_type = 0x07, TLOG = FALSE;
 
 volatile enum answer_t {
 	WAIT_M, YES_M, NO_M
@@ -309,9 +309,9 @@ volatile enum answer_t {
 volatile struct QuadEncoderType OldEncoder;
 
 #pragma idata gpr10
-unsigned char lcd18 = 200;
+uint8_t lcd18 = 200;
 volatile struct qeitype qei1;
-volatile long slow_timer = 0;
+volatile int32_t slow_timer = 0;
 struct emodefaulttype emodump;
 
 /* ISR vectors */
@@ -332,10 +332,10 @@ void work_int(void)
 #pragma code
 
 /* Misc ACSII spinner character generator, stores position for each shape */
-unsigned char spinners(unsigned char shape, unsigned char reset)
+uint8_t spinners(uint8_t shape, uint8_t reset)
 {
-	static unsigned char s[MAX_SHAPES], last_shape = 0;
-	unsigned char c;
+	static uint8_t s[MAX_SHAPES], last_shape = 0;
+	uint8_t c;
 
 	if (shape > (MAX_SHAPES - 1)) shape = 0;
 	if (reset) s[shape] = 0;
@@ -345,9 +345,9 @@ unsigned char spinners(unsigned char shape, unsigned char reset)
 	return c;
 }
 
-void LCD_VC_puts(unsigned char console, unsigned char line, unsigned char COPY) // VCx,DSx, [TRUE..FALSE} copy data from bootstr2 string
+void LCD_VC_puts(uint8_t console, uint8_t line, uint8_t COPY) // VCx,DSx, [TRUE..FALSE} copy data from bootstr2 string
 { // into the LCD display buffer
-	static unsigned char ib = 0;
+	static uint8_t ib = 0;
 
 	if (!LCD_OK) return;
 	//    lcdhits++;
@@ -412,18 +412,18 @@ void update_hist(void) // compute the runtime data from current data
 	}
 }
 
-void wdtdelay(unsigned long delay)
+void wdtdelay(uint32_t delay)
 {
-	static unsigned long int dcount;
+	static uint32_t dcount;
 	for (dcount = 0; dcount <= delay; dcount++) { // delay a bit
 		Nop();
 		ClrWdt(); // reset the WDT timer
 	};
 }
 
-void wdttime(unsigned long delay) // delay = ~ .05 seconds
+void wdttime(uint32_t delay) // delay = ~ .05 seconds
 {
-	static unsigned long dcount, timetemp, clocks_hz;
+	static uint32_t dcount, timetemp, clocks_hz;
 	s_crit(HL);
 	dcount = V.clock20;
 	e_crit();
@@ -437,9 +437,9 @@ void wdttime(unsigned long delay) // delay = ~ .05 seconds
 	} while (timetemp < clocks_hz);
 }
 
-uint8_t checktime(unsigned long delay, uint8_t set) // delay = ~ .05 seconds
+uint8_t checktime(uint32_t delay, uint8_t set) // delay = ~ .05 seconds
 {
-	static unsigned long dcount, timetemp, clocks_hz;
+	static uint32_t dcount, timetemp, clocks_hz;
 
 	if (set) {
 		s_crit(HL);
@@ -455,9 +455,9 @@ uint8_t checktime(unsigned long delay, uint8_t set) // delay = ~ .05 seconds
 	return TRUE;
 }
 
-uint8_t checktime_select(unsigned long delay, uint8_t set) // delay = ~ .05 seconds
+uint8_t checktime_select(uint32_t delay, uint8_t set) // delay = ~ .05 seconds
 {
-	static unsigned long dcount, timetemp, clocks_hz;
+	static uint32_t dcount, timetemp, clocks_hz;
 
 	if (set) {
 		s_crit(HL);
@@ -473,9 +473,9 @@ uint8_t checktime_select(unsigned long delay, uint8_t set) // delay = ~ .05 seco
 	return TRUE;
 }
 
-uint8_t checktime_motor(unsigned long delay, uint8_t set) // delay = ~ .05 seconds
+uint8_t checktime_motor(uint32_t delay, uint8_t set) // delay = ~ .05 seconds
 {
-	static unsigned long dcount, timetemp, clocks_hz;
+	static uint32_t dcount, timetemp, clocks_hz;
 
 	if (set) {
 		s_crit(HL);
@@ -491,9 +491,9 @@ uint8_t checktime_motor(unsigned long delay, uint8_t set) // delay = ~ .05 secon
 	return TRUE;
 }
 
-uint8_t checktime_cal(unsigned long delay, uint8_t set) // delay = ~ .05 seconds
+uint8_t checktime_cal(uint32_t delay, uint8_t set) // delay = ~ .05 seconds
 {
-	static unsigned long dcount, timetemp, clocks_hz;
+	static uint32_t dcount, timetemp, clocks_hz;
 
 	if (set) {
 		s_crit(HL);
@@ -509,9 +509,9 @@ uint8_t checktime_cal(unsigned long delay, uint8_t set) // delay = ~ .05 seconds
 	return TRUE;
 }
 
-uint8_t checktime_eep(unsigned long delay, uint8_t set) // delay = ~ .05 seconds
+uint8_t checktime_eep(uint32_t delay, uint8_t set) // delay = ~ .05 seconds
 {
-	static unsigned long dcount, timetemp, clocks_hz;
+	static uint32_t dcount, timetemp, clocks_hz;
 
 	if (set) {
 		s_crit(HL);
@@ -527,9 +527,9 @@ uint8_t checktime_eep(unsigned long delay, uint8_t set) // delay = ~ .05 seconds
 	return TRUE;
 }
 
-uint8_t checktime_track(unsigned long delay, uint8_t set) // delay = ~ .05 seconds
+uint8_t checktime_track(uint32_t delay, uint8_t set) // delay = ~ .05 seconds
 {
-	static unsigned long dcount, timetemp, clocks_hz;
+	static uint32_t dcount, timetemp, clocks_hz;
 
 	if (set) {
 		s_crit(HL);
@@ -547,7 +547,7 @@ uint8_t checktime_track(unsigned long delay, uint8_t set) // delay = ~ .05 secon
 
 void DelayFor18TCY(void)
 {
-	static unsigned char n;
+	static uint8_t n;
 	_asm nop _endasm // asm code to disable compiler optimizations
 	for (n = 0; n < lcd18; n++) Nop(); // works at 200 (slow white) or 24 (fast blue)
 	//    lcdhits_18tcy++;
@@ -569,7 +569,7 @@ void DelayXLCD(void) // works with 5
 	return;
 }
 
-void putc2(unsigned char c)
+void putc2(uint8_t c)
 {
 	while (Busy2USART()) {
 	}; // wait until the usart is clear
@@ -599,7 +599,7 @@ void clr_lcd()
 	8
  *	9
  */
-float lp_filter(float new, int bn, int slow) // low pass filter, slow rate of change for new, LPCHANC channels, slow/fast select (1) to zero channel
+float lp_filter(float new, int16_t bn, int16_t slow) // low pass filter, slow rate of change for new, LPCHANC channels, slow/fast select (1) to zero channel
 {
 	// smooth,lp_speed,lp_x is a udata global array to save stack space
 
@@ -647,7 +647,7 @@ void hold_process(void) // hold the monitor in the current status until released
 
 void system_data(void) // display system data on terminal
 {
-	static unsigned char z;
+	static uint8_t z;
 	ClrWdt(); // reset the WDT timer
 	sprintf(bootstr2, "\r\n");
 	puts2USART(bootstr2);
@@ -662,15 +662,15 @@ void system_data(void) // display system data on terminal
 	puts2USART(bootstr2);
 	sprintf(bootstr2,
 		"\r\n Power status 1=OK %u, Config DIPSW %u%u%u%u%u%u%u%u, Temp Sensor %lu,Temp Comp %i\r\n Highint %lu, Lowint %lu, Critc Levels %i, HID Idle %i, ",
-		PRIPOWEROK, DIPSW1, DIPSW2, DIPSW3, DIPSW4, DIPSW5, DIPSW6, DIPSW7, DIPSW8, R.thermo_batt, C.temp_drate, V.highint_count, V.lowint_count, (int) critc_level, (int) mode.idle);
+		PRIPOWEROK, DIPSW1, DIPSW2, DIPSW3, DIPSW4, DIPSW5, DIPSW6, DIPSW7, DIPSW8, R.thermo_batt, C.temp_drate, V.highint_count, V.lowint_count, (int16_t) critc_level, (int16_t) mode.idle);
 	puts2USART(bootstr2);
 	sprintf(bootstr2,
 		"Timerint %lu, Workerint %lu, \r\n LCD display counts %lu, LCD 18tcy counts %lu, Com2int %lu, Bint %lu, Eint %lu, Aint %lu, Lowclocks %lu, Lowruns/S %lu, Timer4int %lu, TMR4 %i, qei_counts %i\r\n",
-		V.timerint_count, V.worker_count, V.lcdhits, V.lcdhits_18tcy, V.c2_int, V.buttonint_count, V.eeprom_count, V.adc_count, V.clock20, V.clock20 / V.timerint_count, V.pwm4int_count, (int) TMR4, (int) V.qei_counts);
+		V.timerint_count, V.worker_count, V.lcdhits, V.lcdhits_18tcy, V.c2_int, V.buttonint_count, V.eeprom_count, V.adc_count, V.clock20, V.clock20 / V.timerint_count, V.pwm4int_count, (int16_t) TMR4, (int16_t) V.qei_counts);
 	puts2USART(bootstr2);
 
 	sprintf(bootstr2,
-		" Button int counts B3 %lu, B2 %lu, B1 %lu, B0 %lu : Motor Hunt Counts %lu, QEI position %li \r\n",
+		" Button int16_t counts B3 %lu, B2 %lu, B1 %lu, B0 %lu : Motor Hunt Counts %lu, QEI position %li \r\n",
 		V.b3, V.b2, V.b1, V.b0, V.hunt_count, qei1.c);
 	puts2USART(bootstr2);
 
@@ -678,12 +678,12 @@ void system_data(void) // display system data on terminal
 		if (motordata[z].active) {
 			sprintf(bootstr2,
 				" Motor #%i, MPos %4i MSet %4i ,Merror %4i , MHigh %4i MLow %4i MChange %4i , SPos %4i SSet %4i , SOffset %4i SSpan %4i ",
-				(int) z, motordata[z].pot.pos_actual, motordata[z].pot.pos_set, motordata[z].pot.error, motordata[z].pot.high, motordata[z].pot.low, motordata[z].pot.pos_change,
+				(int16_t) z, motordata[z].pot.pos_actual, motordata[z].pot.pos_set, motordata[z].pot.error, motordata[z].pot.high, motordata[z].pot.low, motordata[z].pot.pos_change,
 				motordata[z].pot.scaled_actual, motordata[z].pot.scaled_set, motordata[z].pot.offset, motordata[z].pot.span);
 			puts2USART(bootstr2);
 			sprintf(bootstr2,
 				" SScale In %4i SScale out %4i \r\n",
-				(int) (motordata[z].pot.scale_in * 1000.0), (int) (motordata[z].pot.scale_out * 1000.0));
+				(int16_t) (motordata[z].pot.scale_in * 1000.0), (int16_t) (motordata[z].pot.scale_out * 1000.0));
 			puts2USART(bootstr2);
 		}
 	}
@@ -698,9 +698,9 @@ void system_help(void) // display system help on terminal
 	if (TLOG) putrs2USART(" Extra Debug Enabled.\r\n");
 }
 
-char* hms(unsigned long sec) // convert long (seconds) to time string
+int8_t* hms(uint32_t sec) // convert int32_t (seconds) to time string
 {
-	static unsigned long h = 0, m = 0, s = 0;
+	static uint32_t h = 0, m = 0, s = 0;
 
 	if (sec > MAXSECONDS) sec = MAXSECONDS; // max time in seconds
 	s = sec;
@@ -712,9 +712,9 @@ char* hms(unsigned long sec) // convert long (seconds) to time string
 	return hms_string;
 }
 
-char* hm(unsigned long sec) // convert long (seconds) to time string
+int8_t* hm(uint32_t sec) // convert int32_t (seconds) to time string
 {
-	static unsigned long h = 0, m = 0, s = 0;
+	static uint32_t h = 0, m = 0, s = 0;
 	if (sec > MAXSECONDS) sec = MAXSECONDS; // max time in seconds
 	s = sec;
 	h = (s / 3600);
@@ -725,7 +725,7 @@ char* hm(unsigned long sec) // convert long (seconds) to time string
 	return hms_string;
 }
 
-int ABSI(int i)
+int16_t ABSI(int16_t i)
 {
 	if (i < 0)
 		return -i;
@@ -733,7 +733,7 @@ int ABSI(int i)
 		return i;
 }
 
-long ABSL(long i)
+int32_t ABSL(int32_t i)
 {
 	if (i < 0)
 		return -i;
@@ -741,59 +741,59 @@ long ABSL(long i)
 		return i;
 }
 
-char* voltfp(unsigned long millvolts, char *strprt) // convert unsigned long (millvolts) to voltage string
+int8_t* voltfp(uint32_t millvolts, int8_t *strprt) // convert uint32_t (millvolts) to voltage string
 {
 	voltfrak = (float) millvolts / 1000;
-	iw = (long) ((float) voltfrak);
-	ip = (long) ((float) voltfrak * 100) - iw * 100;
-	sprintf(strprt, "%d.%02d", (int) iw, (int) ip);
+	iw = (int32_t) ((float) voltfrak);
+	ip = (int32_t) ((float) voltfrak * 100) - iw * 100;
+	sprintf(strprt, "%d.%02d", (int16_t) iw, (int16_t) ip);
 	return strprt;
 }
 
-char* voltfps(unsigned long millvolts, char *strprt) // convert unsigned long (millvolts) to voltage string (short)
+int8_t* voltfps(uint32_t millvolts, int8_t *strprt) // convert uint32_t (millvolts) to voltage string (short)
 {
 	voltfrak = (float) millvolts / 1000;
-	iw = (long) ((float) voltfrak);
-	ip = (long) ((float) voltfrak * 10) - iw * 10;
-	sprintf(strprt, "%d.%01d", (int) iw, (int) ip);
+	iw = (int32_t) ((float) voltfrak);
+	ip = (int32_t) ((float) voltfrak * 10) - iw * 10;
+	sprintf(strprt, "%d.%01d", (int16_t) iw, (int16_t) ip);
 	return strprt;
 }
 
-char* voltfpi(long millvolts, char *strprt) // convert long (mill volts/watts/current) to string (integer with Kilo)
+int8_t* voltfpi(int32_t millvolts, int8_t *strprt) // convert int32_t (mill volts/watts/current) to string (integer with Kilo)
 {
 	sign = ' '; // init sign
 	if (millvolts < 0)
 		sign = '-';
 	voltfrak = (float) millvolts / 1000;
-	iw = (long) ((float) voltfrak);
-	ip = (long) ((float) voltfrak * 10) - iw * 10;
+	iw = (int32_t) ((float) voltfrak);
+	ip = (int32_t) ((float) voltfrak * 10) - iw * 10;
 	if (ABSL(iw) < 1500) {
 		sprintf(strprt, "%c%li", sign, ABSL(iw));
 	} else {
 		voltfrak = voltfrak / 1000;
-		iw = (long) ((float) voltfrak);
-		ip = (long) ((float) voltfrak * 100) - iw * 100;
+		iw = (int32_t) ((float) voltfrak);
+		ip = (int32_t) ((float) voltfrak * 100) - iw * 100;
 		sprintf(strprt, "%c%li.%02lik", sign, ABSL(iw), ABSL(ip));
 	}
 	return strprt;
 }
 
-char* ahfp(long millah, char *strprt) // convert long (.1 of Ah) to Ah string
+int8_t* ahfp(int32_t millah, int8_t *strprt) // convert int32_t (.1 of Ah) to Ah string
 {
 	sign = ' '; // init sign
 	if (millah < 0)
 		sign = '-';
 	ahfrak = (float) millah / 10;
-	iw = (long) ((float) ahfrak);
-	ip = (long) ((float) ahfrak * 10) - iw * 10;
+	iw = (int32_t) ((float) ahfrak);
+	ip = (int32_t) ((float) ahfrak * 10) - iw * 10;
 	sprintf(strprt, "%c%d.%01d", sign, ABSI(iw), ABSI(ip));
 	return strprt;
 }
 
 /*  prints messages from the alarm array, need a rework as it's buggy */
-unsigned char check_alarm(unsigned char bn, const rom char* where) // print alarm codes to terminal or just the battery number with code 251
+uint8_t check_alarm(uint8_t bn, const rom int8_t* where) // print alarm codes to terminal or just the battery number with code 251
 { // or set flag with code 253 or clear flag code 252
-	static unsigned char i = 0, alm_num = 255; // if bn is 255 return state of alarm_codes.alm_flag flag TRUE/FALSE, 254 return current alarm code
+	static uint8_t i = 0, alm_num = 255; // if bn is 255 return state of alarm_codes.alm_flag flag TRUE/FALSE, 254 return current alarm code
 	s_crit(HL);
 
 	if (bn > 250) {
@@ -901,7 +901,7 @@ void fail_safe(void)
 
 }
 
-void ansidraw(int mode) // tek 410x/ansi drawing stuff
+void ansidraw(int16_t mode) // tek 410x/ansi drawing stuff
 {
 	putc2(ESC);
 	putc2('['); // clear screen
@@ -913,8 +913,8 @@ void ansidraw(int mode) // tek 410x/ansi drawing stuff
 
 void update_lcd_menu(uint8_t menu_text_pos)
 {
-	static unsigned char slow;
-	static unsigned char position = 0;
+	static uint8_t slow;
+	static uint8_t position = 0;
 
 	if (!mode.move) {
 		if (mode.free) {
@@ -946,7 +946,7 @@ void update_lcd_menu(uint8_t menu_text_pos)
 
 void Set_Cursor(void)
 {
-	static unsigned char z, shape = 0, s_delay;
+	static uint8_t z, shape = 0, s_delay;
 
 	for (z = 0; z < MAX_POT; z++) {
 		Cursor[z] = 0b11111110; // blank
@@ -966,11 +966,11 @@ void Set_Cursor(void)
 	}
 }
 
-int track_motor(void)
+int16_t track_motor(void)
 { // move motor feedback pot/encoder to setpoint
 	static float deadband = 0.0;
-	static int was_running = FALSE, old_error = 0;
-	unsigned char track_knob_to_pot, PERFECT = FALSE;
+	static int16_t was_running = FALSE, old_error = 0;
+	uint8_t track_knob_to_pot, PERFECT = FALSE;
 	uint8_t menu_pos;
 
 	if (mode.free || mode.on_off_only || (mode.info_only)) return MERR_INV;
@@ -1049,12 +1049,12 @@ int track_motor(void)
 			}
 		}
 
-		if ((motordata[track_knob_to_pot].pot.error > (int) ((float) TRACK_DB_L / deadband)) && (motordata[track_knob_to_pot].pot.error < (int) ((float) TRACK_DB_H / deadband))) {
+		if ((motordata[track_knob_to_pot].pot.error > (int16_t) ((float) TRACK_DB_L / deadband)) && (motordata[track_knob_to_pot].pot.error < (int16_t) ((float) TRACK_DB_H / deadband))) {
 			if (PERFECT && mode.qei) {
 				if (was_running) {
 					deadband = DEADB_STOP; // normal deadband when stopped
 					if (TLOG) {
-						sprintf(bootstr2, " In QEI deadband, Error %3i, SLOW Flag %1i, SLOW Relay %i, Total Hunts %i \r\n", motordata[track_knob_to_pot].pot.error, motordata[track_knob_to_pot].slow, (int) POWER_S, motordata[track_knob_to_pot].hunt_count);
+						sprintf(bootstr2, " In QEI deadband, Error %3i, SLOW Flag %1i, SLOW Relay %i, Total Hunts %i \r\n", motordata[track_knob_to_pot].pot.error, motordata[track_knob_to_pot].slow, (int16_t) POWER_S, motordata[track_knob_to_pot].hunt_count);
 						puts2USART(bootstr2);
 					}
 				}
@@ -1067,7 +1067,7 @@ int track_motor(void)
 							deadband = DEADB_KNOB;
 						}
 						if (TLOG) {
-							sprintf(bootstr2, " QEI stopped, Error %3i, SLOW Flag %1i, SLOW Relay &i, Total Hunts %i ", motordata[track_knob_to_pot].pot.error, motordata[track_knob_to_pot].slow, (int) POWER_S, motordata[track_knob_to_pot].hunt_count);
+							sprintf(bootstr2, " QEI stopped, Error %3i, SLOW Flag %1i, SLOW Relay &i, Total Hunts %i ", motordata[track_knob_to_pot].pot.error, motordata[track_knob_to_pot].slow, (int16_t) POWER_S, motordata[track_knob_to_pot].hunt_count);
 							puts2USART(bootstr2);
 							putrs2USART("\x1b[7m Motor Stopped. \x1b[0m\r\n");
 						}
@@ -1084,7 +1084,7 @@ int track_motor(void)
 						deadband = DEADB_KNOB;
 					}
 					if (TLOG) {
-						sprintf(bootstr2, " %i Error %3i, SLOW Flag %1i, SLOW Relay %i, Total Hunts %i ", track_knob_to_pot, motordata[track_knob_to_pot].pot.error, motordata[track_knob_to_pot].slow, (int) POWER_S, motordata[track_knob_to_pot].hunt_count);
+						sprintf(bootstr2, " %i Error %3i, SLOW Flag %1i, SLOW Relay %i, Total Hunts %i ", track_knob_to_pot, motordata[track_knob_to_pot].pot.error, motordata[track_knob_to_pot].slow, (int16_t) POWER_S, motordata[track_knob_to_pot].hunt_count);
 						puts2USART(bootstr2);
 						putrs2USART("\x1b[7m Motor Stopped. \x1b[0m\r\n");
 					}
@@ -1094,7 +1094,7 @@ int track_motor(void)
 			}
 		}
 
-		if (motordata[track_knob_to_pot].pot.error > (int) ((float) TRACK_DB_H / deadband)) { // check knob position
+		if (motordata[track_knob_to_pot].pot.error > (int16_t) ((float) TRACK_DB_H / deadband)) { // check knob position
 			motordata[track_knob_to_pot].run = TRUE;
 			was_running = TRUE;
 			if (!motordata[track_knob_to_pot].cw) {
@@ -1113,7 +1113,7 @@ int track_motor(void)
 				old_error = motordata[track_knob_to_pot].pot.error;
 			}
 		}
-		if (motordata[track_knob_to_pot].pot.error < (int) ((float) TRACK_DB_L / deadband)) { // check knob position
+		if (motordata[track_knob_to_pot].pot.error < (int16_t) ((float) TRACK_DB_L / deadband)) { // check knob position
 			motordata[track_knob_to_pot].run = TRUE;
 			was_running = TRUE;
 			motordata[track_knob_to_pot].cw = FALSE;
@@ -1175,7 +1175,7 @@ uint8_t check_cable(uint8_t *menu)
 				mode.operate = *menu;
 				help_pos = 0;
 				term_time();
-				sprintf(bootstr2, " Cable Disconnected %i \r\n", (int) check_menu);
+				sprintf(bootstr2, " Cable Disconnected %i \r\n", (int16_t) check_menu);
 				puts2USART(bootstr2);
 				old_menu = cable_type;
 			}
@@ -1194,7 +1194,7 @@ uint8_t check_cable(uint8_t *menu)
 			cable_return = cable_type; // no cable connected OK to modify *menu
 		} else {
 			term_time();
-			sprintf(bootstr2, " Disconnect Glitch!! Prev Cable Selection Code %i, New Cable Selection Code %i \r\n", (int) old_menu, (int) check_menu);
+			sprintf(bootstr2, " Disconnect Glitch!! Prev Cable Selection Code %i, New Cable Selection Code %i \r\n", (int16_t) old_menu, (int16_t) check_menu);
 			puts2USART(bootstr2);
 			*menu = old_menu;
 			cable_return = 0;
@@ -1211,7 +1211,7 @@ uint8_t check_cable(uint8_t *menu)
 			mode.operate = *menu;
 			help_pos = 0;
 			term_time();
-			sprintf(bootstr2, " Old Cable Selection Code %i, New Cable Selection Code %i \r\n", (int) old_menu, (int) *menu);
+			sprintf(bootstr2, " Old Cable Selection Code %i, New Cable Selection Code %i \r\n", (int16_t) old_menu, (int16_t) *menu);
 			puts2USART(bootstr2);
 			old_menu = *menu;
 			if (!mode.locked) { // note change
@@ -1227,7 +1227,7 @@ uint8_t check_cable(uint8_t *menu)
 			return 0;
 		} else {
 			term_time();
-			sprintf(bootstr2, " Selection Glitch!! Prev Cable Selection Code %i, New Cable Selection Code %i \r\n", (int) old_menu, (int) check_menu);
+			sprintf(bootstr2, " Selection Glitch!! Prev Cable Selection Code %i, New Cable Selection Code %i \r\n", (int16_t) old_menu, (int16_t) check_menu);
 			puts2USART(bootstr2);
 		}
 	}
@@ -1262,7 +1262,7 @@ uint8_t get_hid(void) // mode is global
 
 		Set_Cursor();
 		term_time();
-		sprintf(bootstr2, " knob_to_pot  %u ", (int) knob_to_pot);
+		sprintf(bootstr2, " knob_to_pot  %u ", (int16_t) knob_to_pot);
 		puts2USART(bootstr2);
 		putrs2USART("\x1b[7m Mode Button 2. \x1b[0m\r\n");
 		LED_2 = LOW;
@@ -1273,7 +1273,7 @@ uint8_t get_hid(void) // mode is global
 	if (button.B0 || (checktime_select(SELECT_ACTION, FALSE) && mode.move)) {
 		if (!mode.move) mode.free = !mode.free; // toggle the motor tracking mode
 		term_time();
-		sprintf(bootstr2, " menu_pos  %u ", (int) menu_pos);
+		sprintf(bootstr2, " menu_pos  %u ", (int16_t) menu_pos);
 		puts2USART(bootstr2);
 		putrs2USART("\x1b[7m Mode Button 1. \x1b[0m\r\n");
 		mode.move = FALSE; // switch modes with button 1 presses
@@ -1295,7 +1295,7 @@ uint8_t get_hid(void) // mode is global
 						init_motordata(menu_pos);
 						buzzer_ticks(1);
 						term_time();
-						sprintf(bootstr2, " menu_pos  %u ", (int) menu_pos);
+						sprintf(bootstr2, " menu_pos  %u ", (int16_t) menu_pos);
 						puts2USART(bootstr2);
 						putrs2USART("\x1b[7m Menu Right. \x1b[0m\r\n");
 					} else {
@@ -1304,7 +1304,7 @@ uint8_t get_hid(void) // mode is global
 						if (help_pos >= MAX_HELP) help_pos = 0;
 						//                        init_motordata(menu_pos);
 						term_time();
-						sprintf(bootstr2, " help_pos  %u ", (int) help_pos);
+						sprintf(bootstr2, " help_pos  %u ", (int16_t) help_pos);
 						puts2USART(bootstr2);
 						putrs2USART("\x1b[7m Help Right. \x1b[0m\r\n");
 					}
@@ -1319,7 +1319,7 @@ uint8_t get_hid(void) // mode is global
 							init_motordata(menu_pos);
 							buzzer_ticks(1);
 							term_time();
-							sprintf(bootstr2, " menu_pos  %u ", (int) menu_pos);
+							sprintf(bootstr2, " menu_pos  %u ", (int16_t) menu_pos);
 							puts2USART(bootstr2);
 							putrs2USART("\x1b[7m Menu Left. \x1b[0m\r\n");
 						} else {
@@ -1328,7 +1328,7 @@ uint8_t get_hid(void) // mode is global
 							if (help_pos >= MAX_HELP) help_pos = 0;
 							//                           init_motordata(menu_pos);
 							term_time();
-							sprintf(bootstr2, " help_pos  %u ", (int) help_pos);
+							sprintf(bootstr2, " help_pos  %u ", (int16_t) help_pos);
 							puts2USART(bootstr2);
 							putrs2USART("\x1b[7m Help Left. \x1b[0m\r\n");
 						}
@@ -1358,7 +1358,7 @@ uint8_t get_hid(void) // mode is global
 						motor_control(&motordata[knob_to_pot]);
 						checktime_motor(MOTOR_ACTION, TRUE); // reset the movement timer
 						term_time();
-						sprintf(bootstr2, " Motor Number  %u ", (int) knob_to_pot);
+						sprintf(bootstr2, " Motor Number  %u ", (int16_t) knob_to_pot);
 						puts2USART(bootstr2);
 						putrs2USART("\x1b[7m Motor CW. \x1b[0m\r\n");
 					} else { // CCW
@@ -1368,7 +1368,7 @@ uint8_t get_hid(void) // mode is global
 							motor_control(&motordata[knob_to_pot]);
 							checktime_motor(MOTOR_ACTION, TRUE); // reset the movement timer
 							term_time();
-							sprintf(bootstr2, " Motor Number  %u ", (int) knob_to_pot);
+							sprintf(bootstr2, " Motor Number  %u ", (int16_t) knob_to_pot);
 							puts2USART(bootstr2);
 							putrs2USART("\x1b[7m Motor CCW. \x1b[0m\r\n");
 						}
@@ -1406,39 +1406,39 @@ void nav_menu(void) // call the correct screen display function
 
 }
 
-int e220_qei_exer(unsigned char times)
+int16_t e220_qei_exer(uint8_t times)
 {
-	unsigned char z;
-	long y;
-	int ret = 0;
+	uint8_t z;
+	int32_t y;
+	int16_t ret = 0;
 	emotor_power_off(); // turn off the power first
 	if (mode.free || motordata[0].pot.cal_failed) return 3; // only use when tracking is enabled.
 	mode.v24 = FALSE;
 	if (qei1.max == 0) return 2;
 	for (z = 0; z <= times; z++) {
 		term_time();
-		sprintf(bootstr2, " Motor encoder exerciser loop # %i of %i\r\n", (int) z + 1, (int) times);
+		sprintf(bootstr2, " Motor encoder exerciser loop # %i of %i\r\n", (int16_t) z + 1, (int16_t) times);
 		puts2USART(bootstr2);
-		knob2.c = (long) ((float) qei1.max * 0.01);
+		knob2.c = (int32_t) ((float) qei1.max * 0.01);
 		if (track_motor()) break;
 		for (y = 0; y < 300; y += 3) {
-			knob2.c = y + (long) ((float) qei1.max * 0.666);
+			knob2.c = y + (int32_t) ((float) qei1.max * 0.666);
 			motordata[knob_to_pot].pot.error = knob2.c - qei1.c; // find the raw encoder/encoder diff
 			if (track_motor()) break;
 		}
 
 		for (y = 0; y < 300; y += 3) {
-			knob2.c = y + (long) ((float) qei1.max * 0.333);
+			knob2.c = y + (int32_t) ((float) qei1.max * 0.333);
 			motordata[knob_to_pot].pot.error = knob2.c - qei1.c; // find the raw encoder/encoder diff
 			if (track_motor()) break;
 		}
-		knob2.c = (long) ((float) qei1.max * 0.9);
+		knob2.c = (int32_t) ((float) qei1.max * 0.9);
 		motordata[knob_to_pot].pot.error = knob2.c - qei1.c; // find the raw encoder/encoder diff
 		if (track_motor()) break;
-		knob2.c = (long) ((float) qei1.max * 0.1);
+		knob2.c = (int32_t) ((float) qei1.max * 0.1);
 		motordata[knob_to_pot].pot.error = knob2.c - qei1.c; // find the raw encoder/encoder diff
 		if (track_motor()) break;
-		knob2.c = (long) ((float) qei1.max * 0.5);
+		knob2.c = (int32_t) ((float) qei1.max * 0.5);
 		motordata[knob_to_pot].pot.error = knob2.c - qei1.c; // find the raw encoder/encoder diff
 		if (track_motor()) break;
 		if (button.B0 || button.B1 || button.B2) {
@@ -1453,11 +1453,11 @@ int e220_qei_exer(unsigned char times)
 	return ret;
 }
 
-int nonqei_exer(unsigned char times)
+int16_t nonqei_exer(uint8_t times)
 {
-	unsigned char z, m;
-	long y;
-	int ret = 0;
+	uint8_t z, m;
+	int32_t y;
+	int16_t ret = 0;
 	emotor_power_off(); // turn off the power first
 	if (mode.free || motordata[0].pot.cal_failed) return 3; // only use when tracking is enabled.
 	mode.v24 = FALSE;
@@ -1466,7 +1466,7 @@ int nonqei_exer(unsigned char times)
 			knob_to_pot = m;
 			if (motordata[knob_to_pot].active) {
 				term_time();
-				sprintf(bootstr2, " Motor encoder exerciser loop # %i of %i\r\n", (int) z + 1, (int) times);
+				sprintf(bootstr2, " Motor encoder exerciser loop # %i of %i\r\n", (int16_t) z + 1, (int16_t) times);
 				puts2USART(bootstr2);
 				motordata[knob_to_pot].pot.scaled_set = 100;
 				if (track_motor()) break;
@@ -1699,7 +1699,7 @@ void e220_qei_display(void)
 		sprintf(bootstr2, "%cR%2li S%2li E%2i               ", Cursor[0], qei1.c, knob2.c, motordata[0].pot.error);
 		LCD_VC_puts(VC0, DS1, YES);
 		if (motordata[0].run) {
-			sprintf(bootstr2, " Motor direction %i                   ", (int) motordata[0].cw); // info display data
+			sprintf(bootstr2, " Motor direction %i                   ", (int16_t) motordata[0].cw); // info display data
 			LCD_VC_puts(VC0, DS2, YES);
 			sprintf(bootstr2, " Movement %li                   ", qei1.band); // info display data
 			LCD_VC_puts(VC0, DS3, YES);
@@ -1802,7 +1802,7 @@ void varian_v_display(void)
 
 void fail_all_motors(uint8_t fail)
 {
-	int z;
+	int16_t z;
 	for (z = 0; z < MAX_MOTOR; z++) { // set or clear the motor cal failed flag
 		motordata[z].pot.cal_failed = fail;
 	}
@@ -1810,7 +1810,7 @@ void fail_all_motors(uint8_t fail)
 
 void set_all_motors(void)
 {
-	static unsigned char knob_to_pot_save;
+	static uint8_t knob_to_pot_save;
 
 	knob_to_pot_save = knob_to_pot;
 	knob_to_pot = 0;
@@ -1827,10 +1827,10 @@ void set_all_motors(void)
 /* assembly calibration and test routines */
 void run_cal(void) // routines to test and set position data for assy motors or valves
 {
-	unsigned long z, motor_counts = 1000;
-	long qei1_tmp = 0;
-	char p = 'X';
-	int test_counts, STOPPED = FALSE;
+	uint32_t z, motor_counts = 1000;
+	int32_t qei1_tmp = 0;
+	int8_t p = 'X';
+	int16_t test_counts, STOPPED = FALSE;
 
 	mode.cal = FALSE;
 	ADC_read();
@@ -1944,7 +1944,7 @@ void run_cal(void) // routines to test and set position data for assy motors or 
 			if (!(motordata[1].pot.cal_low && motordata[1].pot.cal_high)) {
 				if (motordata[1].active) {
 					button.B2 = FALSE;
-					p = 'X' + (char) 1;
+					p = 'X' + (int8_t) 1;
 					sprintf(bootstr2, "Valve failed calibration %c    ", p); // info display data
 					LCD_VC_puts(dsi, DS0, YES);
 					puts2USART(bootstr2);
@@ -2178,21 +2178,21 @@ void run_cal(void) // routines to test and set position data for assy motors or 
 		emotor_power_off(); // turn off the power first
 		mode.free = FALSE; // setup flags so the tracking can work.
 		mode.v24 = FALSE;
-		knob2.c = (long) ((float) qei1.max * 0.01);
+		knob2.c = (int32_t) ((float) qei1.max * 0.01);
 		track_motor();
-		knob2.c = (long) ((float) qei1.max * 0.666);
+		knob2.c = (int32_t) ((float) qei1.max * 0.666);
 		motordata[knob_to_pot].pot.error = knob2.c - qei1.c; // find the raw encoder/encoder diff
 		track_motor();
-		knob2.c = (long) ((float) qei1.max * 0.333);
+		knob2.c = (int32_t) ((float) qei1.max * 0.333);
 		motordata[knob_to_pot].pot.error = knob2.c - qei1.c; // find the raw encoder/encoder diff
 		track_motor();
-		knob2.c = (long) ((float) qei1.max * 0.9);
+		knob2.c = (int32_t) ((float) qei1.max * 0.9);
 		motordata[knob_to_pot].pot.error = knob2.c - qei1.c; // find the raw encoder/encoder diff
 		track_motor();
-		knob2.c = (long) ((float) qei1.max * 0.1);
+		knob2.c = (int32_t) ((float) qei1.max * 0.1);
 		motordata[knob_to_pot].pot.error = knob2.c - qei1.c; // find the raw encoder/encoder diff
 		track_motor();
-		knob2.c = (long) ((float) qei1.max * 0.5);
+		knob2.c = (int32_t) ((float) qei1.max * 0.5);
 		motordata[knob_to_pot].pot.error = knob2.c - qei1.c; // find the raw encoder/encoder diff
 		track_motor();
 		for (z = 0; z < MAX_MOTOR; z++) { // set defaults to pass
@@ -2216,7 +2216,7 @@ void run_cal(void) // routines to test and set position data for assy motors or 
 			motordata[z].pot.scaled_set = motordata[z].cal_pos; // move to install position
 			if (motordata[z].active) {
 				if (mode.operate != GSD_M) {
-					p = 'X' + (char) z;
+					p = 'X' + (int8_t) z;
 				} else {
 					p = 'A';
 				}
@@ -2237,7 +2237,7 @@ void run_cal(void) // routines to test and set position data for assy motors or 
 			if (motordata[z].active) {
 				button.B2 = FALSE;
 				if (mode.operate != GSD_M) {
-					p = 'X' + (char) z;
+					p = 'X' + (int8_t) z;
 				} else {
 					p = 'A';
 				}
@@ -2261,7 +2261,7 @@ void run_cal(void) // routines to test and set position data for assy motors or 
 				putrs2USART("\r\n");
 				blink_led(TEST_LED, TRUE);
 				if (mode.operate != GSD_M) {
-					p = 'X' + (char) z;
+					p = 'X' + (int8_t) z;
 				} else {
 					p = 'A';
 				}
@@ -2369,8 +2369,8 @@ void init_lcd(void)
 
 void main(void) // Lets Party
 {
-	static unsigned char eep_char = NULL0;
-	static unsigned char z = 0;
+	static uint8_t eep_char = NULL0;
+	static uint8_t z = 0;
 	static uint8_t menu_pos;
 
 	mode.v24 = FALSE;
@@ -2525,7 +2525,7 @@ void main(void) // Lets Party
 
 	wdttime(BATRUNF); // read battery and charging system voltages
 	ADC_read();
-	srand((unsigned int) R.systemvoltage); // set random seed
+	srand((uint16_t) R.systemvoltage); // set random seed
 
 	/*      Work thread start */
 	start_workerthread();

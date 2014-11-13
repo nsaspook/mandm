@@ -5,7 +5,7 @@
 
 /* spinner defines */
 #define MAX_SHAPES  6
-const rom char spin[MAX_SHAPES][20] = {
+const rom int8_t spin[MAX_SHAPES][20] = {
     "||//--", 			// classic LCD version with no \ character
     "||//--\\\\", 		// classic
     "OOOOOO--__-", 		// eye blink
@@ -15,7 +15,7 @@ const rom char spin[MAX_SHAPES][20] = {
 };
 
 
-const rom char \
+const rom int8_t \
 menutext_template[] = "\
 xxxx0\
 xxxx1\
@@ -59,7 +59,7 @@ xxx38\
 xxx39\
 ";
 
-const rom char \
+const rom int8_t \
 menutext[] = "\
                 V80 M      E220 M     GSD M     V80 MS    E220 QEI  V810 MS    VAR V    HELP   \
      \
@@ -85,7 +85,7 @@ xxx38\
 xxx39\
 ";
 
-const rom char \
+const rom int8_t \
 menuselect_free[MAX_MENU + 1][22] = {
     " V80 Manipulator   F",
     " E220 Manipulator  F",
@@ -107,7 +107,7 @@ menuselect_free[MAX_MENU + 1][22] = {
     " vista 10          F"
 };
 
-const rom char \
+const rom int8_t \
 menuselect_track[MAX_MENU + 1][22] = {
     " V80 Manipulator   T",
     " E220 Manipulator  T",
@@ -129,7 +129,7 @@ menuselect_track[MAX_MENU + 1][22] = {
     " Exit              T"
 };
 
-const rom char \
+const rom int8_t \
 lowbatt0[] = "\n\r Reducing battey Ah rating due to possible discharged battery.\n\r",
         zero0[] = " All current inputs are at zero current. ",
         zero1[] = "\n\r Current sensors zero setpoints have been recalibrated.\n\r",
@@ -173,7 +173,7 @@ lowbatt0[] = "\n\r Reducing battey Ah rating due to possible discharged battery.
         divert1[] = " D1  AC Power diversion is OFF\r\n",
         divert99[] = "";
 
-const rom char \
+const rom int8_t \
 almcode0[] = " A0  Charger on, Battery Low.\r\n",
         almcode1[] = " A1  Charger on, Low Primary Battery, in irq.\r\n",
         almcode2[] = " A2  Charger off, Battery Fresh.\r\n",
@@ -194,7 +194,7 @@ almcode0[] = " A0  Charger on, Battery Low.\r\n",
         almcode17[] = " A17 Program Error detected.\r\n",
         almcode99[] = "";
 
-const rom char \
+const rom int8_t \
 chrgcode0[] = " C0  Charging stopped, Battery overvolt limit.\r\n",
         chrgcode1[] = " C1  Charging stopped, PV voltage too low (normal).\r\n",
         chrgcode2[] = " C2  Charging stopped, Terminal FORCEOUT.\r\n",

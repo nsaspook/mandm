@@ -3,8 +3,8 @@
 
 //#define HOUSE_DEMO
 /* Program operation parameters */
-#define MANDM_VERSION 	"    MANDM  03.4B FB  "                 // version text header
-#define	MAGIC			0x0034  			// data version checkmark
+#define MANDM_VERSION 	"    MANDM  03.5B FB  "                 // version text header
+#define	MAGIC			0x0035  			// data version checkmark
 #define	START1			"MCHP, F. Brooks 2014   "	// first LCD message
 #define SIMULA			" \x1b[7m RUNNING IN SIMULATION MODE \x1b[0m "
 #define	PIC_8722		8722
@@ -13,8 +13,8 @@
 
 #define	TIMEROFFSET		26474           // timer0 16bit counter value for 1 second to overflow
 #define	TIMER3REG		3048            // timer3 value for 20Hz clock
-#define LOW		(unsigned char)0        // digital output state levels, sink
-#define	HIGH            (unsigned char)1        // digital output state levels, source
+#define LOW		(uint8_t)0        // digital output state levels, sink
+#define	HIGH            (uint8_t)1        // digital output state levels, source
 #define	ON		LOW       		//
 #define OFF		HIGH			//
 #define	S_ON            LOW       		// low select/on for chip/led
@@ -31,7 +31,7 @@
 #define MERR_INV        3
 #define MERR_STOP       4
 #if defined(__18CXX)
-#define NULL0           (unsigned char)0
+#define NULL0           (uint8_t)0
 #endif
 #define SHIFT1          1
 #define SHIFT2          2

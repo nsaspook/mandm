@@ -7,12 +7,12 @@
 #include <adc.h>
 #include <pwm.h>
 
-void config_pic(unsigned int);
-void start_pic(unsigned int);
+void config_pic(uint16_t);
+void start_pic(uint16_t);
 void start_workerthread(void);
 
-extern	volatile unsigned char WDT_TO,EEP_ER;
+extern	volatile uint8_t WDT_TO,EEP_ER;
 
-extern	void ansidraw(int);
+extern	void ansidraw(int16_t);
 #endif /* HWCONF_H_INCLUDED */
 
