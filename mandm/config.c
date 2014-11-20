@@ -94,21 +94,19 @@ void init_motordata(uint8_t part)
 
         if (part == V810_M) {
                 term_time();
-                mode.display = v810_ms_display;
+                mode.display = e220_m_display;
                 putrs2USART("\x1b[7m Init VISTA MANIPULATOR.\x1b[0m\r\n");
                 for (z = 0; z < MAX_MOTOR; z++) {
-                        motordata[z].slow = FALSE;
-                        motordata[z].slow_only = FALSE;
-                        motordata[z].active = FALSE;
-                        motordata[z].reversed = FALSE;
-                        motordata[z].v24 = FALSE;
-                        motordata[z].cal_pos = V810_MS_CAL;
-                        motordata[z].pot.limit_change = V810_MS_CHANGE;
-                        motordata[z].pot.limit_span = V810_MS_SPAN;
-                        motordata[z].pot.limit_offset_l = V810_MS_OFFSET_L;
-                        motordata[z].pot.limit_offset_h = V810_MS_OFFSET_H;
+                        motordata[z].cal_pos = V810_M_CAL;
+                        motordata[z].pot.limit_change = V810_M_CHANGE;
+                        motordata[z].pot.limit_span = V810_M_SPAN;
+                        motordata[z].pot.limit_offset_l = V810_M_OFFSET_L;
+                        motordata[z].pot.limit_offset_h = V810_M_OFFSET_H;
                 }
-                motordata[0].active = TRUE; // x motor for SLIT position
+                motordata[2].active = FALSE;
+                motordata[0].pot.limit_span = V810_M_SPAN_X;
+                motordata[1].pot.limit_span = V810_M_SPAN_Y;
+                motordata[2].pot.limit_span = V810_M_SPAN_Z;
         }
 
         if (part == VIISION_M) {
@@ -131,7 +129,7 @@ void init_motordata(uint8_t part)
                 mode.display = e220_m_display;
                 putrs2USART("\x1b[7m Init E220E500 MANIPULATOR. \x1b[0m\r\n");
                 for (z = 0; z < MAX_MOTOR; z++) {
-                        motordata[z].slow = FALSE;
+
                 }
                 motordata[1].pot.limit_span = E220E500_M_SPAN_Y; // Y motor special span setting
         }

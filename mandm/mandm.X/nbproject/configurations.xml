@@ -52,6 +52,8 @@
     <logicalFolder name="OtherFiles" displayName="Other Files" projectFiles="false">
       <itemPath>../design.txt</itemPath>
       <itemPath>../mandm_manual.doc</itemPath>
+      <itemPath>../mandm_design.pdf</itemPath>
+      <itemPath>../mandm_rev2_design.txt</itemPath>
     </logicalFolder>
   </logicalFolder>
   <sourceRootList>

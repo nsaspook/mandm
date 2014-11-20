@@ -257,8 +257,17 @@
 #define V810_MS_OFFSET_L    10
 #define V810_MS_CAL	    500
 
+#define V810_M_CHANGE    35
+#define V810_M_SPAN      240       // lowest good span count during cal
+#define V810_M_OFFSET_H    400
+#define V810_M_OFFSET_L    10
+#define V810_M_CAL	    500
+
 #define E220E500_M_SPAN_Y      150  	// lowest good span count during cal
 // some units might need a 3 turn instead of a 10 turn pot for the correct span.
+#define V810_M_SPAN_X      300
+#define V810_M_SPAN_Y      300
+#define V810_M_SPAN_Z      300
 
 #define E_MOTOR_NULL_P  -1
 #define E_MOTOR_NONE    -2

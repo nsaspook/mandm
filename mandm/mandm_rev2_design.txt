@@ -1,3 +1,15 @@
+Controller connectors
+
+I/O plug
+X	7-c,6-a
+Y	1-k,2-n
+Z	8-u,9-w
++24	4
+gnd	3
+
+A/D plug
+
+
 Adapter Plug ms3111f18-32p
 Vista RMS channel X
 
@@ -19,7 +31,7 @@ E
 F	pot ground
 
 
-Vista MANIPULATOR channel X
+Vista MANIPULATOR 
 
 black	b	bit-0		1	x
 black	c	select gnd	G	x
@@ -31,9 +43,26 @@ green	f	bit-3		8
 Main plug
 blue	g	controller power 5vdc
 
+channel X
 A	motor +
-B	pot +
+1-B	pot +
 C	motor -
-D	pot wiper
+2-D	pot wiper
 E
 F	pot ground
+
+channel y
+K	motor +
+L	pot +
+M	motor -
+N	pot wiper
+P
+R	pot ground
+
+channel z
+U	motor +
+V	pot +
+W	motor -
+X	pot wiper
+Y
+Z	pot ground
