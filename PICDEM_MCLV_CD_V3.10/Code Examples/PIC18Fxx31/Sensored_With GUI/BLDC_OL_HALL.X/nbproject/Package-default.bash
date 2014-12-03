@@ -10,9 +10,9 @@ CND_CONF=default
 CND_DISTDIR=dist
 TMPDIR=build/${CND_CONF}/${IMAGE_TYPE}/tmp-packaging
 TMPDIRNAME=tmp-packaging
-OUTPUT_PATH=dist/${CND_CONF}/${IMAGE_TYPE}/BLDC_OL_HALL.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
-OUTPUT_BASENAME=BLDC_OL_HALL.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
-PACKAGE_TOP_DIR=bldcolhall.x/
+OUTPUT_PATH=dist/${CND_CONF}/${IMAGE_TYPE}/BLDC_OL_HALL.X.${OUTPUT_SUFFIX}
+OUTPUT_BASENAME=BLDC_OL_HALL.X.${OUTPUT_SUFFIX}
+PACKAGE_TOP_DIR=BLDCOLHALL.X/
 
 # Functions
 function checkReturnCode
@@ -57,15 +57,15 @@ mkdir -p ${TMPDIR}
 
 # Copy files and create directories and links
 cd "${TOP}"
-makeDirectory ${TMPDIR}/bldcolhall.x/bin
-copyFileToTmpDir "${OUTPUT_PATH}" "${TMPDIR}/${PACKAGE_TOP_DIR}bin/${OUTPUT_BASENAME}" 0755
+makeDirectory ${TMPDIR}/BLDCOLHALL.X/lib
+copyFileToTmpDir "${OUTPUT_PATH}" "${TMPDIR}/${PACKAGE_TOP_DIR}lib/${OUTPUT_BASENAME}" 0644
 
 
 # Generate tar file
 cd "${TOP}"
-rm -f ${CND_DISTDIR}/${CND_CONF}/package/bldcolhall.x.tar
+rm -f ${CND_DISTDIR}/${CND_CONF}/package/BLDCOLHALL.X.tar
 cd ${TMPDIR}
-tar -vcf ../../../../${CND_DISTDIR}/${CND_CONF}/package/bldcolhall.x.tar *
+tar -vcf ../../../../${CND_DISTDIR}/${CND_CONF}/package/BLDCOLHALL.X.tar *
 checkReturnCode
 
 # Cleanup

@@ -225,6 +225,7 @@ void ADC_read(void) // update all voltage/current readings and set load current 
                     term_time();
                     sprintf(bootstr2, " Pot %i Change too high %i\r\n", z, motordata[z].pot.pos_change);
                     puts2USART(bootstr2);
+					motordata[z].pot.pos_change=motordata[z].pot.limit_change; // after one message stop and set it to the limit.
                 } else {
                     motordata[z].pot.pos_actual = rawp[z]; // set to current pot reading
                     motordata[z].pot.pos_actual_prev = rawp[z];

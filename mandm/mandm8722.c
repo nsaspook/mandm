@@ -274,7 +274,6 @@ volatile struct modetype mode = {FALSE, TRUE, TRUE, HELP_M, TRUE, TRUE, FALSE, F
 volatile uint8_t almctr, RS232_DEBUG = FALSE;
 volatile uint32_t critc_count = 0;
 #pragma udata gpr5
-volatile struct buttontype button;
 
 int8_t sign = ' ';
 float lp_speed = 0.0, lp_x = 0.0;
@@ -313,6 +312,7 @@ uint8_t lcd18 = 200;
 volatile struct qeitype qei1;
 volatile int32_t slow_timer = 0;
 struct emodefaulttype emodump;
+volatile struct buttontype button;
 
 /* ISR vectors */
 #pragma code tick_interrupt = HIGH_VECTOR
@@ -670,7 +670,7 @@ void system_data(void) // display system data on terminal
 	puts2USART(bootstr2);
 
 	sprintf(bootstr2,
-		" Button int16_t counts B3 %lu, B2 %lu, B1 %lu, B0 %lu : Motor Hunt Counts %lu, QEI position %li \r\n",
+		" Button int counts B3 %lu, B2 %lu, B1 %lu, B0 %lu : Motor Hunt Counts %lu, QEI position %li \r\n",
 		V.b3, V.b2, V.b1, V.b0, V.hunt_count, qei1.c);
 	puts2USART(bootstr2);
 
@@ -916,7 +916,7 @@ void update_lcd_menu(uint8_t menu_text_pos)
 	static uint8_t slow;
 	static uint8_t position = 0;
 
-	if (!mode.move) {
+	if (!mode.move || (menu_text_pos==HELP_M)) { // lock the top line of the help screen
 		if (mode.free) {
 			strncpypgm2ram(bootstr2, menuselect_free[menu_text_pos], LCD_W); // show the selected menu text.
 		} else {

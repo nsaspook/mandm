@@ -103,7 +103,7 @@ void init_motordata(uint8_t part)
                         motordata[z].pot.limit_offset_l = V810_M_OFFSET_L;
                         motordata[z].pot.limit_offset_h = V810_M_OFFSET_H;
                 }
-                motordata[2].active = FALSE;
+//                motordata[2].active = FALSE;
                 motordata[0].pot.limit_span = V810_M_SPAN_X;
                 motordata[1].pot.limit_span = V810_M_SPAN_Y;
                 motordata[2].pot.limit_span = V810_M_SPAN_Z;

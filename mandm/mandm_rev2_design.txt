@@ -1,4 +1,4 @@
-Controller connectors
+ Controller connectors
 
 I/O plug
 X	7-c,6-a
@@ -11,7 +11,7 @@ A/D plug
 
 
 Adapter Plug ms3111f18-32p
-Vista RMS channel X
+Vista810 RMS channel X
 
 black	b	bit-0		1
 black	c	select gnd	G	x
@@ -31,7 +31,20 @@ E
 F	pot ground
 
 
-Vista MANIPULATOR 
+Vista810 MANIPULATOR 
+
+DB-9 female
+
+1	pot hI	orange/white
+2	pot lo	white/orange
+3	shld
+4	pot arm	blue/white
+5	arm low	white/blue
+6	shld
+7	motor +	brown/white
+8	motor -	white/brown
+9	shld
+
 
 black	b	bit-0		1	x
 black	c	select gnd	G	x
