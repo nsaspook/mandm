@@ -90,7 +90,7 @@ endif
 # Rules for buildStep: compile
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
 ${OBJECTDIR}/_ext/1472/crit.o: ../crit.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/1472 
+	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/crit.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/crit.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -p$(MP_PROCESSOR_OPTION) --verbose -I"../C:/Program Files/Microchip/mplabc18/v3.40/h" -I".." -ml --extended -I ${MP_CC_DIR}/../h  -fo ${OBJECTDIR}/_ext/1472/crit.o   ../crit.c 
@@ -98,7 +98,7 @@ ${OBJECTDIR}/_ext/1472/crit.o: ../crit.c  nbproject/Makefile-${CND_CONF}.mk
 	@${FIXDEPS} "${OBJECTDIR}/_ext/1472/crit.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
 ${OBJECTDIR}/_ext/1472/hwconf.o: ../hwconf.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/1472 
+	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/hwconf.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/hwconf.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -p$(MP_PROCESSOR_OPTION) --verbose -I"../C:/Program Files/Microchip/mplabc18/v3.40/h" -I".." -ml --extended -I ${MP_CC_DIR}/../h  -fo ${OBJECTDIR}/_ext/1472/hwconf.o   ../hwconf.c 
@@ -106,7 +106,7 @@ ${OBJECTDIR}/_ext/1472/hwconf.o: ../hwconf.c  nbproject/Makefile-${CND_CONF}.mk
 	@${FIXDEPS} "${OBJECTDIR}/_ext/1472/hwconf.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
 ${OBJECTDIR}/_ext/1472/model.o: ../model.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/1472 
+	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/model.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/model.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -p$(MP_PROCESSOR_OPTION) --verbose -I"../C:/Program Files/Microchip/mplabc18/v3.40/h" -I".." -ml --extended -I ${MP_CC_DIR}/../h  -fo ${OBJECTDIR}/_ext/1472/model.o   ../model.c 
@@ -114,7 +114,7 @@ ${OBJECTDIR}/_ext/1472/model.o: ../model.c  nbproject/Makefile-${CND_CONF}.mk
 	@${FIXDEPS} "${OBJECTDIR}/_ext/1472/model.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
 ${OBJECTDIR}/_ext/1472/power.o: ../power.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/1472 
+	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/power.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/power.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -p$(MP_PROCESSOR_OPTION) --verbose -I"../C:/Program Files/Microchip/mplabc18/v3.40/h" -I".." -ml --extended -I ${MP_CC_DIR}/../h  -fo ${OBJECTDIR}/_ext/1472/power.o   ../power.c 
@@ -122,7 +122,7 @@ ${OBJECTDIR}/_ext/1472/power.o: ../power.c  nbproject/Makefile-${CND_CONF}.mk
 	@${FIXDEPS} "${OBJECTDIR}/_ext/1472/power.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
 ${OBJECTDIR}/_ext/1472/daq.o: ../daq.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/1472 
+	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/daq.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/daq.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -p$(MP_PROCESSOR_OPTION) --verbose -I"../C:/Program Files/Microchip/mplabc18/v3.40/h" -I".." -ml --extended -I ${MP_CC_DIR}/../h  -fo ${OBJECTDIR}/_ext/1472/daq.o   ../daq.c 
@@ -130,7 +130,7 @@ ${OBJECTDIR}/_ext/1472/daq.o: ../daq.c  nbproject/Makefile-${CND_CONF}.mk
 	@${FIXDEPS} "${OBJECTDIR}/_ext/1472/daq.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
 ${OBJECTDIR}/_ext/1472/mandm8722.o: ../mandm8722.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/1472 
+	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/mandm8722.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/mandm8722.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -p$(MP_PROCESSOR_OPTION) --verbose -I"../C:/Program Files/Microchip/mplabc18/v3.40/h" -I".." -ml --extended -I ${MP_CC_DIR}/../h  -fo ${OBJECTDIR}/_ext/1472/mandm8722.o   ../mandm8722.c 
@@ -138,7 +138,7 @@ ${OBJECTDIR}/_ext/1472/mandm8722.o: ../mandm8722.c  nbproject/Makefile-${CND_CON
 	@${FIXDEPS} "${OBJECTDIR}/_ext/1472/mandm8722.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
 ${OBJECTDIR}/_ext/1472/mandm_vector.o: ../mandm_vector.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/1472 
+	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/mandm_vector.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/mandm_vector.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -p$(MP_PROCESSOR_OPTION) --verbose -I"../C:/Program Files/Microchip/mplabc18/v3.40/h" -I".." -ml --extended -I ${MP_CC_DIR}/../h  -fo ${OBJECTDIR}/_ext/1472/mandm_vector.o   ../mandm_vector.c 
@@ -146,7 +146,7 @@ ${OBJECTDIR}/_ext/1472/mandm_vector.o: ../mandm_vector.c  nbproject/Makefile-${C
 	@${FIXDEPS} "${OBJECTDIR}/_ext/1472/mandm_vector.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
 ${OBJECTDIR}/_ext/760475324/writdata.o: ../xlcd/writdata.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/760475324 
+	@${MKDIR} "${OBJECTDIR}/_ext/760475324" 
 	@${RM} ${OBJECTDIR}/_ext/760475324/writdata.o.d 
 	@${RM} ${OBJECTDIR}/_ext/760475324/writdata.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -p$(MP_PROCESSOR_OPTION) --verbose -I"../C:/Program Files/Microchip/mplabc18/v3.40/h" -I".." -ml --extended -I ${MP_CC_DIR}/../h  -fo ${OBJECTDIR}/_ext/760475324/writdata.o   ../xlcd/writdata.c 
@@ -154,7 +154,7 @@ ${OBJECTDIR}/_ext/760475324/writdata.o: ../xlcd/writdata.c  nbproject/Makefile-$
 	@${FIXDEPS} "${OBJECTDIR}/_ext/760475324/writdata.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
 ${OBJECTDIR}/_ext/760475324/openxlcd.o: ../xlcd/openxlcd.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/760475324 
+	@${MKDIR} "${OBJECTDIR}/_ext/760475324" 
 	@${RM} ${OBJECTDIR}/_ext/760475324/openxlcd.o.d 
 	@${RM} ${OBJECTDIR}/_ext/760475324/openxlcd.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -p$(MP_PROCESSOR_OPTION) --verbose -I"../C:/Program Files/Microchip/mplabc18/v3.40/h" -I".." -ml --extended -I ${MP_CC_DIR}/../h  -fo ${OBJECTDIR}/_ext/760475324/openxlcd.o   ../xlcd/openxlcd.c 
@@ -162,7 +162,7 @@ ${OBJECTDIR}/_ext/760475324/openxlcd.o: ../xlcd/openxlcd.c  nbproject/Makefile-$
 	@${FIXDEPS} "${OBJECTDIR}/_ext/760475324/openxlcd.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
 ${OBJECTDIR}/_ext/760475324/putrxlcd.o: ../xlcd/putrxlcd.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/760475324 
+	@${MKDIR} "${OBJECTDIR}/_ext/760475324" 
 	@${RM} ${OBJECTDIR}/_ext/760475324/putrxlcd.o.d 
 	@${RM} ${OBJECTDIR}/_ext/760475324/putrxlcd.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -p$(MP_PROCESSOR_OPTION) --verbose -I"../C:/Program Files/Microchip/mplabc18/v3.40/h" -I".." -ml --extended -I ${MP_CC_DIR}/../h  -fo ${OBJECTDIR}/_ext/760475324/putrxlcd.o   ../xlcd/putrxlcd.c 
@@ -170,7 +170,7 @@ ${OBJECTDIR}/_ext/760475324/putrxlcd.o: ../xlcd/putrxlcd.c  nbproject/Makefile-$
 	@${FIXDEPS} "${OBJECTDIR}/_ext/760475324/putrxlcd.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
 ${OBJECTDIR}/_ext/760475324/putsxlcd.o: ../xlcd/putsxlcd.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/760475324 
+	@${MKDIR} "${OBJECTDIR}/_ext/760475324" 
 	@${RM} ${OBJECTDIR}/_ext/760475324/putsxlcd.o.d 
 	@${RM} ${OBJECTDIR}/_ext/760475324/putsxlcd.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -p$(MP_PROCESSOR_OPTION) --verbose -I"../C:/Program Files/Microchip/mplabc18/v3.40/h" -I".." -ml --extended -I ${MP_CC_DIR}/../h  -fo ${OBJECTDIR}/_ext/760475324/putsxlcd.o   ../xlcd/putsxlcd.c 
@@ -178,7 +178,7 @@ ${OBJECTDIR}/_ext/760475324/putsxlcd.o: ../xlcd/putsxlcd.c  nbproject/Makefile-$
 	@${FIXDEPS} "${OBJECTDIR}/_ext/760475324/putsxlcd.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
 ${OBJECTDIR}/_ext/760475324/readaddr.o: ../xlcd/readaddr.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/760475324 
+	@${MKDIR} "${OBJECTDIR}/_ext/760475324" 
 	@${RM} ${OBJECTDIR}/_ext/760475324/readaddr.o.d 
 	@${RM} ${OBJECTDIR}/_ext/760475324/readaddr.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -p$(MP_PROCESSOR_OPTION) --verbose -I"../C:/Program Files/Microchip/mplabc18/v3.40/h" -I".." -ml --extended -I ${MP_CC_DIR}/../h  -fo ${OBJECTDIR}/_ext/760475324/readaddr.o   ../xlcd/readaddr.c 
@@ -186,7 +186,7 @@ ${OBJECTDIR}/_ext/760475324/readaddr.o: ../xlcd/readaddr.c  nbproject/Makefile-$
 	@${FIXDEPS} "${OBJECTDIR}/_ext/760475324/readaddr.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
 ${OBJECTDIR}/_ext/760475324/readdata.o: ../xlcd/readdata.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/760475324 
+	@${MKDIR} "${OBJECTDIR}/_ext/760475324" 
 	@${RM} ${OBJECTDIR}/_ext/760475324/readdata.o.d 
 	@${RM} ${OBJECTDIR}/_ext/760475324/readdata.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -p$(MP_PROCESSOR_OPTION) --verbose -I"../C:/Program Files/Microchip/mplabc18/v3.40/h" -I".." -ml --extended -I ${MP_CC_DIR}/../h  -fo ${OBJECTDIR}/_ext/760475324/readdata.o   ../xlcd/readdata.c 
@@ -194,7 +194,7 @@ ${OBJECTDIR}/_ext/760475324/readdata.o: ../xlcd/readdata.c  nbproject/Makefile-$
 	@${FIXDEPS} "${OBJECTDIR}/_ext/760475324/readdata.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
 ${OBJECTDIR}/_ext/760475324/setcgram.o: ../xlcd/setcgram.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/760475324 
+	@${MKDIR} "${OBJECTDIR}/_ext/760475324" 
 	@${RM} ${OBJECTDIR}/_ext/760475324/setcgram.o.d 
 	@${RM} ${OBJECTDIR}/_ext/760475324/setcgram.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -p$(MP_PROCESSOR_OPTION) --verbose -I"../C:/Program Files/Microchip/mplabc18/v3.40/h" -I".." -ml --extended -I ${MP_CC_DIR}/../h  -fo ${OBJECTDIR}/_ext/760475324/setcgram.o   ../xlcd/setcgram.c 
@@ -202,7 +202,7 @@ ${OBJECTDIR}/_ext/760475324/setcgram.o: ../xlcd/setcgram.c  nbproject/Makefile-$
 	@${FIXDEPS} "${OBJECTDIR}/_ext/760475324/setcgram.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
 ${OBJECTDIR}/_ext/760475324/setddram.o: ../xlcd/setddram.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/760475324 
+	@${MKDIR} "${OBJECTDIR}/_ext/760475324" 
 	@${RM} ${OBJECTDIR}/_ext/760475324/setddram.o.d 
 	@${RM} ${OBJECTDIR}/_ext/760475324/setddram.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -p$(MP_PROCESSOR_OPTION) --verbose -I"../C:/Program Files/Microchip/mplabc18/v3.40/h" -I".." -ml --extended -I ${MP_CC_DIR}/../h  -fo ${OBJECTDIR}/_ext/760475324/setddram.o   ../xlcd/setddram.c 
@@ -210,7 +210,7 @@ ${OBJECTDIR}/_ext/760475324/setddram.o: ../xlcd/setddram.c  nbproject/Makefile-$
 	@${FIXDEPS} "${OBJECTDIR}/_ext/760475324/setddram.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
 ${OBJECTDIR}/_ext/760475324/wcmdxlcd.o: ../xlcd/wcmdxlcd.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/760475324 
+	@${MKDIR} "${OBJECTDIR}/_ext/760475324" 
 	@${RM} ${OBJECTDIR}/_ext/760475324/wcmdxlcd.o.d 
 	@${RM} ${OBJECTDIR}/_ext/760475324/wcmdxlcd.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -p$(MP_PROCESSOR_OPTION) --verbose -I"../C:/Program Files/Microchip/mplabc18/v3.40/h" -I".." -ml --extended -I ${MP_CC_DIR}/../h  -fo ${OBJECTDIR}/_ext/760475324/wcmdxlcd.o   ../xlcd/wcmdxlcd.c 
@@ -218,7 +218,7 @@ ${OBJECTDIR}/_ext/760475324/wcmdxlcd.o: ../xlcd/wcmdxlcd.c  nbproject/Makefile-$
 	@${FIXDEPS} "${OBJECTDIR}/_ext/760475324/wcmdxlcd.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
 ${OBJECTDIR}/_ext/760475324/busyxlcd.o: ../xlcd/busyxlcd.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/760475324 
+	@${MKDIR} "${OBJECTDIR}/_ext/760475324" 
 	@${RM} ${OBJECTDIR}/_ext/760475324/busyxlcd.o.d 
 	@${RM} ${OBJECTDIR}/_ext/760475324/busyxlcd.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -p$(MP_PROCESSOR_OPTION) --verbose -I"../C:/Program Files/Microchip/mplabc18/v3.40/h" -I".." -ml --extended -I ${MP_CC_DIR}/../h  -fo ${OBJECTDIR}/_ext/760475324/busyxlcd.o   ../xlcd/busyxlcd.c 
@@ -226,7 +226,7 @@ ${OBJECTDIR}/_ext/760475324/busyxlcd.o: ../xlcd/busyxlcd.c  nbproject/Makefile-$
 	@${FIXDEPS} "${OBJECTDIR}/_ext/760475324/busyxlcd.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
 ${OBJECTDIR}/_ext/1472/config.o: ../config.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/1472 
+	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/config.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/config.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -p$(MP_PROCESSOR_OPTION) --verbose -I"../C:/Program Files/Microchip/mplabc18/v3.40/h" -I".." -ml --extended -I ${MP_CC_DIR}/../h  -fo ${OBJECTDIR}/_ext/1472/config.o   ../config.c 
@@ -235,7 +235,7 @@ ${OBJECTDIR}/_ext/1472/config.o: ../config.c  nbproject/Makefile-${CND_CONF}.mk
 	
 else
 ${OBJECTDIR}/_ext/1472/crit.o: ../crit.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/1472 
+	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/crit.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/crit.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) --verbose -I"../C:/Program Files/Microchip/mplabc18/v3.40/h" -I".." -ml --extended -I ${MP_CC_DIR}/../h  -fo ${OBJECTDIR}/_ext/1472/crit.o   ../crit.c 
@@ -243,7 +243,7 @@ ${OBJECTDIR}/_ext/1472/crit.o: ../crit.c  nbproject/Makefile-${CND_CONF}.mk
 	@${FIXDEPS} "${OBJECTDIR}/_ext/1472/crit.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
 ${OBJECTDIR}/_ext/1472/hwconf.o: ../hwconf.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/1472 
+	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/hwconf.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/hwconf.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) --verbose -I"../C:/Program Files/Microchip/mplabc18/v3.40/h" -I".." -ml --extended -I ${MP_CC_DIR}/../h  -fo ${OBJECTDIR}/_ext/1472/hwconf.o   ../hwconf.c 
@@ -251,7 +251,7 @@ ${OBJECTDIR}/_ext/1472/hwconf.o: ../hwconf.c  nbproject/Makefile-${CND_CONF}.mk
 	@${FIXDEPS} "${OBJECTDIR}/_ext/1472/hwconf.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
 ${OBJECTDIR}/_ext/1472/model.o: ../model.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/1472 
+	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/model.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/model.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) --verbose -I"../C:/Program Files/Microchip/mplabc18/v3.40/h" -I".." -ml --extended -I ${MP_CC_DIR}/../h  -fo ${OBJECTDIR}/_ext/1472/model.o   ../model.c 
@@ -259,7 +259,7 @@ ${OBJECTDIR}/_ext/1472/model.o: ../model.c  nbproject/Makefile-${CND_CONF}.mk
 	@${FIXDEPS} "${OBJECTDIR}/_ext/1472/model.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
 ${OBJECTDIR}/_ext/1472/power.o: ../power.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/1472 
+	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/power.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/power.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) --verbose -I"../C:/Program Files/Microchip/mplabc18/v3.40/h" -I".." -ml --extended -I ${MP_CC_DIR}/../h  -fo ${OBJECTDIR}/_ext/1472/power.o   ../power.c 
@@ -267,7 +267,7 @@ ${OBJECTDIR}/_ext/1472/power.o: ../power.c  nbproject/Makefile-${CND_CONF}.mk
 	@${FIXDEPS} "${OBJECTDIR}/_ext/1472/power.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
 ${OBJECTDIR}/_ext/1472/daq.o: ../daq.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/1472 
+	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/daq.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/daq.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) --verbose -I"../C:/Program Files/Microchip/mplabc18/v3.40/h" -I".." -ml --extended -I ${MP_CC_DIR}/../h  -fo ${OBJECTDIR}/_ext/1472/daq.o   ../daq.c 
@@ -275,7 +275,7 @@ ${OBJECTDIR}/_ext/1472/daq.o: ../daq.c  nbproject/Makefile-${CND_CONF}.mk
 	@${FIXDEPS} "${OBJECTDIR}/_ext/1472/daq.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
 ${OBJECTDIR}/_ext/1472/mandm8722.o: ../mandm8722.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/1472 
+	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/mandm8722.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/mandm8722.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) --verbose -I"../C:/Program Files/Microchip/mplabc18/v3.40/h" -I".." -ml --extended -I ${MP_CC_DIR}/../h  -fo ${OBJECTDIR}/_ext/1472/mandm8722.o   ../mandm8722.c 
@@ -283,7 +283,7 @@ ${OBJECTDIR}/_ext/1472/mandm8722.o: ../mandm8722.c  nbproject/Makefile-${CND_CON
 	@${FIXDEPS} "${OBJECTDIR}/_ext/1472/mandm8722.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
 ${OBJECTDIR}/_ext/1472/mandm_vector.o: ../mandm_vector.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/1472 
+	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/mandm_vector.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/mandm_vector.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) --verbose -I"../C:/Program Files/Microchip/mplabc18/v3.40/h" -I".." -ml --extended -I ${MP_CC_DIR}/../h  -fo ${OBJECTDIR}/_ext/1472/mandm_vector.o   ../mandm_vector.c 
@@ -291,7 +291,7 @@ ${OBJECTDIR}/_ext/1472/mandm_vector.o: ../mandm_vector.c  nbproject/Makefile-${C
 	@${FIXDEPS} "${OBJECTDIR}/_ext/1472/mandm_vector.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
 ${OBJECTDIR}/_ext/760475324/writdata.o: ../xlcd/writdata.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/760475324 
+	@${MKDIR} "${OBJECTDIR}/_ext/760475324" 
 	@${RM} ${OBJECTDIR}/_ext/760475324/writdata.o.d 
 	@${RM} ${OBJECTDIR}/_ext/760475324/writdata.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) --verbose -I"../C:/Program Files/Microchip/mplabc18/v3.40/h" -I".." -ml --extended -I ${MP_CC_DIR}/../h  -fo ${OBJECTDIR}/_ext/760475324/writdata.o   ../xlcd/writdata.c 
@@ -299,7 +299,7 @@ ${OBJECTDIR}/_ext/760475324/writdata.o: ../xlcd/writdata.c  nbproject/Makefile-$
 	@${FIXDEPS} "${OBJECTDIR}/_ext/760475324/writdata.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
 ${OBJECTDIR}/_ext/760475324/openxlcd.o: ../xlcd/openxlcd.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/760475324 
+	@${MKDIR} "${OBJECTDIR}/_ext/760475324" 
 	@${RM} ${OBJECTDIR}/_ext/760475324/openxlcd.o.d 
 	@${RM} ${OBJECTDIR}/_ext/760475324/openxlcd.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) --verbose -I"../C:/Program Files/Microchip/mplabc18/v3.40/h" -I".." -ml --extended -I ${MP_CC_DIR}/../h  -fo ${OBJECTDIR}/_ext/760475324/openxlcd.o   ../xlcd/openxlcd.c 
@@ -307,7 +307,7 @@ ${OBJECTDIR}/_ext/760475324/openxlcd.o: ../xlcd/openxlcd.c  nbproject/Makefile-$
 	@${FIXDEPS} "${OBJECTDIR}/_ext/760475324/openxlcd.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
 ${OBJECTDIR}/_ext/760475324/putrxlcd.o: ../xlcd/putrxlcd.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/760475324 
+	@${MKDIR} "${OBJECTDIR}/_ext/760475324" 
 	@${RM} ${OBJECTDIR}/_ext/760475324/putrxlcd.o.d 
 	@${RM} ${OBJECTDIR}/_ext/760475324/putrxlcd.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) --verbose -I"../C:/Program Files/Microchip/mplabc18/v3.40/h" -I".." -ml --extended -I ${MP_CC_DIR}/../h  -fo ${OBJECTDIR}/_ext/760475324/putrxlcd.o   ../xlcd/putrxlcd.c 
@@ -315,7 +315,7 @@ ${OBJECTDIR}/_ext/760475324/putrxlcd.o: ../xlcd/putrxlcd.c  nbproject/Makefile-$
 	@${FIXDEPS} "${OBJECTDIR}/_ext/760475324/putrxlcd.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
 ${OBJECTDIR}/_ext/760475324/putsxlcd.o: ../xlcd/putsxlcd.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/760475324 
+	@${MKDIR} "${OBJECTDIR}/_ext/760475324" 
 	@${RM} ${OBJECTDIR}/_ext/760475324/putsxlcd.o.d 
 	@${RM} ${OBJECTDIR}/_ext/760475324/putsxlcd.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) --verbose -I"../C:/Program Files/Microchip/mplabc18/v3.40/h" -I".." -ml --extended -I ${MP_CC_DIR}/../h  -fo ${OBJECTDIR}/_ext/760475324/putsxlcd.o   ../xlcd/putsxlcd.c 
@@ -323,7 +323,7 @@ ${OBJECTDIR}/_ext/760475324/putsxlcd.o: ../xlcd/putsxlcd.c  nbproject/Makefile-$
 	@${FIXDEPS} "${OBJECTDIR}/_ext/760475324/putsxlcd.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
 ${OBJECTDIR}/_ext/760475324/readaddr.o: ../xlcd/readaddr.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/760475324 
+	@${MKDIR} "${OBJECTDIR}/_ext/760475324" 
 	@${RM} ${OBJECTDIR}/_ext/760475324/readaddr.o.d 
 	@${RM} ${OBJECTDIR}/_ext/760475324/readaddr.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) --verbose -I"../C:/Program Files/Microchip/mplabc18/v3.40/h" -I".." -ml --extended -I ${MP_CC_DIR}/../h  -fo ${OBJECTDIR}/_ext/760475324/readaddr.o   ../xlcd/readaddr.c 
@@ -331,7 +331,7 @@ ${OBJECTDIR}/_ext/760475324/readaddr.o: ../xlcd/readaddr.c  nbproject/Makefile-$
 	@${FIXDEPS} "${OBJECTDIR}/_ext/760475324/readaddr.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
 ${OBJECTDIR}/_ext/760475324/readdata.o: ../xlcd/readdata.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/760475324 
+	@${MKDIR} "${OBJECTDIR}/_ext/760475324" 
 	@${RM} ${OBJECTDIR}/_ext/760475324/readdata.o.d 
 	@${RM} ${OBJECTDIR}/_ext/760475324/readdata.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) --verbose -I"../C:/Program Files/Microchip/mplabc18/v3.40/h" -I".." -ml --extended -I ${MP_CC_DIR}/../h  -fo ${OBJECTDIR}/_ext/760475324/readdata.o   ../xlcd/readdata.c 
@@ -339,7 +339,7 @@ ${OBJECTDIR}/_ext/760475324/readdata.o: ../xlcd/readdata.c  nbproject/Makefile-$
 	@${FIXDEPS} "${OBJECTDIR}/_ext/760475324/readdata.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
 ${OBJECTDIR}/_ext/760475324/setcgram.o: ../xlcd/setcgram.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/760475324 
+	@${MKDIR} "${OBJECTDIR}/_ext/760475324" 
 	@${RM} ${OBJECTDIR}/_ext/760475324/setcgram.o.d 
 	@${RM} ${OBJECTDIR}/_ext/760475324/setcgram.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) --verbose -I"../C:/Program Files/Microchip/mplabc18/v3.40/h" -I".." -ml --extended -I ${MP_CC_DIR}/../h  -fo ${OBJECTDIR}/_ext/760475324/setcgram.o   ../xlcd/setcgram.c 
@@ -347,7 +347,7 @@ ${OBJECTDIR}/_ext/760475324/setcgram.o: ../xlcd/setcgram.c  nbproject/Makefile-$
 	@${FIXDEPS} "${OBJECTDIR}/_ext/760475324/setcgram.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
 ${OBJECTDIR}/_ext/760475324/setddram.o: ../xlcd/setddram.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/760475324 
+	@${MKDIR} "${OBJECTDIR}/_ext/760475324" 
 	@${RM} ${OBJECTDIR}/_ext/760475324/setddram.o.d 
 	@${RM} ${OBJECTDIR}/_ext/760475324/setddram.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) --verbose -I"../C:/Program Files/Microchip/mplabc18/v3.40/h" -I".." -ml --extended -I ${MP_CC_DIR}/../h  -fo ${OBJECTDIR}/_ext/760475324/setddram.o   ../xlcd/setddram.c 
@@ -355,7 +355,7 @@ ${OBJECTDIR}/_ext/760475324/setddram.o: ../xlcd/setddram.c  nbproject/Makefile-$
 	@${FIXDEPS} "${OBJECTDIR}/_ext/760475324/setddram.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
 ${OBJECTDIR}/_ext/760475324/wcmdxlcd.o: ../xlcd/wcmdxlcd.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/760475324 
+	@${MKDIR} "${OBJECTDIR}/_ext/760475324" 
 	@${RM} ${OBJECTDIR}/_ext/760475324/wcmdxlcd.o.d 
 	@${RM} ${OBJECTDIR}/_ext/760475324/wcmdxlcd.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) --verbose -I"../C:/Program Files/Microchip/mplabc18/v3.40/h" -I".." -ml --extended -I ${MP_CC_DIR}/../h  -fo ${OBJECTDIR}/_ext/760475324/wcmdxlcd.o   ../xlcd/wcmdxlcd.c 
@@ -363,7 +363,7 @@ ${OBJECTDIR}/_ext/760475324/wcmdxlcd.o: ../xlcd/wcmdxlcd.c  nbproject/Makefile-$
 	@${FIXDEPS} "${OBJECTDIR}/_ext/760475324/wcmdxlcd.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
 ${OBJECTDIR}/_ext/760475324/busyxlcd.o: ../xlcd/busyxlcd.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/760475324 
+	@${MKDIR} "${OBJECTDIR}/_ext/760475324" 
 	@${RM} ${OBJECTDIR}/_ext/760475324/busyxlcd.o.d 
 	@${RM} ${OBJECTDIR}/_ext/760475324/busyxlcd.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) --verbose -I"../C:/Program Files/Microchip/mplabc18/v3.40/h" -I".." -ml --extended -I ${MP_CC_DIR}/../h  -fo ${OBJECTDIR}/_ext/760475324/busyxlcd.o   ../xlcd/busyxlcd.c 
@@ -371,7 +371,7 @@ ${OBJECTDIR}/_ext/760475324/busyxlcd.o: ../xlcd/busyxlcd.c  nbproject/Makefile-$
 	@${FIXDEPS} "${OBJECTDIR}/_ext/760475324/busyxlcd.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
 ${OBJECTDIR}/_ext/1472/config.o: ../config.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/1472 
+	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/config.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/config.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) --verbose -I"../C:/Program Files/Microchip/mplabc18/v3.40/h" -I".." -ml --extended -I ${MP_CC_DIR}/../h  -fo ${OBJECTDIR}/_ext/1472/config.o   ../config.c 
