@@ -1,4 +1,4 @@
-MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-3-2014  8:30:04         PAGE  1
+MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-15-2014  18:01:53         PAGE  1
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -57,7 +57,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00003 #DEFINE RAMP                    ;THIS DIRECTIVE ADDS ACCELERATION/DECELERATION ROUTINE IN FIRMWARE
                       00004                                 ;COMMENT THIS DIRECTIVE IF ACCELERATION/DECELERATION NOT REQUIRED
                       00005 #DEFINE ACTIVE_MODE     0x01    ;DEFINES ACTIVE CONTROL MODE
-MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-3-2014  8:30:04         PAGE  2
+MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-15-2014  18:01:53         PAGE  2
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -116,7 +116,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00056 ;****************************************************************************
                       00057 #DEFINE SKIP_DLE            1
                       00058 ;****************************************************************************
-MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-3-2014  8:30:04         PAGE  3
+MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-15-2014  18:01:53         PAGE  3
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -175,7 +175,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00109 
                       00110 ;****************************************************************************
                       00111 ;VUARTINTSTATUS BIT DEFINITION (DO NOT CHANGE)
-MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-3-2014  8:30:04         PAGE  4
+MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-15-2014  18:01:53         PAGE  4
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -234,7 +234,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00162 #DEFINE KEY_RS          2
                       00163 #DEFINE KEY_FR          3
                       00164 #DEFINE KEY_PRESSED     4
-MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-3-2014  8:30:04         PAGE  5
+MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-15-2014  18:01:53         PAGE  5
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -293,7 +293,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00215 #DEFINE LOC_CURRENT_LOOP_KP         0X12
                       00216 #DEFINE LOC_CURRENT_LOOP_KI         0X13
                       00217 #DEFINE LOC_CURRENT_LOOP_KD         0X14
-MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-3-2014  8:30:04         PAGE  6
+MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-15-2014  18:01:53         PAGE  6
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -352,7 +352,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00268 
                       00269 ;****************************************************************************
                       00270 ;COMMUTATION TABLE. LOADED TO OVDCOND
-MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-3-2014  8:30:04         PAGE  7
+MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-15-2014  18:01:53         PAGE  7
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -411,7 +411,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00036 GUI_FLAGS               RES     1
                       00037 ISR_FSR0L               RES     1       ;LOCATION FOR FSR0<H:L> SAVING IN INTERRUPT
                       00038 ISR_FSR0H               RES     1
-MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-3-2014  8:30:04         PAGE  8
+MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-15-2014  18:01:53         PAGE  8
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -470,7 +470,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00089 #ENDIF
                       00090 PARAMETER_BUFFER        RES     PARAMETER_BUFFER_SIZE   ;PARAMETER BUFFER
                       00091 
-MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-3-2014  8:30:04         PAGE  9
+MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-15-2014  18:01:53         PAGE  9
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -529,7 +529,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   0000                00041         GLOBAL  SET_DIRECTION_AT_POR,CONFIGURE_PWM
   0000                00042         GLOBAL  INIT_TMR1,INIT_ADC,READ_SYSTEM_PARAMETERS,INIT_PORTS,INIT_MOTION_FEEDBACK_MODULE
   0000                00043         GLOBAL  ISR_HIGH,ISR_LOW,CLEAR_ALL_RAM,INIT_INTERRUPT,LOAD_SEQUENCE_TABLE,CLEAR_ALL_LED
-MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-3-2014  8:30:04         PAGE 10
+MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-15-2014  18:01:53         PAGE 10
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -588,7 +588,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 000032                00092 CHECK_TMR1_INT  
 000032 B09E           00093         BTFSC   PIR1,TMR1IF                             ;IS IT TMR1 OVER FLOW INT?
 000034 D???           00094         BRA     ISR_TMR1                                ;YES - JUMP TO TMR1 ISR
-MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-3-2014  8:30:04         PAGE 11
+MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-15-2014  18:01:53         PAGE 11
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -647,7 +647,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 00008E D???           00144         BRA     ISR_LOW_CONTEXT_RETRIEVE                ;IF BUFFER FULL THEN RETURN TO CHECK OTHER INTER
                             RUPT
 000090 A2??           00145         BTFSS   UARTINT_STATUS,UARTINT_RX_BUF_FUL       ;CHECK FOR UARTINT_RX_BUF_FUL BIT
-MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-3-2014  8:30:04         PAGE 12
+MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-15-2014  18:01:53         PAGE 12
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -706,7 +706,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0000F0 A6??           00196         BTFSS   TMR1_OF_COUNT_MSB,3
 0000F2 D???           00197         BRA     ISR_LOW_CONTEXT_RETRIEVE
 0000F4 6A??           00198         CLRF    TMR1_OF_COUNT_LSB
-MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-3-2014  8:30:04         PAGE 13
+MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-15-2014  18:01:53         PAGE 13
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -765,7 +765,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00248 #ENDIF
 000148 EC?? F???      00249         CALL    UPDATE_SEQUENCE
 00014C 92A4           00250         BCF     PIR3,IC1IF
-MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-3-2014  8:30:04         PAGE 14
+MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-15-2014  18:01:53         PAGE 14
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -824,7 +824,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 00019E 0B1C           00301         ANDLW   0X1C                                    ;IC1/IC2/IC3
 0001A0 40E8           00302         RRNCF   WREG,W
 0001A2 40E8           00303         RRNCF   WREG,W
-MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-3-2014  8:30:04         PAGE 15
+MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-15-2014  18:01:53         PAGE 15
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -883,7 +883,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00354 ;*************************************************************************************
 0001F8                00355 PROCESS_RUN_CMD
 0001F8 BA??           00356         BTFSC   BLDC_FLAGS_1,RUN_STOP
-MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-3-2014  8:30:04         PAGE 16
+MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-15-2014  18:01:53         PAGE 16
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -942,7 +942,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 000254 C??? FFE8      00407         MOVFF   PARAMETER_BUFFER+LOC_CAPBUF_CNT_LSB,WREG
 000258 AA??           00408         BTFSS   BLDC_FLAGS_1,RUN_STOP
 00025A 6AE8           00409         CLRF    WREG
-MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-3-2014  8:30:04         PAGE 17
+MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-15-2014  18:01:53         PAGE 17
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1001,7 +1001,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0002D4 B2A6           00459         BTFSC   EECON1,WR                                       ;WAIT HERE TILL WRITE IS OVER
 0002D6 D???           00460         BRA     $-2
 0002D8 2AA9           00461         INCF    EEADR
-MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-3-2014  8:30:04         PAGE 18
+MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-15-2014  18:01:53         PAGE 18
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1060,7 +1060,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00512 ;*******************************************************************************
                       00513 ;THIS ROUTINE STARTS MOTOR FROM PREVIOUS STOP WITH MOTOR PARAMETERS INITIALIZED
                       00514 ;*******************************************************************************
-MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-3-2014  8:30:04         PAGE 19
+MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-15-2014  18:01:53         PAGE 19
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1119,7 +1119,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00564 #IF ((ACTIVE_MODE == 0X01) || (ACTIVE_MODE == 0X02))
 000386                00565 INIT_EUSART
 000386 6AAD           00566         CLRF    TXREG                                   ;CLEAR TRANSMIT REGISTER
-MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-3-2014  8:30:04         PAGE 20
+MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-15-2014  18:01:53         PAGE 20
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1178,7 +1178,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00617 ;*************************************************************************************
 0003D4                00618 INIT_PWM
 0003D4 6A7E           00619         CLRF    PTCON1
-MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-3-2014  8:30:04         PAGE 21
+MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-15-2014  18:01:53         PAGE 21
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1237,7 +1237,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 000428 0E59           00670         MOVLW   0X59
 00042A 6EB7           00671         MOVWF   T5CON
 00042C 0E48           00672         MOVLW   0X48        ;CAPTURE AT EVERY INPUT CHANGE FOR IC1
-MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-3-2014  8:30:04         PAGE 22
+MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-15-2014  18:01:53         PAGE 22
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1296,7 +1296,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 000486 6E??           00723         MOVWF   POSITION_TABLE_REV+7
 000488 0012           00724         RETURN
 00048A                00725 LOAD_TABLE_FOR_120DEG_HALL
-MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-3-2014  8:30:04         PAGE 23
+MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-15-2014  18:01:53         PAGE 23
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1355,7 +1355,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0004E2 6AA5           00776         CLRF    IPR3
 0004E4 8C9F           00777         BSF     IPR1,ADIP               ;ASSIGN HIGH PRIORITY TO ADC INTERRUPT
 0004E6 82A5           00778         BSF     IPR3,IC1IP              ;ASSIGN HIGH PRIORITY TO IC1 INTERRUPT
-MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-3-2014  8:30:04         PAGE 24
+MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-15-2014  18:01:53         PAGE 24
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1414,7 +1414,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 000534 B482           00829         BTFSC   KEY_PORT,FWD_REV_KEY            ;IS KEY PRESSED "FWD/REV"?
 000536 EF?? F???      00830         GOTO    SET_KEYS
 00053A B2??           00831         BTFSC   BLDC_FLAGS_1,DEBOUNCE
-MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-3-2014  8:30:04         PAGE 25
+MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-15-2014  18:01:53         PAGE 25
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1473,7 +1473,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 000586 A2EA           00882         BTFSS   FSR0H,1                 ;ALL DONE WITH BANK0, BANK1 AND BANK2?
 000588 D???           00883         BRA     NEXT                    ;NO, CLEAR NEXT RAM
 00058A AEE9           00884         BTFSS   FSR0L,7                 ;ALL DONE WITH BANK0, BANK1 AND BANK2?
-MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-3-2014  8:30:04         PAGE 26
+MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-15-2014  18:01:53         PAGE 26
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1532,7 +1532,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0005D8 9C??           00935         BCF     BLDC_FLAGS_1,TMR1_OF
 0005DA 2A??           00936         INCF    FAULT_CHECK_COUNT,F
 0005DC 0E09           00937         MOVLW   MAX_FAULT_CHECK_COUNT
-MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-3-2014  8:30:04         PAGE 27
+MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-15-2014  18:01:53         PAGE 27
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1586,7 +1586,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00983 ;END OF FILE
                       00984 ;*************************************************************************************
                       00985         END
-MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-3-2014  8:30:04         PAGE 28
+MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-15-2014  18:01:53         PAGE 28
 
 
 SYMBOL TABLE
@@ -1645,7 +1645,7 @@ BAUDCON                           00000FAA
 BAUDCTL                           00000FAA
 BF                                00000000
 BFEMT                             00000003
-MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-3-2014  8:30:04         PAGE 29
+MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-15-2014  18:01:53         PAGE 29
 
 
 SYMBOL TABLE
@@ -1704,7 +1704,7 @@ CCP2CON                           00000FBA
 CCP2IE                            00000000
 CCP2IF                            00000000
 CCP2IP                            00000000
-MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-3-2014  8:30:04         PAGE 30
+MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-15-2014  18:01:53         PAGE 30
 
 
 SYMBOL TABLE
@@ -1763,7 +1763,7 @@ D                                 00000005
 DATA_ADDRESS                      00000005
 DC                                00000001
 DC1B0                             00000004
-MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-3-2014  8:30:04         PAGE 31
+MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-15-2014  18:01:53         PAGE 31
 
 
 SYMBOL TABLE
@@ -1822,7 +1822,7 @@ ETX                               0X03
 FAST                              00000001
 FAULT                             0
 FAULTA_COUNT                      00000000
-MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-3-2014  8:30:04         PAGE 32
+MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-15-2014  18:01:53         PAGE 32
 
 
 SYMBOL TABLE
@@ -1881,7 +1881,7 @@ GIEH                              00000007
 GIEL                              00000006
 GIE_GIEH                          00000007
 GO                                00000001
-MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-3-2014  8:30:04         PAGE 33
+MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-15-2014  18:01:53         PAGE 33
 
 
 SYMBOL TABLE
@@ -1940,7 +1940,7 @@ INT1                              00000004
 INT1E                             00000003
 INT1F                             00000000
 INT1IE                            00000003
-MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-3-2014  8:30:04         PAGE 34
+MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-15-2014  18:01:53         PAGE 34
 
 
 SYMBOL TABLE
@@ -1999,7 +1999,7 @@ KEY_PORT                          PORTC
 KEY_PRESSED                       4
 KEY_RS                            2
 LAST_ADC                          00000000
-MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-3-2014  8:30:04         PAGE 35
+MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-15-2014  18:01:53         PAGE 35
 
 
 SYMBOL TABLE
@@ -2058,7 +2058,7 @@ LOC_FUTURE_USE_0                  0X31
 LOC_FUTURE_USE_1                  0X32
 LOC_FUTURE_USE_2                  0X33
 LOC_FUTURE_USE_3                  0X34
-MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-3-2014  8:30:04         PAGE 36
+MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-15-2014  18:01:53         PAGE 36
 
 
 SYMBOL TABLE
@@ -2117,7 +2117,7 @@ MAX_TEMP_FILT_COUNT               D'50'
 MCLR                              00000003
 MOTOR_TYPE_CONTROL                0X20
 N                                 00000004
-MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-3-2014  8:30:04         PAGE 37
+MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-15-2014  18:01:53         PAGE 37
 
 
 SYMBOL TABLE
@@ -2176,7 +2176,7 @@ PCLATU                            00000FFB
 PD                                00000002
 PDC0H                             00000F78
 PDC0L                             00000F79
-MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-3-2014  8:30:04         PAGE 38
+MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-15-2014  18:01:53         PAGE 38
 
 
 SYMBOL TABLE
@@ -2235,7 +2235,7 @@ POUT1                             00000001
 POUT2                             00000002
 POUT3                             00000003
 POUT4                             00000004
-MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-3-2014  8:30:04         PAGE 39
+MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-15-2014  18:01:53         PAGE 39
 
 
 SYMBOL TABLE
@@ -2294,7 +2294,7 @@ PWMEN0                            00000004
 PWMEN1                            00000005
 PWMEN2                            00000006
 PWM_ALIGNMENT                     0
-MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-3-2014  8:30:04         PAGE 40
+MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-15-2014  18:01:53         PAGE 40
 
 
 SYMBOL TABLE
@@ -2353,7 +2353,7 @@ READ_SPEED_INFO                   00000204
 READ_SYSTEM_PARAMETERS            00000502
 READ_WRITE                        00000002
 REINITIALIZE_BUFFERS              000002E8
-MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-3-2014  8:30:04         PAGE 41
+MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-15-2014  18:01:53         PAGE 41
 
 
 SYMBOL TABLE
@@ -2412,7 +2412,7 @@ SET_POR_DIRECTION_FWD             00000230
 SEVOPS0                           00000004
 SEVOPS1                           00000005
 SEVOPS2                           00000006
-MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-3-2014  8:30:04         PAGE 42
+MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-15-2014  18:01:53         PAGE 42
 
 
 SYMBOL TABLE
@@ -2471,7 +2471,7 @@ T016BIT                           00000006
 T0CKI                             00000003
 T0CON                             00000FD5
 T0CS                              00000005
-MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-3-2014  8:30:04         PAGE 43
+MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-15-2014  18:01:53         PAGE 43
 
 
 SYMBOL TABLE
@@ -2530,7 +2530,7 @@ TMR0H                             00000FD7
 TMR0IE                            00000005
 TMR0IF                            00000002
 TMR0IP                            00000002
-MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-3-2014  8:30:04         PAGE 44
+MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-15-2014  18:01:53         PAGE 44
 
 
 SYMBOL TABLE
@@ -2589,7 +2589,7 @@ TRISB1                            00000001
 TRISB2                            00000002
 TRISB3                            00000003
 TRISB4                            00000004
-MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-3-2014  8:30:04         PAGE 45
+MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-15-2014  18:01:53         PAGE 45
 
 
 SYMBOL TABLE
@@ -2648,7 +2648,7 @@ UPDATE_PWM                        0000034E
 UPDATE_SEQUENCE                   0000018E
 UPDOWN                            00000005
 UP_DOWN                           00000005
-MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-3-2014  8:30:04         PAGE 46
+MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-15-2014  18:01:53         PAGE 46
 
 
 SYMBOL TABLE
@@ -2707,7 +2707,7 @@ _CPB_OFF_5H                       000000FF
 _CPB_ON_5H                        000000BF
 _CPD_OFF_5H                       000000FF
 _CPD_ON_5H                        0000007F
-MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-3-2014  8:30:04         PAGE 47
+MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-15-2014  18:01:53         PAGE 47
 
 
 SYMBOL TABLE
@@ -2766,7 +2766,7 @@ _PWRTEN_ON_2L                     000000FE
 _ROUTINES_02D6                    000002D6
 _STVREN_OFF_4L                    000000FE
 _STVREN_ON_4L                     000000FF
-MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-3-2014  8:30:04         PAGE 48
+MPASM 5.59           ../BLDC_OL_ROUTINES.ASM   12-15-2014  18:01:53         PAGE 48
 
 
 SYMBOL TABLE

@@ -3,9 +3,9 @@
 
 //#define HOUSE_DEMO
 /* Program operation parameters */
-#define MANDM_VERSION 	"    MANDM  03.5B FB  "                 // version text header
-#define	MAGIC			0x0035  			// data version checkmark
-#define	START1			"MCHP, F. Brooks 2014   "	// first LCD message
+#define MANDM_VERSION 	"    MANDM  03.6B FB  "                 // version text header
+#define	MAGIC			0x0036  			// data version checkmark
+#define	START1			"MCHP, F. Brooks 2015   "	// first LCD message
 #define SIMULA			" \x1b[7m RUNNING IN SIMULATION MODE \x1b[0m "
 #define	PIC_8722		8722
 #define CHECKMARK		0x59		// EEPROM checkmark
@@ -202,10 +202,10 @@
 #define POT_BAND_RATIO	8l		// Scaling factor
 #define POT_BAND_MAX_P  10l             // fastest cw pot travel
 #define POT_BAND_MAX_N  -10l            // fastest ccw pot travel
-#define POT_MAX_CHANGE  100             // if the change in readback between ADC reads is this or greater, it's a possible error
+#define POT_MAX_CHANGE  110             // if the change in readback between ADC reads is this or greater, it's a possible error
 #define POT_M_OFFSET	500		// offset mean
 #define POT_H_OFFSET	999             // offset high fail limit
-#define POT_L_OFFSET	1               // offset low fail limit
+#define POT_L_OFFSET	0               // offset low fail limit
 #define POT_MIN_SPAN    200             // if the change in readback between ADC reads is this or less, it's a possible error
 #define MAX_MOTOR       3u               // number of motors to control
 #define MAX_POT         3u               // number of axis that pots will control
@@ -245,11 +245,13 @@
 #define VIISION_M_OFFSET_H    300
 #define VIISION_M_OFFSET_L    10
 
-#define VIISION_MS_CHANGE    60
-#define VIISION_MS_SPAN      480       // lowest good span count during cal
-#define VIISION_MS_OFFSET_H    400
-#define VIISION_MS_OFFSET_L    35
+#define VIISION_MS_CHANGE    80
+#define VIISION_MS_SPAN      520       // lowest good span count during cal
+#define VIISION_MS_OFFSET_H    720
+#define VIISION_MS_OFFSET_L    15
 #define VIISION_MS_CAL		999
+#define VIISION_MS_RES_HIGH	645
+#define VIISION_MS_RES_LOW	60
 
 #define V810_MS_CHANGE    35
 #define V810_MS_SPAN      360       // lowest good span count during cal

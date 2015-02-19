@@ -1,4 +1,4 @@
-MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-3-2014  8:30:04         PAGE  1
+MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-15-2014  18:01:53         PAGE  1
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -57,7 +57,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00040         INCLUDE <InterfaceBLDCConstant.inc>
                       00001 ;GUI INTERFACE CODE CONSTANT AND BYTE DEFINITION
                       00002 
-MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-3-2014  8:30:04         PAGE  2
+MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-15-2014  18:01:53         PAGE  2
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -116,7 +116,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00053 
                       00054 ;****************************************************************************
                       00055 ;SMHOSTFLAGS BIT DEFINITION
-MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-3-2014  8:30:04         PAGE  3
+MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-15-2014  18:01:53         PAGE  3
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -175,7 +175,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00106 #DEFINE COM_IN_PROGRESS         2   ;0 = COMMUNICATION NOT IN PROGRESS, 1 = COMMUNICATION IN PROGRESS
                       00107 #DEFINE COMMUNICATION_ERROR     3   ;0 = NO COMMUNICATION ERROR, 1 = COMMUNICATION ERROR
                       00108 #DEFINE GUI_CONTROL_1ST_TIME    4   ;0 = NOT 1ST TIME, 1 = 1ST TIME
-MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-3-2014  8:30:04         PAGE  4
+MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-15-2014  18:01:53         PAGE  4
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -234,7 +234,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00159 ;****************************************************************************
                       00160 #DEFINE FWD_REV         0
                       00161 #DEFINE DEBOUNCE        1
-MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-3-2014  8:30:04         PAGE  5
+MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-15-2014  18:01:53         PAGE  5
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -293,7 +293,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00212 #DEFINE LOC_SPEED_LOOP_KP           0X0F
                       00213 #DEFINE LOC_SPEED_LOOP_KI           0X10
                       00214 #DEFINE LOC_SPEED_LOOP_KD           0X11
-MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-3-2014  8:30:04         PAGE  6
+MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-15-2014  18:01:53         PAGE  6
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -352,7 +352,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00265 #DEFINE COMMAND_DIRECTION           0X14
                       00266 #DEFINE COMMAND_ASK_DATA            0X15
                       00267 #DEFINE COMMAND_SYSTEM_PARAMETERS       0X16
-MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-3-2014  8:30:04         PAGE  7
+MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-15-2014  18:01:53         PAGE  7
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -411,7 +411,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00033 
                       00034 
                       00035         UDATA           0X100           ;DO NOT DELETE ANY
-MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-3-2014  8:30:04         PAGE  8
+MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-15-2014  18:01:53         PAGE  8
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -470,7 +470,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00086 UARTINT_RX_BUFFER       RES     UARTINT_RX_BUFFER_SIZE  ;RECEIVE DATA FIFO BUFFER
                       00087 HOST_BUFFER             RES     HOST_BUFFER_SIZE        ;RECEIVE DATA FIFO BUFFER
                       00088 RESPONSE_BUFFER         RES     RESPONSE_BUFFER_SIZE    ;RECEIVE DATA FIFO BUFFER
-MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-3-2014  8:30:04         PAGE  9
+MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-15-2014  18:01:53         PAGE  9
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -529,7 +529,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00121 #ENDIF
                       00042         
                       00043 #IF ((ACTIVE_MODE == 0X01) || (ACTIVE_MODE == 0X02))    
-MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-3-2014  8:30:04         PAGE 10
+MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-15-2014  18:01:53         PAGE 10
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -588,7 +588,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 00004C 62??           00094         CPFSEQ  USARTBYTE                       ;COMPARE GIVEN VALUE WITH RECEIVED BYTE
 00004E D???           00095         BRA     PARSE_HOSTCMD_ERROR             ;ERROR IN COMMUNICATION - RETURN TO MAIN
 000050 D???           00096         BRA     PARSE_HOSTCMD_NEXTSTATE                 ;RECEIVED BYTE IS CORRECT - GOTO NEXT STATE.
-MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-3-2014  8:30:04         PAGE 11
+MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-15-2014  18:01:53         PAGE 11
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -647,7 +647,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0000A0 D???           00147         BRA     PARSE_HOSTCMD_FSM               ;YES.  NEXT BYTE IS OUR DATA.
 0000A2 50??           00148         MOVF    HOSTCHECKSUM, W                 ;NO.  THIS IS THE DATA.
 0000A4 62??           00149         CPFSEQ  USARTBYTE                       ;IS CHECKSUM VALID ?
-MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-3-2014  8:30:04         PAGE 12
+MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-15-2014  18:01:53         PAGE 12
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -706,7 +706,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0000F2 D???           00200         BRA     SEND_HOSTDATA_DLE_STX           ;SM_HOST_DLE_STX
 0000F4 D???           00201         BRA     SEND_HOSTDATA_LEN               ;SM_HOST_LEN
 0000F6 D???           00202         BRA     SEND_HOSTDATA_CMD               ;SM_HOST_CMD
-MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-3-2014  8:30:04         PAGE 13
+MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-15-2014  18:01:53         PAGE 13
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -765,7 +765,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 00015A 92??           00253         BCF     SMHOSTFLAGS, SKIP_DLE           ;REMEMBER TO NOT SKIP DLE FOR NEXT TIME.
 00015C 50??           00254         MOVF    TEMP5,W
 00015E 26??           00255         ADDWF   HOSTCHECKSUM,F                  ;CALCULATE CHECKSUM.
-MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-3-2014  8:30:04         PAGE 14
+MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-15-2014  18:01:53         PAGE 14
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -823,7 +823,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00304 ;END OF FILE
                       00305 ;*************************************************************************************
                       00306         END
-MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-3-2014  8:30:04         PAGE 15
+MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-15-2014  18:01:53         PAGE 15
 
 
 SYMBOL TABLE
@@ -882,7 +882,7 @@ BAUDCON                           00000FAA
 BAUDCTL                           00000FAA
 BF                                00000000
 BFEMT                             00000003
-MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-3-2014  8:30:04         PAGE 16
+MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-15-2014  18:01:53         PAGE 16
 
 
 SYMBOL TABLE
@@ -941,7 +941,7 @@ CCP2CON                           00000FBA
 CCP2IE                            00000000
 CCP2IF                            00000000
 CCP2IP                            00000000
-MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-3-2014  8:30:04         PAGE 17
+MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-15-2014  18:01:53         PAGE 17
 
 
 SYMBOL TABLE
@@ -1000,7 +1000,7 @@ DDRE                              TRISE
 DEBOUNCE                          1
 DEBOUNCE_COUNT                    0XFF
 DEBOUNCE_COUNTER                  00000000
-MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-3-2014  8:30:04         PAGE 18
+MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-15-2014  18:01:53         PAGE 18
 
 
 SYMBOL TABLE
@@ -1059,7 +1059,7 @@ FLT4EN                            00000006
 FLTA                              00000001
 FLTAEN                            00000000
 FLTAMOD                           00000001
-MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-3-2014  8:30:04         PAGE 19
+MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-15-2014  18:01:53         PAGE 19
 
 
 SYMBOL TABLE
@@ -1118,7 +1118,7 @@ HOSTCHECKSUM                      00000000
 HOSTCMD                           00000000
 HOSTDATALEN                       00000000
 HOSTRESPONSE_BUF_STATUS           00000000
-MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-3-2014  8:30:04         PAGE 20
+MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-15-2014  18:01:53         PAGE 20
 
 
 SYMBOL TABLE
@@ -1177,7 +1177,7 @@ IPEN                              00000007
 IPR1                              00000F9F
 IPR2                              00000FA2
 IPR3                              00000FA5
-MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-3-2014  8:30:04         PAGE 21
+MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-15-2014  18:01:53         PAGE 21
 
 
 SYMBOL TABLE
@@ -1236,7 +1236,7 @@ LOC_BUFFER_CHKSUM_2               0X01
 LOC_CAPBUF_CNT_LSB                0X2F
 LOC_CAPBUF_CNT_MSB                0X30
 LOC_CURRENT_LOOP_KD               0X14
-MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-3-2014  8:30:04         PAGE 22
+MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-15-2014  18:01:53         PAGE 22
 
 
 SYMBOL TABLE
@@ -1295,7 +1295,7 @@ LVDIE                             00000002
 LVDIF                             00000002
 LVDIP                             00000002
 LVDL0                             00000000
-MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-3-2014  8:30:04         PAGE 23
+MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-15-2014  18:01:53         PAGE 23
 
 
 SYMBOL TABLE
@@ -1354,7 +1354,7 @@ OV                                00000003
 OVDCOND                           00000F6B
 OVDCONS                           00000F6A
 OVOLT                             1
-MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-3-2014  8:30:04         PAGE 24
+MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-15-2014  18:01:53         PAGE 24
 
 
 SYMBOL TABLE
@@ -1413,7 +1413,7 @@ PMOD1                             00000001
 PMOD2                             00000002
 PMOD3                             00000003
 POR                               00000001
-MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-3-2014  8:30:04         PAGE 25
+MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-15-2014  18:01:53         PAGE 25
 
 
 SYMBOL TABLE
@@ -1472,7 +1472,7 @@ PTCKPS1                           00000003
 PTCON0                            00000F7F
 PTCON1                            00000F7E
 PTDIR                             00000006
-MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-3-2014  8:30:04         PAGE 26
+MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-15-2014  18:01:53         PAGE 26
 
 
 SYMBOL TABLE
@@ -1531,7 +1531,7 @@ RC3                               00000003
 RC4                               00000004
 RC5                               00000005
 RC6                               00000006
-MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-3-2014  8:30:04         PAGE 27
+MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-15-2014  18:01:53         PAGE 27
 
 
 SYMBOL TABLE
@@ -1590,7 +1590,7 @@ SCSEL1                            00000003
 SDA                               00000004
 SDI                               00000004
 SDO                               00000007
-MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-3-2014  8:30:04         PAGE 28
+MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-15-2014  18:01:53         PAGE 28
 
 
 SYMBOL TABLE
@@ -1649,7 +1649,7 @@ SSPSTAT                           00000FC7
 SSRC0                             00000000
 SSRC1                             00000001
 SSRC2                             00000002
-MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-3-2014  8:30:04         PAGE 29
+MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-15-2014  18:01:53         PAGE 29
 
 
 SYMBOL TABLE
@@ -1708,7 +1708,7 @@ T5MOD                             00000005
 T5PS0                             00000003
 T5PS1                             00000004
 T5SEN                             00000007
-MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-3-2014  8:30:04         PAGE 30
+MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-15-2014  18:01:53         PAGE 30
 
 
 SYMBOL TABLE
@@ -1767,7 +1767,7 @@ TMR5ON                            00000000
 TO                                00000003
 TOS                               00000FFD
 TOSH                              00000FFE
-MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-3-2014  8:30:04         PAGE 31
+MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-15-2014  18:01:53         PAGE 31
 
 
 SYMBOL TABLE
@@ -1826,7 +1826,7 @@ TXSTA                             00000FAC
 UA                                00000001
 UARTINT_GETCH                     00000000
 UARTINT_PUTCH                     00000000
-MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-3-2014  8:30:04         PAGE 32
+MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-15-2014  18:01:53         PAGE 32
 
 
 SYMBOL TABLE
@@ -1885,7 +1885,7 @@ _CONFIG2L                         00300002
 _CONFIG3H                         00300005
 _CONFIG3L                         00300004
 _CONFIG4L                         00300006
-MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-3-2014  8:30:04         PAGE 33
+MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-15-2014  18:01:53         PAGE 33
 
 
 SYMBOL TABLE
@@ -1944,7 +1944,7 @@ _LVP_ON_4L                        000000FF
 _MCLRE_OFF_3H                     0000007F
 _MCLRE_ON_3H                      000000FF
 _OSC_ECIO_1H                      000000F5
-MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-3-2014  8:30:04         PAGE 34
+MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-15-2014  18:01:53         PAGE 34
 
 
 SYMBOL TABLE
@@ -2003,7 +2003,7 @@ _WRTC_OFF_6H                      000000FF
 _WRTC_ON_6H                       000000DF
 _WRTD_OFF_6H                      000000FF
 _WRTD_ON_6H                       0000007F
-MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-3-2014  8:30:04         PAGE 35
+MPASM 5.59          ../BLDCCOMMUNICATION.ASM   12-15-2014  18:01:53         PAGE 35
 
 
 SYMBOL TABLE

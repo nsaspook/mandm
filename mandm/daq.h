@@ -9,7 +9,6 @@
 #include "crit.h"
 #include "mandm_vector.h"
 
-uint32_t ADC_get(uint8_t, uint16_t, uint16_t, uint8_t, int16_t, uint8_t);
 void ADC_zero(void);
 void ADC_read(void);
 void zero_amploc(void); // set sensor ADC zero value
