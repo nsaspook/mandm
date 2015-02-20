@@ -83,7 +83,7 @@ MP_LINKER_DEBUG_OPTION=-r=ROM@0x3DC0:0x3FFF -r=RAM@GPR:0x2F4:0x2FF
 # Rules for buildStep: assemble
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
 ${OBJECTDIR}/_ext/1472/BLDC_OL.o: ../BLDC_OL.asm  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/1472 
+	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/BLDC_OL.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/BLDC_OL.o 
 	@${FIXDEPS} dummy.d -e "${OBJECTDIR}/_ext/1472/BLDC_OL.err" $(SILENT) -c ${MP_AS} $(MP_EXTRA_AS_PRE) -d__DEBUG -d__MPLAB_DEBUGGER_ICD3=1 -q -p$(MP_PROCESSOR_OPTION) -u  -l\\\"${OBJECTDIR}/_ext/1472/BLDC_OL.lst\\\" -e\\\"${OBJECTDIR}/_ext/1472/BLDC_OL.err\\\" $(ASM_OPTIONS)   -o\\\"${OBJECTDIR}/_ext/1472/BLDC_OL.o\\\" \\\"../BLDC_OL.asm\\\" 
@@ -91,7 +91,7 @@ ${OBJECTDIR}/_ext/1472/BLDC_OL.o: ../BLDC_OL.asm  nbproject/Makefile-${CND_CONF}
 	@${FIXDEPS} "${OBJECTDIR}/_ext/1472/BLDC_OL.o.d" $(SILENT) -rsi ${MP_AS_DIR} -c18 
 	
 ${OBJECTDIR}/_ext/1472/BLDC_OL_routines.o: ../BLDC_OL_routines.asm  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/1472 
+	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/BLDC_OL_routines.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/BLDC_OL_routines.o 
 	@${FIXDEPS} dummy.d -e "${OBJECTDIR}/_ext/1472/BLDC_OL_routines.err" $(SILENT) -c ${MP_AS} $(MP_EXTRA_AS_PRE) -d__DEBUG -d__MPLAB_DEBUGGER_ICD3=1 -q -p$(MP_PROCESSOR_OPTION) -u  -l\\\"${OBJECTDIR}/_ext/1472/BLDC_OL_routines.lst\\\" -e\\\"${OBJECTDIR}/_ext/1472/BLDC_OL_routines.err\\\" $(ASM_OPTIONS)   -o\\\"${OBJECTDIR}/_ext/1472/BLDC_OL_routines.o\\\" \\\"../BLDC_OL_routines.asm\\\" 
@@ -99,7 +99,7 @@ ${OBJECTDIR}/_ext/1472/BLDC_OL_routines.o: ../BLDC_OL_routines.asm  nbproject/Ma
 	@${FIXDEPS} "${OBJECTDIR}/_ext/1472/BLDC_OL_routines.o.d" $(SILENT) -rsi ${MP_AS_DIR} -c18 
 	
 ${OBJECTDIR}/_ext/1472/BLDCbuffer.o: ../BLDCbuffer.asm  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/1472 
+	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/BLDCbuffer.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/BLDCbuffer.o 
 	@${FIXDEPS} dummy.d -e "${OBJECTDIR}/_ext/1472/BLDCbuffer.err" $(SILENT) -c ${MP_AS} $(MP_EXTRA_AS_PRE) -d__DEBUG -d__MPLAB_DEBUGGER_ICD3=1 -q -p$(MP_PROCESSOR_OPTION) -u  -l\\\"${OBJECTDIR}/_ext/1472/BLDCbuffer.lst\\\" -e\\\"${OBJECTDIR}/_ext/1472/BLDCbuffer.err\\\" $(ASM_OPTIONS)   -o\\\"${OBJECTDIR}/_ext/1472/BLDCbuffer.o\\\" \\\"../BLDCbuffer.asm\\\" 
@@ -107,7 +107,7 @@ ${OBJECTDIR}/_ext/1472/BLDCbuffer.o: ../BLDCbuffer.asm  nbproject/Makefile-${CND
 	@${FIXDEPS} "${OBJECTDIR}/_ext/1472/BLDCbuffer.o.d" $(SILENT) -rsi ${MP_AS_DIR} -c18 
 	
 ${OBJECTDIR}/_ext/1472/BLDCCommunication.o: ../BLDCCommunication.asm  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/1472 
+	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/BLDCCommunication.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/BLDCCommunication.o 
 	@${FIXDEPS} dummy.d -e "${OBJECTDIR}/_ext/1472/BLDCCommunication.err" $(SILENT) -c ${MP_AS} $(MP_EXTRA_AS_PRE) -d__DEBUG -d__MPLAB_DEBUGGER_ICD3=1 -q -p$(MP_PROCESSOR_OPTION) -u  -l\\\"${OBJECTDIR}/_ext/1472/BLDCCommunication.lst\\\" -e\\\"${OBJECTDIR}/_ext/1472/BLDCCommunication.err\\\" $(ASM_OPTIONS)   -o\\\"${OBJECTDIR}/_ext/1472/BLDCCommunication.o\\\" \\\"../BLDCCommunication.asm\\\" 
@@ -116,7 +116,7 @@ ${OBJECTDIR}/_ext/1472/BLDCCommunication.o: ../BLDCCommunication.asm  nbproject/
 	
 else
 ${OBJECTDIR}/_ext/1472/BLDC_OL.o: ../BLDC_OL.asm  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/1472 
+	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/BLDC_OL.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/BLDC_OL.o 
 	@${FIXDEPS} dummy.d -e "${OBJECTDIR}/_ext/1472/BLDC_OL.err" $(SILENT) -c ${MP_AS} $(MP_EXTRA_AS_PRE) -q -p$(MP_PROCESSOR_OPTION) -u  -l\\\"${OBJECTDIR}/_ext/1472/BLDC_OL.lst\\\" -e\\\"${OBJECTDIR}/_ext/1472/BLDC_OL.err\\\" $(ASM_OPTIONS)   -o\\\"${OBJECTDIR}/_ext/1472/BLDC_OL.o\\\" \\\"../BLDC_OL.asm\\\" 
@@ -124,7 +124,7 @@ ${OBJECTDIR}/_ext/1472/BLDC_OL.o: ../BLDC_OL.asm  nbproject/Makefile-${CND_CONF}
 	@${FIXDEPS} "${OBJECTDIR}/_ext/1472/BLDC_OL.o.d" $(SILENT) -rsi ${MP_AS_DIR} -c18 
 	
 ${OBJECTDIR}/_ext/1472/BLDC_OL_routines.o: ../BLDC_OL_routines.asm  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/1472 
+	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/BLDC_OL_routines.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/BLDC_OL_routines.o 
 	@${FIXDEPS} dummy.d -e "${OBJECTDIR}/_ext/1472/BLDC_OL_routines.err" $(SILENT) -c ${MP_AS} $(MP_EXTRA_AS_PRE) -q -p$(MP_PROCESSOR_OPTION) -u  -l\\\"${OBJECTDIR}/_ext/1472/BLDC_OL_routines.lst\\\" -e\\\"${OBJECTDIR}/_ext/1472/BLDC_OL_routines.err\\\" $(ASM_OPTIONS)   -o\\\"${OBJECTDIR}/_ext/1472/BLDC_OL_routines.o\\\" \\\"../BLDC_OL_routines.asm\\\" 
@@ -132,7 +132,7 @@ ${OBJECTDIR}/_ext/1472/BLDC_OL_routines.o: ../BLDC_OL_routines.asm  nbproject/Ma
 	@${FIXDEPS} "${OBJECTDIR}/_ext/1472/BLDC_OL_routines.o.d" $(SILENT) -rsi ${MP_AS_DIR} -c18 
 	
 ${OBJECTDIR}/_ext/1472/BLDCbuffer.o: ../BLDCbuffer.asm  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/1472 
+	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/BLDCbuffer.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/BLDCbuffer.o 
 	@${FIXDEPS} dummy.d -e "${OBJECTDIR}/_ext/1472/BLDCbuffer.err" $(SILENT) -c ${MP_AS} $(MP_EXTRA_AS_PRE) -q -p$(MP_PROCESSOR_OPTION) -u  -l\\\"${OBJECTDIR}/_ext/1472/BLDCbuffer.lst\\\" -e\\\"${OBJECTDIR}/_ext/1472/BLDCbuffer.err\\\" $(ASM_OPTIONS)   -o\\\"${OBJECTDIR}/_ext/1472/BLDCbuffer.o\\\" \\\"../BLDCbuffer.asm\\\" 
@@ -140,7 +140,7 @@ ${OBJECTDIR}/_ext/1472/BLDCbuffer.o: ../BLDCbuffer.asm  nbproject/Makefile-${CND
 	@${FIXDEPS} "${OBJECTDIR}/_ext/1472/BLDCbuffer.o.d" $(SILENT) -rsi ${MP_AS_DIR} -c18 
 	
 ${OBJECTDIR}/_ext/1472/BLDCCommunication.o: ../BLDCCommunication.asm  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/1472 
+	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/BLDCCommunication.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/BLDCCommunication.o 
 	@${FIXDEPS} dummy.d -e "${OBJECTDIR}/_ext/1472/BLDCCommunication.err" $(SILENT) -c ${MP_AS} $(MP_EXTRA_AS_PRE) -q -p$(MP_PROCESSOR_OPTION) -u  -l\\\"${OBJECTDIR}/_ext/1472/BLDCCommunication.lst\\\" -e\\\"${OBJECTDIR}/_ext/1472/BLDCCommunication.err\\\" $(ASM_OPTIONS)   -o\\\"${OBJECTDIR}/_ext/1472/BLDCCommunication.o\\\" \\\"../BLDCCommunication.asm\\\" 
