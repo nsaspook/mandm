@@ -247,13 +247,13 @@ LP_CURRENT_Z::2	X:\mandm\mandm\mandm_defs.h	315;"	d	line:315
 LP_FB_X::3	X:\mandm\mandm\mandm_defs.h	316;"	d	line:316
 LP_FB_Y::4	X:\mandm\mandm\mandm_defs.h	317;"	d	line:317
 LP_FB_Z::5	X:\mandm\mandm\mandm_defs.h	318;"	d	line:318
-MAGIC::0x0035	X:\mandm\mandm\mandm_defs.h	7;"	d	line:7
+MAGIC::0x0036	X:\mandm\mandm\mandm_defs.h	7;"	d	line:7
 MANDM_DEFS_H_INCLUDED	X:\mandm\mandm\mandm_defs.h	2;"	d	line:2
 MANDM_H_INCLUDED	X:\mandm\mandm\mandm.h	2;"	d	line:2
 MANDM_MSG_H_INCLUDED	X:\mandm\mandm\mandm_msg.h	2;"	d	line:2
 MANDM_SHARED_H_INCLUDED	X:\mandm\mandm\mandm_shared.h	3;"	d	line:3
 MANDM_VECTOR_H_INCLUDED	X:\mandm\mandm\mandm_vector.h	7;"	d	line:7
-MANDM_VERSION::"MANDM03.5BFB"	X:\mandm\mandm\mandm_defs.h	6;"	d	line:6
+MANDM_VERSION::"MANDM03.6BFB"	X:\mandm\mandm\mandm_defs.h	6;"	d	line:6
 MAXALM::7u	X:\mandm\mandm\mandm_defs.h	329;"	d	line:329
 MAXSECONDS::315576000ul	X:\mandm\mandm\mandm_defs.h	341;"	d	line:341
 MAX_EMO::3u	X:\mandm\mandm\mandm_defs.h	212;"	d	line:212
@@ -378,7 +378,7 @@ SHIFT_DISP_LEFT::0b00011011	X:\mandm\mandm\xlcd.h	58;"	d	line:58
 SHIFT_DISP_RIGHT::0b00011111	X:\mandm\mandm\xlcd.h	59;"	d	line:59
 SIMULA::"	X:\mandm\mandm\mandm_defs.h	10;"	d	line:10
 SLOW_STATUS	X:\mandm\mandm\mandm8722.c	265;"	v	line:265
-START1::"MCHP,F.Brooks2014"	X:\mandm\mandm\mandm_defs.h	8;"	d	line:8
+START1::"MCHP,F.Brooks2015"	X:\mandm\mandm\mandm_defs.h	8;"	d	line:8
 STOP	X:\mandm\mandm\mandm.h	63;"	e	line:63	enum:pottype::movement_t
 STOP	X:\mandm\mandm\mandm.h	84;"	e	line:84	enum:knobtype::movement_t
 STOP	X:\mandm\mandm\mandm.h	93;"	e	line:93	enum:qeitype::movement_t
@@ -896,7 +896,7 @@ nonqei_exer	X:\mandm\mandm\mandm8722.c	214;"	p	line:214	file:
 offset	X:\mandm\mandm\mandm.h	68;"	m	line:68	struct:pottype
 old_error	X:\mandm\mandm\mandm8722.c	958;"	l	line:958	file:
 old_menu	X:\mandm\mandm\mandm8722.c	1148;"	l	line:1148	file:
-old_part	X:\mandm\mandm\config.c	6;"	l	line:6	file:
+old_part	X:\mandm\mandm\config.c	5;"	l	line:5	file:
 on_off_only	X:\mandm\mandm\mandm.h	28;"	m	line:28	struct:modetype
 on_off_only	X:\mandm\mandm\mandm.h	74;"	m	line:74	struct:motortype
 operate	X:\mandm\mandm\mandm.h	28;"	m	line:28	struct:modetype
@@ -1104,7 +1104,7 @@ write_data_eeprom	X:\mandm\mandm\crit.c	52;"	f	line:52	signature:(uint8_t data, 
 write_data_eeprom	X:\mandm\mandm\crit.h	12;"	p	line:12	signature:(uint8_t, uint8_t, uint16_t, uint16_t)
 y	X:\mandm\mandm\mandm8722.c	1396;"	l	line:1396
 y	X:\mandm\mandm\mandm8722.c	1442;"	l	line:1442
-z	X:\mandm\mandm\config.c	6;"	l	line:6	file:
+z	X:\mandm\mandm\config.c	5;"	l	line:5	file:
 z	X:\mandm\mandm\daq.c	277;"	l	line:277	file:
 z	X:\mandm\mandm\daq.c	40;"	l	line:40	file:
 z	X:\mandm\mandm\hwconf.c	5;"	l	line:5	file:

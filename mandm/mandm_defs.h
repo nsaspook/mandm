@@ -3,8 +3,8 @@
 
 //#define HOUSE_DEMO
 /* Program operation parameters */
-#define MANDM_VERSION 	"    MANDM  03.6B FB  "                 // version text header
-#define	MAGIC			0x0036  			// data version checkmark
+#define MANDM_VERSION 	"    MANDM  03.8B FB  "                 // version text header
+#define	MAGIC			0x0038  			// data version checkmark
 #define	START1			"MCHP, F. Brooks 2015   "	// first LCD message
 #define SIMULA			" \x1b[7m RUNNING IN SIMULATION MODE \x1b[0m "
 #define	PIC_8722		8722
@@ -243,7 +243,7 @@
 #define VIISION_M_CHANGE    30
 #define VIISION_M_SPAN      250       // lowest good span count during cal
 #define VIISION_M_OFFSET_H    300
-#define VIISION_M_OFFSET_L    10
+#define VIISION_M_OFFSET_L    10 // this should not be zero but make it a warning
 
 #define VIISION_MS_CHANGE    80
 #define VIISION_MS_SPAN      520       // lowest good span count during cal
