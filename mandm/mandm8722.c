@@ -161,6 +161,7 @@
 //		Use BOREN to reset cpu when using the external VREF
 //      3.2	adjust timeouts for slower motors (RMS)
 //      3.3     Mostly bug fixes and motor preset moves after calibration.
+//	3.8	Warning instead of error for span range errors
 
 //	***
 //  dipswitch settings PORTD
