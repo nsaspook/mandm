@@ -1,6 +1,6 @@
 build/default/production/_ext/1472/hwconf.o:  \
-	/audio/mandm/mandm/hwconf.c  \
-	/audio/mandm/mandm/hwconf.h  \
-	/audio/mandm/mandm/mandm.h  \
-	/audio/mandm/mandm/mandm_defs.h  \
+	/root/mandm/mandm/mandm/hwconf.c  \
+	/root/mandm/mandm/mandm/hwconf.h  \
+	/root/mandm/mandm/mandm/mandm.h  \
+	/root/mandm/mandm/mandm/mandm_defs.h  \
 

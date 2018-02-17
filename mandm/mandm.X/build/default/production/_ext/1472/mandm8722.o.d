@@ -1,15 +1,15 @@
 build/default/production/_ext/1472/mandm8722.o:  \
-	/audio/mandm/mandm/mandm8722.c  \
-	/audio/mandm/mandm/mandm_msg.h  \
-	/audio/mandm/mandm/mandm_defs.h  \
-	/audio/mandm/mandm/xlcd.h  \
-	/audio/mandm/mandm/config.h  \
-	/audio/mandm/mandm/mandm.h  \
-	/audio/mandm/mandm/mandm_shared.h  \
-	/audio/mandm/mandm/crit.h  \
-	/audio/mandm/mandm/power.h  \
-	/audio/mandm/mandm/hwconf.h  \
-	/audio/mandm/mandm/model.h  \
-	/audio/mandm/mandm/mandm_vector.h  \
-	/audio/mandm/mandm/daq.h  \
+	/root/mandm/mandm/mandm/mandm8722.c  \
+	/root/mandm/mandm/mandm/mandm_msg.h  \
+	/root/mandm/mandm/mandm/mandm_defs.h  \
+	/root/mandm/mandm/mandm/xlcd.h  \
+	/root/mandm/mandm/mandm/config.h  \
+	/root/mandm/mandm/mandm/mandm.h  \
+	/root/mandm/mandm/mandm/mandm_shared.h  \
+	/root/mandm/mandm/mandm/crit.h  \
+	/root/mandm/mandm/mandm/power.h  \
+	/root/mandm/mandm/mandm/hwconf.h  \
+	/root/mandm/mandm/mandm/model.h  \
+	/root/mandm/mandm/mandm/mandm_vector.h  \
+	/root/mandm/mandm/mandm/daq.h  \
 

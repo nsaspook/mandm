@@ -329,7 +329,7 @@ void tick_handler(void) // This is the high priority ISR routine
 		}
 		V.lowint_count++; // low int trigger entropy counter
 		//FIXME watchout for int uint conversions that make negative number high
-		// check for currrent overloads using the current sensors
+		// check for current overloads using the current sensors
 		if (FALSE && (((int32_t) R.current_x > (int32_t) MAX_MOTOR_CURRENT_H) || ((int32_t) R.current_y > (int32_t) MAX_MOTOR_CURRENT_L) || ((int32_t) R.current_z > (int32_t) MAX_MOTOR_CURRENT_L))) { // over-current errors
 			LED_3 = HIGH;
 			LED_1 = LOW;
@@ -433,7 +433,7 @@ void tick_handler(void) // This is the high priority ISR routine
 				}
 			}
 		}
-		// House keeping fuctions
+		// House keeping functions
 		// mode.idle FLAG updates
 		if (HID_IDLE_FLAG) {
 			if (hid_idle++ >= MAX_IDLE) {
@@ -465,7 +465,7 @@ void work_handler(void) // This is the low priority ISR routine, the high ISR ro
 {
 }
 
-void idle_loop(void) // idle processe to allow for better isr triggers and background networking
+void idle_loop(void) // idle process to allow for better isr triggers and background networking
 {
 	IDLEFLAG = TRUE;
 	ClrWdt();

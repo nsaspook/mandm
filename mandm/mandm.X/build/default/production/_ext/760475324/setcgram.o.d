@@ -1,6 +1,4 @@
 build/default/production/_ext/760475324/setcgram.o:  \
-	/audio/mandm/mandm/xlcd/setcgram.c  \
-	/opt/microchip/mplabc18/v3.40/h/p18cxxx.h  \
-	/opt/microchip/mplabc18/v3.40/h/p18f8722.h  \
-	/audio/mandm/mandm/xlcd.h  \
+	/root/mandm/mandm/mandm/xlcd/setcgram.c  \
+	/root/mandm/mandm/mandm/xlcd.h  \
 

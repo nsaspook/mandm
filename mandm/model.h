@@ -9,12 +9,12 @@
 void model_data(void);
 uint8_t model_learn(uint8_t); //
 
-extern  far int8_t bootstr2[MESG_W+1];
-extern  const rom int8_t modelheader0[],modelheader1[];
+extern far int8_t bootstr2[MESG_W + 1];
+extern const rom int8_t modelheader0[], modelheader1[];
 
-extern  uint8_t ChargeBatt(uint8_t, uint8_t, uint8_t);
-extern  void noload_soc(uint8_t);
-extern  void update_hist(void);
-extern  void term_time(void);
+extern uint8_t ChargeBatt(uint8_t, uint8_t, uint8_t);
+extern void noload_soc(uint8_t);
+extern void update_hist(void);
+extern void term_time(void);
 
 #endif /* MODEL_H_INCLUDED */

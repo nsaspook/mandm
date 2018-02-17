@@ -1,7 +1,7 @@
 build/default/production/_ext/1472/model.o:  \
-	/audio/mandm/mandm/model.c  \
-	/audio/mandm/mandm/model.h  \
-	/audio/mandm/mandm/mandm.h  \
-	/audio/mandm/mandm/mandm_defs.h  \
-	/audio/mandm/mandm/mandm_shared.h  \
+	/root/mandm/mandm/mandm/model.c  \
+	/root/mandm/mandm/mandm/model.h  \
+	/root/mandm/mandm/mandm/mandm.h  \
+	/root/mandm/mandm/mandm/mandm_defs.h  \
+	/root/mandm/mandm/mandm/mandm_shared.h  \
 

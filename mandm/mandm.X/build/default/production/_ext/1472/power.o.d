@@ -1,9 +1,9 @@
 build/default/production/_ext/1472/power.o:  \
-	/audio/mandm/mandm/power.c  \
-	/audio/mandm/mandm/power.h  \
-	/audio/mandm/mandm/mandm.h  \
-	/audio/mandm/mandm/mandm_defs.h  \
-	/audio/mandm/mandm/mandm_shared.h  \
-	/audio/mandm/mandm/crit.h  \
-	/audio/mandm/mandm/config.h  \
+	/root/mandm/mandm/mandm/power.c  \
+	/root/mandm/mandm/mandm/power.h  \
+	/root/mandm/mandm/mandm/mandm.h  \
+	/root/mandm/mandm/mandm/mandm_defs.h  \
+	/root/mandm/mandm/mandm/mandm_shared.h  \
+	/root/mandm/mandm/mandm/crit.h  \
+	/root/mandm/mandm/mandm/config.h  \
 

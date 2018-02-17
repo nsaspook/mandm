@@ -1,20 +1,11 @@
 build/default/production/_ext/1472/daq.o:  \
-	/audio/mandm/mandm/daq.c  \
-	/audio/mandm/mandm/daq.h  \
-	/opt/microchip/mplabc18/v3.40/h/adc.h  \
-	/opt/microchip/mplabc18/v3.40/h/pconfig.h  \
-	/opt/microchip/mplabc18/v3.40/h/p18cxxx.h  \
-	/opt/microchip/mplabc18/v3.40/h/p18f8722.h  \
-	/opt/microchip/mplabc18/v3.40/h/delays.h  \
-	/opt/microchip/mplabc18/v3.40/h/usart.h  \
-	/opt/microchip/mplabc18/v3.40/h/stdio.h  \
-	/opt/microchip/mplabc18/v3.40/h/stdarg.h  \
-	/opt/microchip/mplabc18/v3.40/h/stddef.h  \
-	/audio/mandm/mandm/mandm.h  \
-	/audio/mandm/mandm/mandm_defs.h  \
-	/audio/mandm/mandm/mandm_shared.h  \
-	/audio/mandm/mandm/crit.h  \
-	/audio/mandm/mandm/mandm_vector.h  \
-	/audio/mandm/mandm/config.h  \
-	/audio/mandm/mandm/power.h  \
+	/root/mandm/mandm/mandm/daq.c  \
+	/root/mandm/mandm/mandm/daq.h  \
+	/root/mandm/mandm/mandm/mandm.h  \
+	/root/mandm/mandm/mandm/mandm_defs.h  \
+	/root/mandm/mandm/mandm/mandm_shared.h  \
+	/root/mandm/mandm/mandm/crit.h  \
+	/root/mandm/mandm/mandm/mandm_vector.h  \
+	/root/mandm/mandm/mandm/config.h  \
+	/root/mandm/mandm/mandm/power.h  \
 

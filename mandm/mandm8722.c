@@ -1758,7 +1758,7 @@ void default_display(void)
 }
 
 void emo_display(void)
-{ // System has detected a condition that caused it to stop in a save comdition
+{ // System has detected a condition that caused it to stop in a safe comdition
 	sprintf(bootstr2, " EMO EMO EMO EMO      ");
 	LCD_VC_puts(VC0, DS1, YES);
 	sprintf(bootstr2, " Power Cycle/Reset    "); // info display data

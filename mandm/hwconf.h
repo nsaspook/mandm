@@ -11,8 +11,8 @@ void config_pic(uint16_t);
 void start_pic(uint16_t);
 void start_workerthread(void);
 
-extern	volatile uint8_t WDT_TO,EEP_ER;
+extern volatile uint8_t WDT_TO, EEP_ER;
 
-extern	void ansidraw(int16_t);
+extern void ansidraw(int16_t);
 #endif /* HWCONF_H_INCLUDED */
 
