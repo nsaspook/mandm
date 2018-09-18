@@ -3,9 +3,9 @@
 
 //#define HOUSE_DEMO
 /* Program operation parameters */
-#define MANDM_VERSION 	"    MANDM  03.8B FB  "                 // version text header
-#define	MAGIC			0x0038  			// data version checkmark
-#define	START1			"MCHP, F. Brooks 2015   "	// first LCD message
+#define MANDM_VERSION 	"    MANDM  04.0B FB  "                 // version text header, missing 3.9 fixes
+#define	MAGIC			0x0040  			// data version checkmark
+#define	START1			"MCHP, F. Brooks 2017   "	// first LCD message
 #define SIMULA			" \x1b[7m RUNNING IN SIMULATION MODE \x1b[0m "
 #define	PIC_8722		8722
 #define CHECKMARK		0x59		// EEPROM checkmark

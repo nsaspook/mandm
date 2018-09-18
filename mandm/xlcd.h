@@ -124,8 +124,8 @@ void putsXLCD(PARAM_SCLASS char *);
 void putrsXLCD(PARAM_SCLASS const MEM_MODEL rom char *);
 
 /* User defines these routines according to the oscillator frequency */
-extern void DelayFor18TCY(void);
-extern void DelayPORXLCD(void);
-extern void DelayXLCD(void);
+void DelayFor18TCY(void);
+void DelayPORXLCD(void);
+void DelayXLCD(void);
 
 #endif

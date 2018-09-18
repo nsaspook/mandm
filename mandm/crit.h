@@ -17,7 +17,7 @@ extern volatile uint32_t critc_count;
 extern volatile uint8_t critc_level;
 extern volatile uint8_t IDLEFLAG;
 
-extern void idle_loop(void);
+void idle_loop(void);
 
 #endif /* CRIT_H_INCLUDED */
 

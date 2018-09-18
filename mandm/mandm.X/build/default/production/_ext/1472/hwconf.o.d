@@ -1,6 +1,6 @@
 build/default/production/_ext/1472/hwconf.o:  \
-	/root/mandm/mandm/mandm/hwconf.c  \
-	/root/mandm/mandm/mandm/hwconf.h  \
-	/root/mandm/mandm/mandm/mandm.h  \
-	/root/mandm/mandm/mandm/mandm_defs.h  \
+	/fred/mandm/mandm/hwconf.c  \
+	/fred/mandm/mandm/hwconf.h  \
+	/fred/mandm/mandm/mandm.h  \
+	/fred/mandm/mandm/mandm_defs.h  \
 

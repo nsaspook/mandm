@@ -116,7 +116,7 @@ void config_pic(uint16_t hw_config)
 		WriteTimer3(TIMER3REG); //  low int worker thread timer  about 20hz                                                           //
 
 		/*      work int thread setup */
-		IPR2bits.TMR3IP = HIGH; // make it low level
+		IPR2bits.TMR3IP = HIGH; // make it high level
 		PIE2bits.TMR3IE = HIGH; // enable int
 
 		/* EEPROM write int enable */

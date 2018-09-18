@@ -34,15 +34,15 @@ extern volatile struct motortype motordata[MAX_MOTOR], *motor_ptr;
 
 extern int32_t ABSL(int32_t);
 extern int16_t ABSI(int16_t);
-extern float lp_filter(float, int16_t, int16_t);
-extern void do_sim(void);
-extern void display_system(void);
-extern void wdtdelay(uint32_t);
-extern void wdttime(uint32_t);
-extern void term_time(void);
-extern uint8_t checktime_eep(uint32_t, uint8_t);
-extern void buzzer_ticks(uint8_t);
-extern void emo_display(void);
+float lp_filter(float, int16_t, int16_t);
+void do_sim(void);
+void display_system(void);
+void wdtdelay(uint32_t);
+void wdttime(uint32_t);
+void term_time(void);
+uint8_t checktime_eep(uint32_t, uint8_t);
+void buzzer_ticks(uint8_t);
+void emo_display(void);
 
 
 #endif /* DAQ_H_INCLUDED */
